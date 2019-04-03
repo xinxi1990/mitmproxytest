@@ -1,0 +1,162 @@
+Loading script Joker.py
+Proxy server listening at http://*:8080
+192.168.1.105:51309: clientconnect
+192.168.1.105:51309: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217843389.1554217930474&_s=cd052d&network=WIFI&promotion_id=10000019280&page_id=0x00&x=0.80&brand=unknown&version=11.9.1&action_time=1554217930474&platform_id=0x04&model=Google+Nexus+6P
+                  << 200 OK 30b
+192.168.1.105:51311: clientconnect
+192.168.1.105:51312: clientconnect
+192.168.1.105:51311: POST https://api.xueqiu.com/etc/mobile/state.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.0.1554217933577&_s=7300a7
+                  << 200 OK 36b
+192.168.1.105:51312: POST https://api.xueqiu.com/upload/mobile/offlineFile?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.0.1554217933582&_s=1641dd
+                  << 200 OK 30b
+192.168.1.105:51309: clientdisconnect
+192.168.1.105:51312: clientdisconnect
+192.168.1.105:51311: clientdisconnect
+192.168.1.105:51317: clientconnect
+192.168.1.105:51317: GET https://qmas.xueqiu.com/routers.json?env=production&timestamp=1554184013&app=xueqiu&v=1
+                  << 200 OK 52b
+192.168.1.105:51320: clientconnect
+192.168.1.105:51322: clientconnect
+192.168.1.105:51322: GET https://api.xueqiu.com/imgroups/joined_list.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.0.1554217938770&_s=191ed7&
+                  << 200 OK 22b
+192.168.1.105:51320: POST https://api.sobot.com/chat-sdk/sdk/user/v1/config.action
+                  << 200 OK 135b
+192.168.1.105:51326: clientconnect
+192.168.1.105:51320: POST https://api.sobot.com/chat-sdk/sdk/user/v1/collect.action
+                  << 200 OK 33b
+192.168.1.105:51326: GET https://qmas.xueqiu.com/routers.json?env=production&timestamp=1554184013&app=xueqiu&v=1
+                  << 200 OK 52b
+192.168.1.105:51328: clientconnect
+192.168.1.105:51330: clientconnect
+192.168.1.105:51331: clientconnect
+192.168.1.105:51322: POST https://api.xueqiu.com/etc/mobile/state.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217938061.1554217943971&_s=ba6f2a
+                  << 200 OK 36b
+192.168.1.105:51328: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.0.1554217943898&_s=7536b2&network=WIFI&promotion_id=10000019267&page_id=0x00&x=0.158&brand=unknown&version=11.9.1&action_time=1554217943898&platform_id=0x04&model=Google+Nexus+6P
+                  << 200 OK 30b
+192.168.1.105:51334: clientconnect
+192.168.1.105:51322: GET https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217943974&_s=11058e&
+                  << 200 OK 288b
+192.168.1.105:51330: GET https://stock.xueqiu.com/v5/stock/indicator/setting/list.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.0.1554217943967&_s=c1a4c7&uid=1772081866
+                  << 200 OK 323b
+192.168.1.105:51336: clientconnect
+192.168.1.105:51331: GET https://api.xueqiu.com/mobile/android/isgray.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217943973&_s=103b7c&version=11.9.1
+                  << 200 OK 79b
+192.168.1.105:51322: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217943975&_s=b6fbd5&updated=1512547809384&type=stk_quote_type_field7
+                  << 200 OK 40b
+192.168.1.105:51338: clientconnect
+192.168.1.105:51331: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217943977&_s=89b9f8&updated=1540464918213&type=feature_grayscale_config
+                  << 200 OK 40b
+192.168.1.105:51334: GET https://api.xueqiu.com/statuses/switch.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217943974&_s=11058e&
+                  << 200 OK 283b
+192.168.1.105:51340: clientconnect
+192.168.1.105:51328: GET https://promo.xueqiu.com/promotion/display_cache.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217943979&_s=8245a5&screen_type=3&date=1554217943979&platform_id=0x04&page_id=0x01
+                  << 200 OK 645b
+192.168.1.105:51336: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217943975&_s=ba4e23&updated=1502957694391&type=stk_quote_main_type_field
+                  << 200 OK 40b
+192.168.1.105:51341: clientconnect
+192.168.1.105:51330: clientdisconnect
+192.168.1.105:51338: GET https://tc.xueqiu.com/tc/snowx/app/reddot/query.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217943978&_s=9d80b8&config_key=broker%3Ared_point_mapper_8_6
+                  << 200 OK 410b
+192.168.1.105:51322: clientdisconnect
+192.168.1.105:51340: GET https://tc.xueqiu.com/tc/snowx/securities/exchange.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217943988&_s=cbc24d&
+                  << 200 OK 122b
+192.168.1.105:51331: clientdisconnect
+192.168.1.105:51341: GET https://tc.xueqiu.com/tc/snowx/MONI/trans_group/list.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217943991&_s=9d18e2&
+                  << 200  91b
+192.168.1.105:51334: clientdisconnect
+192.168.1.105:51344: clientconnect
+192.168.1.105:51345: clientconnect
+192.168.1.105:51346: clientconnect
+192.168.1.105:51346: GET https://xqimg.imedao.com/169de4d317a6285d3fd1c03f.png!345x210.webp
+                  << 200 OK 9.36k
+192.168.1.105:51345: GET https://xqimg.imedao.com/169de4d315862d6e3fd89542.png!345x210.webp
+                  << 200 OK 7.52k
+192.168.1.105:51344: GET https://xqimg.imedao.com/169de4d313a62e923fecc03f.png!345x210.webp
+                  << 200 OK 19.12k
+192.168.1.105:51350: clientconnect
+192.168.1.105:51351: clientconnect
+192.168.1.105:51352: clientconnect
+192.168.1.105:51336: GET https://api.xueqiu.com/statuses/home/hot_spot.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217945146&_s=476ba4&
+                  << 200 OK 80b
+192.168.1.105:51351: GET https://api.xueqiu.com/v4/statuses/public_timeline_by_category.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217945152&_s=aed14f&since_id=885937&count=8&network_type=wifi&category=6
+                  << 200 OK 72b
+192.168.1.105:51328: clientdisconnect
+192.168.1.105:51352: GET https://api.xueqiu.com/cubes/discover/editorial/list.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217945145&_s=6d3b88&x=0.490&count=6&page=1
+                  << 200 OK 520b
+192.168.1.105:51338: clientdisconnect
+192.168.1.105:51350: GET https://api.xueqiu.com/v4/statuses/public_timeline_by_category.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217945148&_s=84fbe5&since_id=265&count=8&network_type=wifi&category=200
+                  << 200 OK 4.64k
+192.168.1.105:51340: clientdisconnect
+192.168.1.105:51346: GET https://xqimg.imedao.com/1698c160d2ffe913fe8e94b4.jpg!345x210.webp
+                  << 200 OK 11.43k
+192.168.1.105:51345: GET https://xqimg.imedao.com/1698c160b35fe8c3fb4d65ff.jpg!345x210.webp
+                  << 200 OK 1.95k
+192.168.1.105:51344: GET https://xqimg.imedao.com/1698c160c24fbe13fdb040f7.jpg!345x210.webp
+                  << 200 OK 7.34k
+192.168.1.105:51346: GET https://xqimg.imedao.com/1698c160d2ffe913fe8e94b4.jpg!345x210.webp
+                  << 200 OK 11.43k
+192.168.1.105:51345: GET https://xqimg.imedao.com/1698c160b35fe8c3fb4d65ff.jpg!345x210.webp
+                  << 200 OK 1.95k
+192.168.1.105:51344: GET https://xqimg.imedao.com/1698c160c24fbe13fdb040f7.jpg!345x210.webp
+                  << 200 OK 7.34k
+192.168.1.105:51336: GET https://api.xueqiu.com/remind/unread.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217945987&_s=d26369&x=0.290
+                  << 200 OK 170b
+192.168.1.105:51356: clientconnect
+192.168.1.105:51356: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217947093&_s=3b40a1&network=WIFI&promotion_id=10000019234&page_id=0x00&x=0.38&brand=unknown&version=11.9.1&action_time=1554217947093&platform_id=0x04&model=Google+Nexus+6P
+                  << 200 OK 30b
+192.168.1.105:51341: clientdisconnect
+192.168.1.105:51336: GET https://api.xueqiu.com/app/mobile_module?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217948980&_s=d0b7c7&x=0.130
+                  << 200 OK 326b
+192.168.1.105:51352: GET https://api.xueqiu.com/user/setting/select.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217948986&_s=0bee61&types=is_open%2Cbegin_time%2Cend_time%2Cdirect_message%2Ccomment%2Cmention_me%2Cnew_follower%2Cnews_message%2Ctrade_message%2Clike_receive%2Cmart_message%2Cstatus_message%2Cimage_watermark%2Creject_stranger_msg
+                  << 200 OK 196b
+192.168.1.105:51358: clientconnect
+192.168.1.105:51350: GET https://api.xueqiu.com/cubes/discover/element/buttons.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217948982&_s=63d47c&
+                  << 200 OK 596b
+192.168.1.105:51351: GET https://api.xueqiu.com/cubes/discover/rank/cube/filter.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217948983&_s=baaa7d&updateTime=1443054663000&category=0
+                  << 200 OK 48b
+192.168.1.105:51336: GET https://api.xueqiu.com/privacy/show.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217948990&_s=77cc8e&
+                  << 200 OK 247b
+192.168.1.105:51350: GET https://api.xueqiu.com/friendships/groups.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217948992&_s=9fa3fe&
+                  << 200 OK 139b
+192.168.1.105:51351: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217948992&_s=63eb45&updated=1551776791779&type=profile_menu_v10.9_anonymous
+                  << 200 OK 40b
+192.168.1.105:51336: GET https://api.xueqiu.com/promotion/search_ad.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217948993&_s=de9b0e&pos_id=0&uid=1772081866&platform_id=0x04&page_id=0x07
+                  << 200 OK 172b
+192.168.1.105:51350: GET https://api.xueqiu.com/promotion/display_ad_batch.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217948993&_s=2c57c8&uid=1772081866&platform_id=0x04&page_id=0x08%2C0x22
+                  << 200 OK 291b
+192.168.1.105:51358: GET https://tc.xueqiu.com/tc/snowx/trade/setting/query.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217948991&_s=88003b&keys=position_card_display
+                  << 200 OK 99b
+192.168.1.105:51351: GET https://api.xueqiu.com/etc/prompt/bomb_box/show.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217948994&_s=00ebf6&uid=1772081866
+                  << 200 OK 85b
+192.168.1.105:51352: GET https://api.xueqiu.com/share/get_content.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217948996&_s=ddc685&special_id=0&updated=0&amount=0&id=0&type=8&user_id=0
+                  << 200 OK 203b
+192.168.1.105:51351: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217948997&_s=903549&updated=0&type=stk_hqzx_menu
+                  << 200 OK 166b
+192.168.1.105:51336: GET https://api.xueqiu.com/promotion/display_ad_batch.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217948995&_s=8a9ef8&uid=1772081866&platform_id=0x04&page_id=0x16%2C0x11%2C0x18
+                  << 200 OK 57b
+192.168.1.105:51350: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217948996&_s=966a98&updated=1512547809384&type=stk_cata
+                  << 200 OK 419b
+192.168.1.105:51352: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217948997&_s=664a09&updated=1553667451809&type=android_upgrade_config
+                  << 200 OK 40b
+192.168.1.105:51336: GET https://api.xueqiu.com/statuses/abtest/switch.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217948998&_s=6f4bf5&
+                  << 200 OK 68b
+192.168.1.105:51350: GET https://api.xueqiu.com/stock/privilege/userprivilege/query.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217948999&_s=b339eb&
+                  << 200 OK 62b
+192.168.1.105:51351: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217948997&_s=150000&updated=1520909085063&type=trade_home_menu_config_v10.0
+                  << 200 OK 40b
+192.168.1.105:51356: clientdisconnect
+192.168.1.105:51360: clientconnect
+192.168.1.105:51360: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217953060&_s=67c14a&network=WIFI&promotion_id=2099&page_id=0x00&x=0.426&brand=unknown&version=11.9.1&action_time=1554217953060&platform_id=0x04&model=Google+Nexus+6P
+                  << 200 OK 30b
+192.168.1.105:51358: clientdisconnect
+192.168.1.105:51362: clientconnect
+192.168.1.105:51360: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217956062&_s=b2109b&network=WIFI&promotion_id=10000019285&page_id=0x00&x=0.102&brand=unknown&version=11.9.1&action_time=1554217956062&platform_id=0x04&model=Google+Nexus+6P
+                  << 200 OK 30b
+192.168.1.105:51362: POST http://astat.bugly.qq.com:8011/rqd/async?aid=f8514e09-4815-4a51-9c8b-13601c0b3d9b
+                  << 200 OK 316b
+192.168.1.105:51360: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217959061&_s=06d8b3&network=WIFI&promotion_id=2098&page_id=0x00&x=0.35&brand=unknown&version=11.9.1&action_time=1554217959061&platform_id=0x04&model=Google+Nexus+6P
+                  << 200 OK 30b
+192.168.1.105:51360: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217962065&_s=822b01&network=WIFI&promotion_id=2100&page_id=0x00&x=0.38&brand=unknown&version=11.9.1&action_time=1554217962065&platform_id=0x04&model=Google+Nexus+6P
+                  << 200 OK 30b
+192.168.1.105:51360: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION2c27146166770ab65891bf6cac785969.1772081866.1554217943971.1554217968063&_s=c9b91a&network=WIFI&promotion_id=10000019281&page_id=0x00&x=0.75&brand=unknown&version=11.9.1&action_time=1554217968062&platform_id=0x04&model=Google+Nexus+6P
+                  << 200 OK 30b

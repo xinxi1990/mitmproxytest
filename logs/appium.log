@@ -1,0 +1,1024 @@
+2019-04-03 06:54:22:395 - info: [Appium] Welcome to Appium v1.9.0 (REV 640a5f3300faf0368777486e6a2bc180a3f9799a)
+2019-04-03 06:54:22:396 - info: [Appium] Non-default server args:
+2019-04-03 06:54:22:397 - info: [Appium]   sessionOverride: true
+2019-04-03 06:54:22:397 - info: [Appium]   log: appium.log
+2019-04-03 06:54:22:429 - info: [Appium] Appium REST http interface listener started on 0.0.0.0:4723
+2019-04-03 06:54:23:434 - info: [HTTP] --> POST /wd/hub/session
+2019-04-03 06:54:23:434 - info: [HTTP] {"capabilities":{"firstMatch":[{"platformName":"android","appium:deviceName":"192.168.56.101:5555","appium:appPackage":"com.xueqiu.android","appium:appActivity":".view.WelcomeActivityAlias","appium:autoGrantPermissions":true,"appium:automationName":"UiAutomator2"}]},"desiredCapabilities":{"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2"}}
+2019-04-03 06:54:23:436 - info: [debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2"},null,{"firstMatch":[{"platformName":"android","appium:deviceName":"192.168.56.101:5555","appium:appPackage":"com.xueqiu.android","appium:appActivity":".view.WelcomeActivityAlias","appium:autoGrantPermissions":true,"appium:automationName":"UiAutomator2"}]}]
+2019-04-03 06:54:23:437 - info: [debug] [BaseDriver] Event 'newSessionRequested' logged at 1554274463437 (14:54:23 GMT+0800 (CST))
+2019-04-03 06:54:23:442 - info: [Appium] Creating new AndroidUiautomator2Driver (v1.16.0) session
+2019-04-03 06:54:23:443 - info: [Appium] Capabilities:
+2019-04-03 06:54:23:443 - info: [Appium]   platformName: android
+2019-04-03 06:54:23:443 - info: [Appium]   deviceName: 192.168.56.101:5555
+2019-04-03 06:54:23:443 - info: [Appium]   appPackage: com.xueqiu.android
+2019-04-03 06:54:23:443 - info: [Appium]   appActivity: .view.WelcomeActivityAlias
+2019-04-03 06:54:23:443 - info: [Appium]   autoGrantPermissions: true
+2019-04-03 06:54:23:443 - info: [Appium]   automationName: UiAutomator2
+2019-04-03 06:54:23:446 - info: [debug] [BaseDriver] W3C capabilities {"alwaysMatch":{"platformNa... and MJSONWP desired capabilities {"platformName":"android","... were provided
+2019-04-03 06:54:23:446 - info: [debug] [BaseDriver] Creating session with W3C capabilities: {"alwaysMatch":{"platformNa...
+2019-04-03 06:54:23:451 - info: [BaseDriver] Session created with session id: e2528ef3-2a1d-48fe-8a9e-49bb5aab6808
+2019-04-03 06:54:23:785 - info: [AndroidDriver] Java version is: 1.8.0_161
+2019-04-03 06:54:23:787 - info: [ADB] Checking whether adb is present
+2019-04-03 06:54:23:809 - info: [ADB] Found 15 'build-tools' folders under '/Users/xinxi/Library/Android/sdk' (newest first):
+2019-04-03 06:54:23:809 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/28.0.3
+2019-04-03 06:54:23:809 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/27.0.3
+2019-04-03 06:54:23:809 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/27.0.1
+2019-04-03 06:54:23:810 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/26.0.2
+2019-04-03 06:54:23:810 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/26.0.1
+2019-04-03 06:54:23:810 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/26.0.0
+2019-04-03 06:54:23:810 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/25.0.2
+2019-04-03 06:54:23:810 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/25.0.1
+2019-04-03 06:54:23:810 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/25.0.0
+2019-04-03 06:54:23:810 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/24.0.2
+2019-04-03 06:54:23:810 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/23.0.3
+2019-04-03 06:54:23:811 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/23.0.2
+2019-04-03 06:54:23:811 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/23.0.1
+2019-04-03 06:54:23:811 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/22.0.1
+2019-04-03 06:54:23:811 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/21.1.2
+2019-04-03 06:54:23:811 - info: [ADB] Using adb from /Users/xinxi/Library/Android/sdk/platform-tools/adb
+2019-04-03 06:54:23:812 - info: [AndroidDriver] Retrieving device list
+2019-04-03 06:54:23:812 - info: [debug] [ADB] Trying to find a connected android device
+2019-04-03 06:54:23:813 - info: [debug] [ADB] Getting connected devices...
+2019-04-03 06:54:23:830 - info: [debug] [ADB] 1 device(s) connected
+2019-04-03 06:54:23:830 - info: [AndroidDriver] Using device: 192.168.56.101:5555
+2019-04-03 06:54:23:831 - info: [debug] [ADB] Setting device id to 192.168.56.101:5555
+2019-04-03 06:54:23:833 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell getprop ro.build.version.sdk'
+2019-04-03 06:54:23:851 - info: [debug] [ADB] Current device property 'ro.build.version.sdk': 23
+2019-04-03 06:54:23:851 - info: [debug] [ADB] Device API level: 23
+2019-04-03 06:54:23:852 - warn: [AndroidDriver] No app sent in, not parsing package/activity
+2019-04-03 06:54:23:852 - info: [ADB] Getting device platform version
+2019-04-03 06:54:23:852 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell getprop ro.build.version.release'
+2019-04-03 06:54:23:870 - info: [debug] [ADB] Current device property 'ro.build.version.release': 6.0
+2019-04-03 06:54:23:870 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell wm size'
+2019-04-03 06:54:24:233 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell wm density'
+2019-04-03 06:54:24:598 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell getprop ro.product.model'
+2019-04-03 06:54:24:620 - info: [debug] [ADB] Current device property 'ro.product.model': Samsung Galaxy S6
+2019-04-03 06:54:24:621 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell getprop ro.product.manufacturer'
+2019-04-03 06:54:24:640 - info: [debug] [ADB] Current device property 'ro.product.manufacturer': Genymotion
+2019-04-03 06:54:24:641 - info: [debug] [ADB] Device API level: 23
+2019-04-03 06:54:24:642 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am force-stop io.appium.uiautomator2.server'
+2019-04-03 06:54:25:036 - info: [debug] [ADB] Checking app cert for /usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v1.15.1.apk
+2019-04-03 06:54:25:039 - info: [ADB] Using apksigner from /Users/xinxi/Library/Android/sdk/build-tools/28.0.3/apksigner
+2019-04-03 06:54:25:040 - info: [debug] [ADB] Starting '/Users/xinxi/Library/Android/sdk/build-tools/28.0.3/apksigner' with args '["verify","--print-certs","/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v1.15.1.apk"]'
+2019-04-03 06:54:26:218 - info: [debug] [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2019-04-03 06:54:26:219 - info: [debug] [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2019-04-03 06:54:26:220 - info: [debug] [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2019-04-03 06:54:26:220 - info: [debug] [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2019-04-03 06:54:26:220 - info: [debug] [ADB] WARNING: META-INF/INDEX.LIST not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+2019-04-03 06:54:26:221 - info: [debug] [ADB] WARNING: META-INF/io.netty.versions.properties not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+2019-04-03 06:54:26:221 - info: [debug] [ADB] 
+2019-04-03 06:54:26:221 - info: [debug] [ADB] '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v1.15.1.apk' is already signed.
+2019-04-03 06:54:26:222 - info: [debug] [ADB] Checking app cert for /usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk
+2019-04-03 06:54:26:223 - info: [debug] [ADB] Starting '/Users/xinxi/Library/Android/sdk/build-tools/28.0.3/apksigner' with args '["verify","--print-certs","/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk"]'
+2019-04-03 06:54:26:791 - info: [debug] [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2019-04-03 06:54:26:791 - info: [debug] [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2019-04-03 06:54:26:791 - info: [debug] [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2019-04-03 06:54:26:791 - info: [debug] [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2019-04-03 06:54:26:791 - info: [debug] [ADB] 
+2019-04-03 06:54:26:800 - info: [debug] [ADB] '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' is already signed.
+2019-04-03 06:54:26:801 - info: [debug] [ADB] Getting install status for io.appium.uiautomator2.server
+2019-04-03 06:54:26:801 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages io.appium.uiautomator2.server'
+2019-04-03 06:54:27:018 - info: [debug] [ADB] App is installed
+2019-04-03 06:54:27:019 - info: [debug] [ADB] Getting package info for 'io.appium.uiautomator2.server'
+2019-04-03 06:54:27:019 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package io.appium.uiautomator2.server'
+2019-04-03 06:54:27:046 - info: [ADB] Checking whether aapt is present
+2019-04-03 06:54:27:048 - info: [ADB] Using aapt from /Users/xinxi/Library/Android/sdk/build-tools/28.0.3/aapt
+2019-04-03 06:54:27:066 - info: [debug] [ADB] The installed 'io.appium.uiautomator2.server' package does not require upgrade ('1.15.1' >= '1.15.1')
+2019-04-03 06:54:27:066 - info: [debug] [ADB] Getting install status for io.appium.uiautomator2.server.test
+2019-04-03 06:54:27:066 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages io.appium.uiautomator2.server.test'
+2019-04-03 06:54:27:375 - info: [debug] [ADB] App is installed
+2019-04-03 06:54:27:375 - info: [debug] [ADB] Getting package info for 'io.appium.uiautomator2.server.test'
+2019-04-03 06:54:27:375 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package io.appium.uiautomator2.server.test'
+2019-04-03 06:54:27:418 - warn: [ADB] Cannot read version codes of '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' and/or 'io.appium.uiautomator2.server.test'
+2019-04-03 06:54:27:418 - warn: [ADB] Cannot read version names of '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' and/or 'io.appium.uiautomator2.server.test'. Assuming correct app version is already installed
+2019-04-03 06:54:27:419 - info: [debug] [UiAutomator2] Waiting up to 20000ms for instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' to be available
+2019-04-03 06:54:27:420 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list instrumentation'
+2019-04-03 06:54:27:656 - info: [debug] [UiAutomator2] Instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' available
+2019-04-03 06:54:27:658 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 wait-for-device'
+2019-04-03 06:54:27:674 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell echo ping'
+2019-04-03 06:54:27:693 - info: [debug] [AndroidDriver] Pushing settings apk to device...
+2019-04-03 06:54:27:694 - info: [debug] [ADB] Getting install status for io.appium.settings
+2019-04-03 06:54:27:694 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages io.appium.settings'
+2019-04-03 06:54:27:905 - info: [debug] [ADB] App is installed
+2019-04-03 06:54:27:905 - info: [debug] [ADB] Getting package info for 'io.appium.settings'
+2019-04-03 06:54:27:906 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package io.appium.settings'
+2019-04-03 06:54:27:944 - info: [debug] [ADB] The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')
+2019-04-03 06:54:27:945 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell ps'
+2019-04-03 06:54:27:977 - info: [debug] [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2019-04-03 06:54:27:978 - info: [debug] [ADB] Device API level: 23
+2019-04-03 06:54:27:979 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell appops set io.appium.settings android\:mock_location allow'
+2019-04-03 06:54:28:463 - warn: [AndroidDriver] setDeviceLanguageCountry requires language or country.
+2019-04-03 06:54:28:464 - warn: [AndroidDriver] Got language: 'null' and country: 'null'
+2019-04-03 06:54:28:466 - info: [debug] [Logcat] Starting logcat capture
+2019-04-03 06:54:28:547 - info: [debug] [AndroidDriver] Pushing unlock helper app to device...
+2019-04-03 06:54:28:548 - info: [debug] [ADB] Getting install status for io.appium.unlock
+2019-04-03 06:54:28:548 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages io.appium.unlock'
+2019-04-03 06:54:29:027 - info: [debug] [ADB] App is installed
+2019-04-03 06:54:29:028 - info: [debug] [ADB] Getting package info for 'io.appium.unlock'
+2019-04-03 06:54:29:028 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package io.appium.unlock'
+2019-04-03 06:54:29:084 - info: [debug] [ADB] The installed 'io.appium.unlock' package does not require upgrade ('2.0.0' >= '2.0.0')
+2019-04-03 06:54:29:084 - info: [debug] [UiAutomator2] Forwarding UiAutomator2 Server port 6790 to 8206
+2019-04-03 06:54:29:086 - info: [debug] [ADB] Forwarding system: 8206 to device: 6790
+2019-04-03 06:54:29:087 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 forward tcp\:8206 tcp\:6790'
+2019-04-03 06:54:29:119 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell rm -rf /data/local/tmp/strings.json'
+2019-04-03 06:54:29:187 - info: [debug] [UiAutomator2] No app capability. Assuming it is already on the device
+2019-04-03 06:54:29:189 - info: [debug] [ADB] Getting install status for com.xueqiu.android
+2019-04-03 06:54:29:189 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages com.xueqiu.android'
+2019-04-03 06:54:29:406 - info: [debug] [ADB] App is installed
+2019-04-03 06:54:29:407 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am force-stop com.xueqiu.android'
+2019-04-03 06:54:29:819 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm clear com.xueqiu.android'
+2019-04-03 06:54:30:189 - info: [debug] [ADB] Device API level: 23
+2019-04-03 06:54:30:190 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package com.xueqiu.android'
+2019-04-03 06:54:30:213 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm dump com.xueqiu.android'
+2019-04-03 06:54:30:497 - info: [debug] [ADB] Got the following command chunks to execute: pm,grant,com.xueqiu.android,android.permission.WRITE_EXTERNAL_STORAGE,;,pm,grant,com.xueqiu.android,android.permission.READ_PHONE_STATE,;,pm,grant,com.xueqiu.android,android.permission.ACCESS_FINE_LOCATION,;,pm,grant,com.xueqiu.android,android.permission.ACCESS_COARSE_LOCATION,;,pm,grant,com.xueqiu.android,android.permission.SYSTEM_ALERT_WINDOW,;,pm,grant,com.xueqiu.android,android.permission.READ_EXTERNAL_STORAGE,;,pm,grant,com.xueqiu.android,android.permission.RECORD_AUDIO,;,pm,grant,com.xueqiu.android,android.permission.CAMERA,;,pm,grant,com.xueqiu.android,android.permission.MOUNT_UNMOUNT_FILESYSTEMS,;,pm,grant,com.xueqiu.android,android.permission.CALL_PHONE,;
+2019-04-03 06:54:30:497 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm grant com.xueqiu.android android.permission.WRITE_EXTERNAL_STORAGE \; pm grant com.xueqiu.android android.permission.READ_PHONE_STATE \; pm grant com.xueqiu.android android.permission.ACCESS_FINE_LOCATION \; pm grant com.xueqiu.android android.permission.ACCESS_COARSE_LOCATION \; pm grant com.xueqiu.android android.permission.SYSTEM_ALERT_WINDOW \; pm grant com.xueqiu.android android.permission.READ_EXTERNAL_STORAGE \; pm grant com.xueqiu.android android.permission.RECORD_AUDIO \; pm grant com.xueqiu.android android.permission.CAMERA \; pm grant com.xueqiu.android android.permission.MOUNT_UNMOUNT_FILESYSTEMS \; pm grant com.xueqiu.android android.permission.CALL_PHONE \;'
+2019-04-03 06:54:32:136 - info: [debug] [AndroidDriver] Performed fast reset on the installed 'com.xueqiu.android' application (stop and clear)
+2019-04-03 06:54:32:136 - info: [debug] [ADB] Checking app cert for null
+2019-04-03 06:54:32:142 - info: [debug] [ADB] 'null' doesn't exist
+2019-04-03 06:54:32:143 - info: [debug] [ADB] Getting all processes with uiautomator
+2019-04-03 06:54:32:143 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell ps'
+2019-04-03 06:54:32:178 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am force-stop io.appium.uiautomator2.server'
+2019-04-03 06:54:32:559 - info: [UiAutomator2] Starting uiautomator2 server 1.15.1
+2019-04-03 06:54:32:560 - info: [UiAutomator2] Using UIAutomator2 server from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v1.15.1.apk' and test from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+2019-04-03 06:54:32:560 - info: [UiAutomator2] Running command: 'adb -s 192.168.56.101:5555 shell am instrument -w io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner'
+2019-04-03 06:54:32:562 - info: [UiAutomator2] Waiting up to 20000ms for UiAutomator2 to be online...
+2019-04-03 06:54:32:565 - info: [debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+2019-04-03 06:54:32:566 - info: [debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8206/wd/hub/status] with no body
+2019-04-03 06:54:33:591 - info: [debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+2019-04-03 06:54:33:592 - info: [debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8206/wd/hub/status] with no body
+2019-04-03 06:54:34:601 - info: [debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+2019-04-03 06:54:34:602 - info: [debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8206/wd/hub/status] with no body
+2019-04-03 06:54:34:618 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"SESSIONID\",\"status\":0,\"value\":\"Status Invoked\"}"
+2019-04-03 06:54:34:618 - info: [debug] [JSONWP Proxy] Matched '/session' to command name 'createSession'
+2019-04-03 06:54:34:619 - info: [debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://localhost:8206/wd/hub/session] with body: {"desiredCapabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2"},"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2","deviceUDID":"192.168.56.101:5555","platformVersion":"6.0","deviceScreenSize":"1440x2560","deviceScreenDensity":640,"deviceModel":"Samsung Galaxy S6","deviceManufacturer":"Genymotion","deviceApiLevel":23}}
+2019-04-03 06:54:34:632 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a1e20e36-4bd8-449b-b9f4-3b001d2c535d","status":0,"value":"Created Session"}
+2019-04-03 06:54:34:633 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys window'
+2019-04-03 06:54:34:669 - info: [AndroidDriver] Screen already unlocked, doing nothing
+2019-04-03 06:54:34:669 - info: [UiAutomator2] UiAutomator2 did not start the activity we were waiting for, 'com.xueqiu.android/.view.WelcomeActivityAlias'. Starting it ourselves
+2019-04-03 06:54:34:670 - info: [debug] [ADB] Device API level: 23
+2019-04-03 06:54:34:670 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am start -W -n com.xueqiu.android/.view.WelcomeActivityAlias -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2019-04-03 06:54:35:865 - info: [debug] [JSONWP Proxy] Proxying [GET /appium/device/pixel_ratio] to [GET http://localhost:8206/wd/hub/session/a1e20e36-4bd8-449b-b9f4-3b001d2c535d/appium/device/pixel_ratio] with body: {}
+2019-04-03 06:54:35:877 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"a1e20e36-4bd8-449b-b9f4-3b001d2c535d\",\"status\":0,\"value\":4}"
+2019-04-03 06:54:35:879 - info: [debug] [JSONWP Proxy] Matched '/appium/device/system_bars' to command name 'getSystemBars'
+2019-04-03 06:54:35:879 - info: [debug] [JSONWP Proxy] Proxying [GET /appium/device/system_bars] to [GET http://localhost:8206/wd/hub/session/a1e20e36-4bd8-449b-b9f4-3b001d2c535d/appium/device/system_bars] with body: {}
+2019-04-03 06:54:35:893 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"a1e20e36-4bd8-449b-b9f4-3b001d2c535d\",\"status\":0,\"value\":{\"statusBar\":96}}"
+2019-04-03 06:54:35:894 - info: [debug] [JSONWP Proxy] Matched '/window/current/size' to command name 'getWindowSize'
+2019-04-03 06:54:35:894 - info: [debug] [JSONWP Proxy] Proxying [GET /window/current/size] to [GET http://localhost:8206/wd/hub/session/a1e20e36-4bd8-449b-b9f4-3b001d2c535d/window/current/size] with body: {}
+2019-04-03 06:54:35:905 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"a1e20e36-4bd8-449b-b9f4-3b001d2c535d\",\"status\":0,\"value\":{\"height\":2560,\"width\":1440}}"
+2019-04-03 06:54:35:905 - info: [Appium] New AndroidUiautomator2Driver session created successfully, session e2528ef3-2a1d-48fe-8a9e-49bb5aab6808 added to master session list
+2019-04-03 06:54:35:906 - info: [debug] [BaseDriver] Event 'newSessionStarted' logged at 1554274475906 (14:54:35 GMT+0800 (CST))
+2019-04-03 06:54:35:908 - info: [debug] [W3C] Responding to client with driver.createSession() result: {"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2"},"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2","deviceUDID":"192.168.56.101:5555","platformVersion":"6.0","deviceScreenSize":"1440x2560","deviceScreenDensity":640,"deviceModel":"Samsung Galaxy S6","deviceManufacturer":"Genymotion","deviceApiLevel":23,"pixelRatio":4,"statBarHeight":96,"viewportRect":{"left":0,"top":96,"width":1440,"height":2464}}}
+2019-04-03 06:54:35:916 - info: [HTTP] <-- POST /wd/hub/session 200 12478 ms - 979
+2019-04-03 06:54:35:916 - info: [HTTP] 
+2019-04-03 06:54:35:920 - info: [HTTP] --> POST /wd/hub/session/e2528ef3-2a1d-48fe-8a9e-49bb5aab6808/timeouts
+2019-04-03 06:54:35:920 - info: [HTTP] {"implicit":6000,"sessionId":"e2528ef3-2a1d-48fe-8a9e-49bb5aab6808"}
+2019-04-03 06:54:35:922 - info: [debug] [W3C] Calling AppiumDriver.timeouts() with args: [null,null,null,null,6000,"e2528ef3-2a1d-48fe-8a9e-49bb5aab6808"]
+2019-04-03 06:54:35:936 - info: [debug] [BaseDriver] W3C timeout argument: {"implicit":6000}}
+2019-04-03 06:54:35:936 - info: [debug] [BaseDriver] Set implicit wait to 6000ms
+2019-04-03 06:54:35:937 - info: [debug] [W3C] Responding to client with driver.timeouts() result: null
+2019-04-03 06:54:35:939 - info: [HTTP] <-- POST /wd/hub/session/e2528ef3-2a1d-48fe-8a9e-49bb5aab6808/timeouts 200 18 ms - 14
+2019-04-03 06:54:35:940 - info: [HTTP] 
+2019-04-03 06:54:35:941 - info: [HTTP] --> POST /wd/hub/session/e2528ef3-2a1d-48fe-8a9e-49bb5aab6808/elements
+2019-04-03 06:54:35:941 - info: [HTTP] {"using":"xpath","value":"//*[@text='好的']","sessionId":"e2528ef3-2a1d-48fe-8a9e-49bb5aab6808"}
+2019-04-03 06:54:35:943 - info: [debug] [W3C] Calling AppiumDriver.findElements() with args: ["xpath","//*[@text='好的']","e2528ef3-2a1d-48fe-8a9e-49bb5aab6808"]
+2019-04-03 06:54:35:946 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-04-03 06:54:35:948 - info: [debug] [BaseDriver] Waiting up to 6000 ms for condition
+2019-04-03 06:54:35:950 - info: [debug] [JSONWP Proxy] Matched '/elements' to command name 'findElements'
+2019-04-03 06:54:35:950 - info: [debug] [JSONWP Proxy] Proxying [POST /elements] to [POST http://localhost:8206/wd/hub/session/a1e20e36-4bd8-449b-b9f4-3b001d2c535d/elements] with body: {"strategy":"xpath","selector":"//*[@text='好的']","context":"","multiple":true}
+2019-04-03 06:54:37:667 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a1e20e36-4bd8-449b-b9f4-3b001d2c535d","status":0,"value":[]}
+2019-04-03 06:54:37:667 - info: [debug] [BaseDriver] Waited for 1718 ms so far
+2019-04-03 06:54:38:170 - info: [debug] [JSONWP Proxy] Matched '/elements' to command name 'findElements'
+2019-04-03 06:54:38:170 - info: [debug] [JSONWP Proxy] Proxying [POST /elements] to [POST http://localhost:8206/wd/hub/session/a1e20e36-4bd8-449b-b9f4-3b001d2c535d/elements] with body: {"strategy":"xpath","selector":"//*[@text='好的']","context":"","multiple":true}
+2019-04-03 06:54:40:043 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a1e20e36-4bd8-449b-b9f4-3b001d2c535d","status":0,"value":[]}
+2019-04-03 06:54:40:043 - info: [debug] [BaseDriver] Waited for 4094 ms so far
+2019-04-03 06:54:40:599 - info: [debug] [JSONWP Proxy] Matched '/elements' to command name 'findElements'
+2019-04-03 06:54:40:602 - info: [debug] [JSONWP Proxy] Proxying [POST /elements] to [POST http://localhost:8206/wd/hub/session/a1e20e36-4bd8-449b-b9f4-3b001d2c535d/elements] with body: {"strategy":"xpath","selector":"//*[@text='好的']","context":"","multiple":true}
+2019-04-03 06:54:41:296 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a1e20e36-4bd8-449b-b9f4-3b001d2c535d","status":0,"value":[]}
+2019-04-03 06:54:41:297 - info: [debug] [BaseDriver] Waited for 5347 ms so far
+2019-04-03 06:54:41:800 - info: [debug] [JSONWP Proxy] Matched '/elements' to command name 'findElements'
+2019-04-03 06:54:41:800 - info: [debug] [JSONWP Proxy] Proxying [POST /elements] to [POST http://localhost:8206/wd/hub/session/a1e20e36-4bd8-449b-b9f4-3b001d2c535d/elements] with body: {"strategy":"xpath","selector":"//*[@text='好的']","context":"","multiple":true}
+2019-04-03 06:54:42:437 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a1e20e36-4bd8-449b-b9f4-3b001d2c535d","status":0,"value":[]}
+2019-04-03 06:54:42:438 - info: [debug] [W3C] Responding to client with driver.findElements() result: []
+2019-04-03 06:54:42:439 - info: [HTTP] <-- POST /wd/hub/session/e2528ef3-2a1d-48fe-8a9e-49bb5aab6808/elements 200 6497 ms - 12
+2019-04-03 06:54:42:439 - info: [HTTP] 
+2019-04-03 06:54:42:444 - info: [HTTP] --> GET /wd/hub/session/e2528ef3-2a1d-48fe-8a9e-49bb5aab6808/screenshot
+2019-04-03 06:54:42:444 - info: [HTTP] {}
+2019-04-03 06:54:42:444 - info: [debug] [W3C] Calling AppiumDriver.getScreenshot() with args: ["e2528ef3-2a1d-48fe-8a9e-49bb5aab6808"]
+2019-04-03 06:54:42:447 - info: [debug] [JSONWP Proxy] Matched '/screenshot' to command name 'getScreenshot'
+2019-04-03 06:54:42:448 - info: [debug] [JSONWP Proxy] Proxying [GET /screenshot] to [GET http://localhost:8206/wd/hub/session/a1e20e36-4bd8-449b-b9f4-3b001d2c535d/screenshot] with no body
+2019-04-03 06:54:44:073 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"a1e20e36-4bd8-449b-b9f4-3b001d2c535d\",\"status\":0,\"value\":\"iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAIAAADIlhKYAAAAA3NCSVQICAjb4U\\/gAAAgAElEQVR4\\nnOzdeXRd1Z0n+t8+050kXU0ehATGgzDGYEMM2AwBTJwKmDw6VJxKQwqS7qoy1XmdorLSeSt5XXl5\\nvfqtpt5aqQ5Z3akkRTrJwq+TSkJwQyAphsRmMjK2sWV5lCxbkjWPV3e+Z9j7\\/XGkq+t7Ndx5kL+f\\nxWLpHt2zz5Ysy\\/d8796\\/H4vFYgQAAAAAAAAAUMmkUk8AAAAAAAAAACBXCDgAAAAAAAAAoOIh4AAA\\nAAAAAACAioeAAwAAAAAAAAAqHgIOAAAAAAAAAKh4CDgAAAAAAAAAoOIh4AAAAAAAAACAioeAAwAA\\nAAAAAAAqHgIOAAAAAAAAAKh4CDgAAAAAAAAAoOIh4AAAAAAAAACAioeAAwAAAAAAAAAqHgIOAAAA\\nAAAAAKh4CDgAAAAAAAAAoOIh4AAAAAAAAACAioeAAwAAAAAAAAAqHgIOAAAAAAAAAKh4CDgAAAAA\\nAAAAoOIppZ4AAAAAAABA9rq6uhb6VGtrazFnUkFM01SUEt8MDgwMBAKBjE5pbGysq6uTZblAU4JK\\nt6wCDiFEIBC4dOmS3+93u91r166tr68v9aQAAAAAACA\\/urq6BgYGxsfHBwYGJiYmJiYm0jmroaGh\\noaGhubm5sbGxubkZqUdXV9fKlSu9Xm9ppxEIBMbHxzM6xePxeL1eBBywkOUTcNjpxgcffNDW1jYx\\nMVFdXX3PPffcf\\/\\/9brebMVbq2QEAAAAAQDa6urra29sHBgY6OzuzG8GOQhJPv+GGG5qbm7du3XoV\\nhh1dXV0jIyMrV64s9UQA8m\\/5BByWZZ05c+btt9\\/2+\\/1CiOnp6Q...
+2019-04-03 06:54:44:131 - info: [debug] [W3C] Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAIAAADIlhKYAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4\nnOzdeXRd1Z0n+t8+050kXU0ehATGgzDGYEMM2AwBTJwKmDw6VJxKQwqS7qoy1XmdorLSeSt5XXl5\nvfqtpt5aqQ5Z3akkRTrJwq+TSkJwQyAphsRmMjK2sWV5lCxbkjWPV3e+Z9j7/XGkq+t7Ndx5kL+f\nxWLpHt2zz5Ysy/d8796/H4vFYgQAAAAAAAAAUMmkUk8AAAAAAAAAACBXCDgAAAAAAAAAoOIh4AAA\nAAAAAACAioeAAwAAAAAAAAAqHgIOAAAAAAAAAKh4CDgAAAAAAAAAoOIh4AAAAAAAAACAioeAAwAA\nAAAAAAAqHgIOAAAAAAAAAKh4CDgAAAAAAAAAoOIh4AAAAAAAAACAioeAAwAAAAAAAAAqHgIOAAAA\nAAAAAKh4CDgAAAAAAAAAoOIh4AAAAAAAAACAioeAAwAAAAAAAAAqHgIOAAAAAAAAAKh4CDgAAAAA\nAAAAoOIppZ4AAAAAAABA9rq6uhb6VGtrazFnUkFM01SUEt8MDgwMBAKBjE5pbGysq6uTZblAU4JK\nt6wCDiFEIBC4dOmS3+93u91r166tr68v9aQAAAAAACA/urq6BgYGxsfHBwYGJiYmJiYm0jmroaGh\noaGhubm5sbGxubkZqUdXV9fKlSu9Xm9ppxEIBMbHxzM6xePxeL1eBBywkOUTcNjpxgcffNDW1jYx\nMVFdXX3PPffcf//9brebMVbq2QEAAAAAQDa6urra29sHBgY6OzuzG8GOQhJPv+GGG5qbm7du3XoV\nhh1dXV0jIyMrV64s9UQA8m/5BByWZZ05c+btt9/2+/1CiOnp6Q8//LCmpmb79u2qqpZ6dgAAAAAA\nkIGTJ09+8MEHXV1dkUgk74N3dnZ2dnYeOHDA5XK1trbeddddW7ZsyftVypCdbpR6FgCFsnwCjvHx\n8RMnTg...
+2019-04-03 06:54:44:139 - info: [HTTP] <-- GET /wd/hub/session/e2528ef3-2a1d-48fe-8a9e-49bb5aab6808/screenshot 200 1695 ms - 1213508
+2019-04-03 06:54:44:139 - info: [HTTP] 
+2019-04-03 06:54:44:158 - info: [HTTP] --> POST /wd/hub/session
+2019-04-03 06:54:44:159 - info: [HTTP] {"capabilities":{"firstMatch":[{"platformName":"android","appium:deviceName":"192.168.56.101:5555","appium:appPackage":"com.xueqiu.android","appium:appActivity":".view.WelcomeActivityAlias","appium:autoGrantPermissions":true,"appium:automationName":"UiAutomator2"}]},"desiredCapabilities":{"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2"}}
+2019-04-03 06:54:44:159 - info: [debug] [W3C] Calling AppiumDriver.createSession() with args: [{"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2"},null,{"firstMatch":[{"platformName":"android","appium:deviceName":"192.168.56.101:5555","appium:appPackage":"com.xueqiu.android","appium:appActivity":".view.WelcomeActivityAlias","appium:autoGrantPermissions":true,"appium:automationName":"UiAutomator2"}]}]
+2019-04-03 06:54:44:159 - info: [debug] [BaseDriver] Event 'newSessionRequested' logged at 1554274484159 (14:54:44 GMT+0800 (CST))
+2019-04-03 06:54:44:161 - info: [Appium] Creating new AndroidUiautomator2Driver (v1.16.0) session
+2019-04-03 06:54:44:161 - info: [Appium] Capabilities:
+2019-04-03 06:54:44:162 - info: [Appium]   platformName: android
+2019-04-03 06:54:44:162 - info: [Appium]   deviceName: 192.168.56.101:5555
+2019-04-03 06:54:44:162 - info: [Appium]   appPackage: com.xueqiu.android
+2019-04-03 06:54:44:162 - info: [Appium]   appActivity: .view.WelcomeActivityAlias
+2019-04-03 06:54:44:162 - info: [Appium]   autoGrantPermissions: true
+2019-04-03 06:54:44:163 - info: [Appium]   automationName: UiAutomator2
+2019-04-03 06:54:44:164 - info: [Appium] Session override is on. Deleting other 1 active session.
+2019-04-03 06:54:44:166 - info: [Appium] Removing session e2528ef3-2a1d-48fe-8a9e-49bb5aab6808 from our master session list
+2019-04-03 06:54:44:167 - info: [debug] [UiAutomator2] Deleting UiAutomator2 session
+2019-04-03 06:54:44:169 - info: [debug] [UiAutomator2] Deleting UiAutomator2 server session
+2019-04-03 06:54:44:170 - info: [debug] [JSONWP Proxy] Matched '/' to command name 'deleteSession'
+2019-04-03 06:54:44:171 - info: [debug] [JSONWP Proxy] Proxying [DELETE /] to [DELETE http://localhost:8206/wd/hub/session/a1e20e36-4bd8-449b-b9f4-3b001d2c535d] with no body
+2019-04-03 06:54:44:190 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"a1e20e36-4bd8-449b-b9f4-3b001d2c535d\",\"status\":0,\"value\":\"Session deleted\"}"
+2019-04-03 06:54:44:190 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am force-stop com.xueqiu.android'
+2019-04-03 06:54:44:638 - info: [debug] [Logcat] Stopping logcat capture
+2019-04-03 06:54:44:644 - info: [debug] [ADB] Removing forwarded port socket connection: 8206 
+2019-04-03 06:54:44:644 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 forward --remove tcp\:8206'
+2019-04-03 06:54:44:673 - info: [debug] [BaseDriver] W3C capabilities {"alwaysMatch":{"platformNa... and MJSONWP desired capabilities {"platformName":"android","... were provided
+2019-04-03 06:54:44:674 - info: [debug] [BaseDriver] Creating session with W3C capabilities: {"alwaysMatch":{"platformNa...
+2019-04-03 06:54:44:681 - info: [BaseDriver] Session created with session id: b28b4b47-af57-42a3-b7d8-4158ab89c2eb
+2019-04-03 06:54:44:875 - info: [AndroidDriver] Java version is: 1.8.0_161
+2019-04-03 06:54:44:876 - info: [AndroidDriver] Retrieving device list
+2019-04-03 06:54:44:876 - info: [debug] [ADB] Trying to find a connected android device
+2019-04-03 06:54:44:876 - info: [debug] [ADB] Getting connected devices...
+2019-04-03 06:54:44:890 - info: [debug] [ADB] 1 device(s) connected
+2019-04-03 06:54:44:890 - info: [AndroidDriver] Using device: 192.168.56.101:5555
+2019-04-03 06:54:44:891 - info: [debug] [ADB] Setting device id to 192.168.56.101:5555
+2019-04-03 06:54:44:891 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell getprop ro.build.version.sdk'
+2019-04-03 06:54:44:913 - info: [debug] [ADB] Current device property 'ro.build.version.sdk': 23
+2019-04-03 06:54:44:913 - info: [debug] [ADB] Device API level: 23
+2019-04-03 06:54:44:913 - warn: [AndroidDriver] No app sent in, not parsing package/activity
+2019-04-03 06:54:44:913 - info: [ADB] Getting device platform version
+2019-04-03 06:54:44:914 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell getprop ro.build.version.release'
+2019-04-03 06:54:44:936 - info: [debug] [ADB] Current device property 'ro.build.version.release': 6.0
+2019-04-03 06:54:44:937 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell wm size'
+2019-04-03 06:54:45:329 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell wm density'
+2019-04-03 06:54:45:488 - info: [debug] [UiAutomator2] [UIAutomator2] 
+2019-04-03 06:54:45:488 - info: [debug] [UiAutomator2] [UIAutomator2] io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:.
+2019-04-03 06:54:45:488 - info: [debug] [UiAutomator2] [UIAutomator2] 
+2019-04-03 06:54:45:488 - info: [debug] [UiAutomator2] [UIAutomator2] Time: 12.027
+2019-04-03 06:54:45:488 - info: [debug] [UiAutomator2] [UIAutomator2] 
+2019-04-03 06:54:45:489 - info: [debug] [UiAutomator2] [UIAutomator2] OK (1 test)
+2019-04-03 06:54:45:489 - info: [debug] [UiAutomator2] [UIAutomator2] 
+2019-04-03 06:54:45:489 - info: [debug] [UiAutomator2] [UIAutomator2] 
+2019-04-03 06:54:45:728 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell getprop ro.product.model'
+2019-04-03 06:54:45:756 - info: [debug] [ADB] Current device property 'ro.product.model': Samsung Galaxy S6
+2019-04-03 06:54:45:756 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell getprop ro.product.manufacturer'
+2019-04-03 06:54:45:785 - info: [debug] [ADB] Current device property 'ro.product.manufacturer': Genymotion
+2019-04-03 06:54:45:785 - info: [debug] [ADB] Device API level: 23
+2019-04-03 06:54:45:786 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am force-stop io.appium.uiautomator2.server'
+2019-04-03 06:54:46:167 - info: [debug] [ADB] Checking app cert for /usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v1.15.1.apk
+2019-04-03 06:54:46:167 - info: [debug] [ADB] Starting '/Users/xinxi/Library/Android/sdk/build-tools/28.0.3/apksigner' with args '["verify","--print-certs","/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v1.15.1.apk"]'
+2019-04-03 06:54:46:856 - info: [debug] [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2019-04-03 06:54:46:856 - info: [debug] [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2019-04-03 06:54:46:856 - info: [debug] [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2019-04-03 06:54:46:857 - info: [debug] [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2019-04-03 06:54:46:857 - info: [debug] [ADB] WARNING: META-INF/INDEX.LIST not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+2019-04-03 06:54:46:857 - info: [debug] [ADB] WARNING: META-INF/io.netty.versions.properties not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+2019-04-03 06:54:46:857 - info: [debug] [ADB] 
+2019-04-03 06:54:46:857 - info: [debug] [ADB] '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v1.15.1.apk' is already signed.
+2019-04-03 06:54:46:857 - info: [debug] [ADB] Checking app cert for /usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk
+2019-04-03 06:54:46:858 - info: [debug] [ADB] Starting '/Users/xinxi/Library/Android/sdk/build-tools/28.0.3/apksigner' with args '["verify","--print-certs","/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk"]'
+2019-04-03 06:54:47:329 - info: [debug] [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2019-04-03 06:54:47:329 - info: [debug] [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2019-04-03 06:54:47:330 - info: [debug] [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2019-04-03 06:54:47:330 - info: [debug] [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2019-04-03 06:54:47:330 - info: [debug] [ADB] 
+2019-04-03 06:54:47:330 - info: [debug] [ADB] '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' is already signed.
+2019-04-03 06:54:47:330 - info: [debug] [ADB] Getting install status for io.appium.uiautomator2.server
+2019-04-03 06:54:47:330 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages io.appium.uiautomator2.server'
+2019-04-03 06:54:47:493 - info: [debug] [ADB] App is installed
+2019-04-03 06:54:47:495 - info: [debug] [ADB] Getting package info for 'io.appium.uiautomator2.server'
+2019-04-03 06:54:47:495 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package io.appium.uiautomator2.server'
+2019-04-03 06:54:47:541 - info: [debug] [ADB] The installed 'io.appium.uiautomator2.server' package does not require upgrade ('1.15.1' >= '1.15.1')
+2019-04-03 06:54:47:542 - info: [debug] [ADB] Getting install status for io.appium.uiautomator2.server.test
+2019-04-03 06:54:47:542 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages io.appium.uiautomator2.server.test'
+2019-04-03 06:54:47:709 - info: [debug] [ADB] App is installed
+2019-04-03 06:54:47:710 - info: [debug] [ADB] Getting package info for 'io.appium.uiautomator2.server.test'
+2019-04-03 06:54:47:710 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package io.appium.uiautomator2.server.test'
+2019-04-03 06:54:47:742 - warn: [ADB] Cannot read version codes of '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' and/or 'io.appium.uiautomator2.server.test'
+2019-04-03 06:54:47:742 - warn: [ADB] Cannot read version names of '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' and/or 'io.appium.uiautomator2.server.test'. Assuming correct app version is already installed
+2019-04-03 06:54:47:742 - info: [debug] [UiAutomator2] Waiting up to 20000ms for instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' to be available
+2019-04-03 06:54:47:742 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list instrumentation'
+2019-04-03 06:54:47:917 - info: [debug] [UiAutomator2] Instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' available
+2019-04-03 06:54:47:917 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 wait-for-device'
+2019-04-03 06:54:47:931 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell echo ping'
+2019-04-03 06:54:47:947 - info: [debug] [AndroidDriver] Pushing settings apk to device...
+2019-04-03 06:54:47:947 - info: [debug] [ADB] Getting install status for io.appium.settings
+2019-04-03 06:54:47:948 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages io.appium.settings'
+2019-04-03 06:54:48:117 - info: [debug] [ADB] App is installed
+2019-04-03 06:54:48:118 - info: [debug] [ADB] Getting package info for 'io.appium.settings'
+2019-04-03 06:54:48:118 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package io.appium.settings'
+2019-04-03 06:54:48:153 - info: [debug] [ADB] The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')
+2019-04-03 06:54:48:154 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell ps'
+2019-04-03 06:54:48:183 - info: [debug] [ADB] Device API level: 23
+2019-04-03 06:54:48:183 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am start -W -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2019-04-03 06:54:49:306 - info: [debug] [ADB] Device API level: 23
+2019-04-03 06:54:49:306 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell appops set io.appium.settings android\:mock_location allow'
+2019-04-03 06:54:49:801 - warn: [AndroidDriver] setDeviceLanguageCountry requires language or country.
+2019-04-03 06:54:49:801 - warn: [AndroidDriver] Got language: 'null' and country: 'null'
+2019-04-03 06:54:49:802 - info: [debug] [Logcat] Starting logcat capture
+2019-04-03 06:54:49:865 - info: [debug] [AndroidDriver] Pushing unlock helper app to device...
+2019-04-03 06:54:49:865 - info: [debug] [ADB] Getting install status for io.appium.unlock
+2019-04-03 06:54:49:866 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages io.appium.unlock'
+2019-04-03 06:54:50:420 - info: [debug] [ADB] App is installed
+2019-04-03 06:54:50:421 - info: [debug] [ADB] Getting package info for 'io.appium.unlock'
+2019-04-03 06:54:50:421 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package io.appium.unlock'
+2019-04-03 06:54:50:532 - info: [debug] [ADB] The installed 'io.appium.unlock' package does not require upgrade ('2.0.0' >= '2.0.0')
+2019-04-03 06:54:50:532 - info: [debug] [UiAutomator2] Forwarding UiAutomator2 Server port 6790 to 8206
+2019-04-03 06:54:50:533 - info: [debug] [ADB] Forwarding system: 8206 to device: 6790
+2019-04-03 06:54:50:533 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 forward tcp\:8206 tcp\:6790'
+2019-04-03 06:54:50:557 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell rm -rf /data/local/tmp/strings.json'
+2019-04-03 06:54:50:590 - info: [debug] [UiAutomator2] No app capability. Assuming it is already on the device
+2019-04-03 06:54:50:591 - info: [debug] [ADB] Getting install status for com.xueqiu.android
+2019-04-03 06:54:50:591 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages com.xueqiu.android'
+2019-04-03 06:54:50:851 - info: [debug] [ADB] App is installed
+2019-04-03 06:54:50:852 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am force-stop com.xueqiu.android'
+2019-04-03 06:54:51:291 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm clear com.xueqiu.android'
+2019-04-03 06:54:51:484 - info: [debug] [ADB] Device API level: 23
+2019-04-03 06:54:51:484 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package com.xueqiu.android'
+2019-04-03 06:54:51:509 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm dump com.xueqiu.android'
+2019-04-03 06:54:51:774 - info: [debug] [ADB] Got the following command chunks to execute: pm,grant,com.xueqiu.android,android.permission.WRITE_EXTERNAL_STORAGE,;,pm,grant,com.xueqiu.android,android.permission.READ_PHONE_STATE,;,pm,grant,com.xueqiu.android,android.permission.ACCESS_FINE_LOCATION,;,pm,grant,com.xueqiu.android,android.permission.ACCESS_COARSE_LOCATION,;,pm,grant,com.xueqiu.android,android.permission.SYSTEM_ALERT_WINDOW,;,pm,grant,com.xueqiu.android,android.permission.READ_EXTERNAL_STORAGE,;,pm,grant,com.xueqiu.android,android.permission.RECORD_AUDIO,;,pm,grant,com.xueqiu.android,android.permission.CAMERA,;,pm,grant,com.xueqiu.android,android.permission.MOUNT_UNMOUNT_FILESYSTEMS,;,pm,grant,com.xueqiu.android,android.permission.CALL_PHONE,;
+2019-04-03 06:54:51:775 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm grant com.xueqiu.android android.permission.WRITE_EXTERNAL_STORAGE \; pm grant com.xueqiu.android android.permission.READ_PHONE_STATE \; pm grant com.xueqiu.android android.permission.ACCESS_FINE_LOCATION \; pm grant com.xueqiu.android android.permission.ACCESS_COARSE_LOCATION \; pm grant com.xueqiu.android android.permission.SYSTEM_ALERT_WINDOW \; pm grant com.xueqiu.android android.permission.READ_EXTERNAL_STORAGE \; pm grant com.xueqiu.android android.permission.RECORD_AUDIO \; pm grant com.xueqiu.android android.permission.CAMERA \; pm grant com.xueqiu.android android.permission.MOUNT_UNMOUNT_FILESYSTEMS \; pm grant com.xueqiu.android android.permission.CALL_PHONE \;'
+2019-04-03 06:54:53:614 - info: [debug] [AndroidDriver] Performed fast reset on the installed 'com.xueqiu.android' application (stop and clear)
+2019-04-03 06:54:53:614 - info: [debug] [ADB] Checking app cert for null
+2019-04-03 06:54:53:615 - info: [debug] [ADB] 'null' doesn't exist
+2019-04-03 06:54:53:616 - info: [debug] [ADB] Getting all processes with uiautomator
+2019-04-03 06:54:53:616 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell ps'
+2019-04-03 06:54:53:644 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am force-stop io.appium.uiautomator2.server'
+2019-04-03 06:54:54:014 - info: [UiAutomator2] Starting uiautomator2 server 1.15.1
+2019-04-03 06:54:54:015 - info: [UiAutomator2] Using UIAutomator2 server from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v1.15.1.apk' and test from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+2019-04-03 06:54:54:015 - info: [UiAutomator2] Running command: 'adb -s 192.168.56.101:5555 shell am instrument -w io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner'
+2019-04-03 06:54:54:015 - info: [UiAutomator2] Waiting up to 20000ms for UiAutomator2 to be online...
+2019-04-03 06:54:54:016 - info: [debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+2019-04-03 06:54:54:016 - info: [debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8206/wd/hub/status] with no body
+2019-04-03 06:54:55:024 - info: [debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+2019-04-03 06:54:55:025 - info: [debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8206/wd/hub/status] with no body
+2019-04-03 06:54:56:041 - info: [debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+2019-04-03 06:54:56:041 - info: [debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8206/wd/hub/status] with no body
+2019-04-03 06:54:56:056 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"SESSIONID\",\"status\":0,\"value\":\"Status Invoked\"}"
+2019-04-03 06:54:56:058 - info: [debug] [JSONWP Proxy] Matched '/session' to command name 'createSession'
+2019-04-03 06:54:56:058 - info: [debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://localhost:8206/wd/hub/session] with body: {"desiredCapabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2"},"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2","deviceUDID":"192.168.56.101:5555","platformVersion":"6.0","deviceScreenSize":"1440x2560","deviceScreenDensity":640,"deviceModel":"Samsung Galaxy S6","deviceManufacturer":"Genymotion","deviceApiLevel":23}}
+2019-04-03 06:54:56:065 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"30b49b13-e98b-4747-b27e-d6f9ac4a8e42","status":0,"value":"Created Session"}
+2019-04-03 06:54:56:066 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys window'
+2019-04-03 06:54:56:097 - info: [AndroidDriver] Screen already unlocked, doing nothing
+2019-04-03 06:54:56:097 - info: [UiAutomator2] UiAutomator2 did not start the activity we were waiting for, 'com.xueqiu.android/.view.WelcomeActivityAlias'. Starting it ourselves
+2019-04-03 06:54:56:098 - info: [debug] [ADB] Device API level: 23
+2019-04-03 06:54:56:098 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am start -W -n com.xueqiu.android/.view.WelcomeActivityAlias -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2019-04-03 06:54:58:175 - info: [debug] [JSONWP Proxy] Proxying [GET /appium/device/pixel_ratio] to [GET http://localhost:8206/wd/hub/session/30b49b13-e98b-4747-b27e-d6f9ac4a8e42/appium/device/pixel_ratio] with body: {}
+2019-04-03 06:54:58:184 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"30b49b13-e98b-4747-b27e-d6f9ac4a8e42\",\"status\":0,\"value\":4}"
+2019-04-03 06:54:58:186 - info: [debug] [JSONWP Proxy] Matched '/appium/device/system_bars' to command name 'getSystemBars'
+2019-04-03 06:54:58:186 - info: [debug] [JSONWP Proxy] Proxying [GET /appium/device/system_bars] to [GET http://localhost:8206/wd/hub/session/30b49b13-e98b-4747-b27e-d6f9ac4a8e42/appium/device/system_bars] with body: {}
+2019-04-03 06:54:58:197 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"30b49b13-e98b-4747-b27e-d6f9ac4a8e42\",\"status\":0,\"value\":{\"statusBar\":96}}"
+2019-04-03 06:54:58:198 - info: [debug] [JSONWP Proxy] Matched '/window/current/size' to command name 'getWindowSize'
+2019-04-03 06:54:58:199 - info: [debug] [JSONWP Proxy] Proxying [GET /window/current/size] to [GET http://localhost:8206/wd/hub/session/30b49b13-e98b-4747-b27e-d6f9ac4a8e42/window/current/size] with body: {}
+2019-04-03 06:54:58:207 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"30b49b13-e98b-4747-b27e-d6f9ac4a8e42\",\"status\":0,\"value\":{\"height\":2560,\"width\":1440}}"
+2019-04-03 06:54:58:208 - info: [Appium] New AndroidUiautomator2Driver session created successfully, session b28b4b47-af57-42a3-b7d8-4158ab89c2eb added to master session list
+2019-04-03 06:54:58:209 - info: [debug] [BaseDriver] Event 'newSessionStarted' logged at 1554274498209 (14:54:58 GMT+0800 (CST))
+2019-04-03 06:54:58:210 - info: [debug] [W3C] Responding to client with driver.createSession() result: {"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2"},"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2","deviceUDID":"192.168.56.101:5555","platformVersion":"6.0","deviceScreenSize":"1440x2560","deviceScreenDensity":640,"deviceModel":"Samsung Galaxy S6","deviceManufacturer":"Genymotion","deviceApiLevel":23,"pixelRatio":4,"statBarHeight":96,"viewportRect":{"left":0,"top":96,"width":1440,"height":2464}}}
+2019-04-03 06:54:58:213 - info: [HTTP] <-- POST /wd/hub/session 200 14052 ms - 979
+2019-04-03 06:54:58:213 - info: [HTTP] 
+2019-04-03 06:54:58:216 - info: [HTTP] --> POST /wd/hub/session/b28b4b47-af57-42a3-b7d8-4158ab89c2eb/timeouts
+2019-04-03 06:54:58:216 - info: [HTTP] {"implicit":6000,"sessionId":"b28b4b47-af57-42a3-b7d8-4158ab89c2eb"}
+2019-04-03 06:54:58:217 - info: [debug] [W3C] Calling AppiumDriver.timeouts() with args: [null,null,null,null,6000,"b28b4b47-af57-42a3-b7d8-4158ab89c2eb"]
+2019-04-03 06:54:58:219 - info: [debug] [BaseDriver] W3C timeout argument: {"implicit":6000}}
+2019-04-03 06:54:58:219 - info: [debug] [BaseDriver] Set implicit wait to 6000ms
+2019-04-03 06:54:58:220 - info: [debug] [W3C] Responding to client with driver.timeouts() result: null
+2019-04-03 06:54:58:221 - info: [HTTP] <-- POST /wd/hub/session/b28b4b47-af57-42a3-b7d8-4158ab89c2eb/timeouts 200 4 ms - 14
+2019-04-03 06:54:58:221 - info: [HTTP] 
+2019-04-03 06:54:58:223 - info: [HTTP] --> POST /wd/hub/session/b28b4b47-af57-42a3-b7d8-4158ab89c2eb/elements
+2019-04-03 06:54:58:224 - info: [HTTP] {"using":"xpath","value":"//*[@text='好的']","sessionId":"b28b4b47-af57-42a3-b7d8-4158ab89c2eb"}
+2019-04-03 06:54:58:224 - info: [debug] [W3C] Calling AppiumDriver.findElements() with args: ["xpath","//*[@text='好的']","b28b4b47-af57-42a3-b7d8-4158ab89c2eb"]
+2019-04-03 06:54:58:226 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-04-03 06:54:58:226 - info: [debug] [BaseDriver] Waiting up to 6000 ms for condition
+2019-04-03 06:54:58:226 - info: [debug] [JSONWP Proxy] Matched '/elements' to command name 'findElements'
+2019-04-03 06:54:58:227 - info: [debug] [JSONWP Proxy] Proxying [POST /elements] to [POST http://localhost:8206/wd/hub/session/30b49b13-e98b-4747-b27e-d6f9ac4a8e42/elements] with body: {"strategy":"xpath","selector":"//*[@text='好的']","context":"","multiple":true}
+2019-04-03 06:54:59:892 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"30b49b13-e98b-4747-b27e-d6f9ac4a8e42","status":0,"value":[]}
+2019-04-03 06:54:59:892 - info: [debug] [BaseDriver] Waited for 1666 ms so far
+2019-04-03 06:55:00:394 - info: [debug] [JSONWP Proxy] Matched '/elements' to command name 'findElements'
+2019-04-03 06:55:00:395 - info: [debug] [JSONWP Proxy] Proxying [POST /elements] to [POST http://localhost:8206/wd/hub/session/30b49b13-e98b-4747-b27e-d6f9ac4a8e42/elements] with body: {"strategy":"xpath","selector":"//*[@text='好的']","context":"","multiple":true}
+2019-04-03 06:55:05:054 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"30b49b13-e98b-4747-b27e-d6f9ac4a8e42","status":0,"value":[]}
+2019-04-03 06:55:05:055 - info: [debug] [W3C] Responding to client with driver.findElements() result: []
+2019-04-03 06:55:05:056 - info: [HTTP] <-- POST /wd/hub/session/b28b4b47-af57-42a3-b7d8-4158ab89c2eb/elements 200 6832 ms - 12
+2019-04-03 06:55:05:056 - info: [HTTP] 
+2019-04-03 06:55:05:058 - info: [HTTP] --> GET /wd/hub/session/b28b4b47-af57-42a3-b7d8-4158ab89c2eb/screenshot
+2019-04-03 06:55:05:058 - info: [HTTP] {}
+2019-04-03 06:55:05:058 - info: [debug] [W3C] Calling AppiumDriver.getScreenshot() with args: ["b28b4b47-af57-42a3-b7d8-4158ab89c2eb"]
+2019-04-03 06:55:05:060 - info: [debug] [JSONWP Proxy] Matched '/screenshot' to command name 'getScreenshot'
+2019-04-03 06:55:05:060 - info: [debug] [JSONWP Proxy] Proxying [GET /screenshot] to [GET http://localhost:8206/wd/hub/session/30b49b13-e98b-4747-b27e-d6f9ac4a8e42/screenshot] with no body
+2019-04-03 06:55:06:621 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"30b49b13-e98b-4747-b27e-d6f9ac4a8e42\",\"status\":0,\"value\":\"iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAIAAADIlhKYAAAAA3NCSVQICAjb4U\\/gAAAgAElEQVR4\\nnOzdeXRc130n+N99W20AChsXCJAoLhBJUSJF0TIpL5Ioy7FEZdTRhIpHdiS7O4mUybTj+DiZY08n\\nmZnTc9qZc+y2fLqd2JHbzhGn7cibWopkx5JtUjsoiiJBcAUIEACxr4Xa6y33zh8PKBRRWKoKr+pV\\ngd\\/P0dFBPdS77wIEwXrf+t3fZalUigAAAAAAAAAAKpnk9gQAAAAAAAAAAFYLAQcAAAAAAAAAVDwE\\nHAAAAAAAAABQ8RBwAAAAAAAAAEDFQ8ABAAAAAAAAABUPAQcAAAAAAAAAVDwEHAAAAAAAAABQ8RBw\\nAAAAAAAAAEDFQ8ABAAAAAAAAABUPAQcAAAAAAAAAVDwEHAAAAAAAAABQ8RBwAAAAAAAAAEDFQ8AB\\nAAAAAAAAABUPAQcAAAAAAAAAVDwEHAAAAAAAAABQ8RBwAAAAAAAAAEDFQ8ABAAAAAAAAABUPAQcA\\nAAAAAAAAVDzF7QkAAAAAAAAUrqura6lPtba2lnImFcQ0TUVx+WZwcHAwEonkdUpjY2NdXZ0sy0Wa\\nElS6NRVwCCEikciVK1fC4bDf79+8eXN9fb3bkwIAAAAAAGd0dXUNDg5OTEwMDg5OTk5OTk7mclZD\\nQ0NDQ0Nzc3NjY2NzczNSj66urvXr1weDQXenEYlEJiYm8jolEAgEg0EEHLCUtRNw2OnGu+++29bW\\nNjk5WV1d\\/dGPfvTee+\\/1+\\/2MMbdnBwAAAAAAhejq6mpvbx8cHOzs7CxsBDsKyTz9lltuaW5u3rNn\\nz3UYdnR1dY2Ojq5fv97tiQA4b+0EHJZlnT9\\/\\/vXXXw+Hw0KImZmZ9957...
+2019-04-03 06:55:06:701 - info: [debug] [W3C] Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAIAAADIlhKYAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4\nnOzdeXRc130n+N99W20AChsXCJAoLhBJUSJF0TIpL5Ioy7FEZdTRhIpHdiS7O4mUybTj+DiZY08n\nmZnTc9qZc+y2fLqd2JHbzhGn7cibWopkx5JtUjsoiiJBcAUIEACxr4Xa6y33zh8PKBRRWKoKr+pV\ngd/P0dFBPdS77wIEwXrf+t3fZalUigAAAAAAAAAAKpnk9gQAAAAAAAAAAFYLAQcAAAAAAAAAVDwE\nHAAAAAAAAABQ8RBwAAAAAAAAAEDFQ8ABAAAAAAAAABUPAQcAAAAAAAAAVDwEHAAAAAAAAABQ8RBw\nAAAAAAAAAEDFQ8ABAAAAAAAAABUPAQcAAAAAAAAAVDwEHAAAAAAAAABQ8RBwAAAAAAAAAEDFQ8AB\nAAAAAAAAABUPAQcAAAAAAAAAVDwEHAAAAAAAAABQ8RBwAAAAAAAAAEDFQ8ABAAAAAAAAABUPAQcA\nAAAAAAAAVDzF7QkAAAAAAAAUrqura6lPtba2lnImFcQ0TUVx+WZwcHAwEonkdUpjY2NdXZ0sy0Wa\nElS6NRVwCCEikciVK1fC4bDf79+8eXN9fb3bkwIAAAAAAGd0dXUNDg5OTEwMDg5OTk5OTk7mclZD\nQ0NDQ0Nzc3NjY2NzczNSj66urvXr1weDQXenEYlEJiYm8jolEAgEg0EEHLCUtRNw2OnGu+++29bW\nNjk5WV1d/dGPfvTee+/1+/2MMbdnBwAAAAAAhejq6mpvbx8cHOzs7CxsBDsKyTz9lltuaW5u3rNn\nz3UYdnR1dY2Ojq5fv97tiQA4b+0EHJZlnT9//vXXXw+Hw0KImZmZ9957r6amZv/+/aqquj07AAAA\nAADIw5kzZ959992urq5EIuH44J2dnZ2dnUePHvX5fK2trXfffffu3bsdv0oZstMNt2cBUCxrJ+CY\nmJg4ff...
+2019-04-03 06:55:06:708 - info: [HTTP] <-- GET /wd/hub/session/b28b4b47-af57-42a3-b7d8-4158ab89c2eb/screenshot 200 1650 ms - 1385908
+2019-04-03 06:55:06:709 - info: [HTTP] 
+2019-04-03 06:55:06:732 - info: [HTTP] --> POST /wd/hub/session
+2019-04-03 06:55:06:732 - info: [HTTP] {"capabilities":{"firstMatch":[{"platformName":"android","appium:deviceName":"192.168.56.101:5555","appium:appPackage":"com.xueqiu.android","appium:appActivity":".view.WelcomeActivityAlias","appium:autoGrantPermissions":true,"appium:automationName":"UiAutomator2"}]},"desiredCapabilities":{"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2"}}
+2019-04-03 06:55:06:732 - info: [debug] [W3C] Calling AppiumDriver.createSession() with args: [{"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2"},null,{"firstMatch":[{"platformName":"android","appium:deviceName":"192.168.56.101:5555","appium:appPackage":"com.xueqiu.android","appium:appActivity":".view.WelcomeActivityAlias","appium:autoGrantPermissions":true,"appium:automationName":"UiAutomator2"}]}]
+2019-04-03 06:55:06:733 - info: [debug] [BaseDriver] Event 'newSessionRequested' logged at 1554274506733 (14:55:06 GMT+0800 (CST))
+2019-04-03 06:55:06:734 - info: [Appium] Creating new AndroidUiautomator2Driver (v1.16.0) session
+2019-04-03 06:55:06:734 - info: [Appium] Capabilities:
+2019-04-03 06:55:06:734 - info: [Appium]   platformName: android
+2019-04-03 06:55:06:734 - info: [Appium]   deviceName: 192.168.56.101:5555
+2019-04-03 06:55:06:734 - info: [Appium]   appPackage: com.xueqiu.android
+2019-04-03 06:55:06:734 - info: [Appium]   appActivity: .view.WelcomeActivityAlias
+2019-04-03 06:55:06:734 - info: [Appium]   autoGrantPermissions: true
+2019-04-03 06:55:06:735 - info: [Appium]   automationName: UiAutomator2
+2019-04-03 06:55:06:735 - info: [Appium] Session override is on. Deleting other 1 active session.
+2019-04-03 06:55:06:735 - info: [Appium] Removing session b28b4b47-af57-42a3-b7d8-4158ab89c2eb from our master session list
+2019-04-03 06:55:06:735 - info: [debug] [UiAutomator2] Deleting UiAutomator2 session
+2019-04-03 06:55:06:735 - info: [debug] [UiAutomator2] Deleting UiAutomator2 server session
+2019-04-03 06:55:06:736 - info: [debug] [JSONWP Proxy] Matched '/' to command name 'deleteSession'
+2019-04-03 06:55:06:736 - info: [debug] [JSONWP Proxy] Proxying [DELETE /] to [DELETE http://localhost:8206/wd/hub/session/30b49b13-e98b-4747-b27e-d6f9ac4a8e42] with no body
+2019-04-03 06:55:06:759 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"30b49b13-e98b-4747-b27e-d6f9ac4a8e42\",\"status\":0,\"value\":\"Session deleted\"}"
+2019-04-03 06:55:06:759 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am force-stop com.xueqiu.android'
+2019-04-03 06:55:07:151 - info: [debug] [Logcat] Stopping logcat capture
+2019-04-03 06:55:07:157 - info: [debug] [ADB] Removing forwarded port socket connection: 8206 
+2019-04-03 06:55:07:157 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 forward --remove tcp\:8206'
+2019-04-03 06:55:07:204 - info: [debug] [BaseDriver] W3C capabilities {"alwaysMatch":{"platformNa... and MJSONWP desired capabilities {"platformName":"android","... were provided
+2019-04-03 06:55:07:205 - info: [debug] [BaseDriver] Creating session with W3C capabilities: {"alwaysMatch":{"platformNa...
+2019-04-03 06:55:07:211 - info: [BaseDriver] Session created with session id: e23b4efd-c34e-41f9-987b-e87d41ffaaf6
+2019-04-03 06:55:07:488 - info: [AndroidDriver] Java version is: 1.8.0_161
+2019-04-03 06:55:07:489 - info: [AndroidDriver] Retrieving device list
+2019-04-03 06:55:07:489 - info: [debug] [ADB] Trying to find a connected android device
+2019-04-03 06:55:07:489 - info: [debug] [ADB] Getting connected devices...
+2019-04-03 06:55:07:504 - info: [debug] [ADB] 1 device(s) connected
+2019-04-03 06:55:07:504 - info: [AndroidDriver] Using device: 192.168.56.101:5555
+2019-04-03 06:55:07:505 - info: [debug] [ADB] Setting device id to 192.168.56.101:5555
+2019-04-03 06:55:07:505 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell getprop ro.build.version.sdk'
+2019-04-03 06:55:07:525 - info: [debug] [ADB] Current device property 'ro.build.version.sdk': 23
+2019-04-03 06:55:07:525 - info: [debug] [ADB] Device API level: 23
+2019-04-03 06:55:07:525 - warn: [AndroidDriver] No app sent in, not parsing package/activity
+2019-04-03 06:55:07:526 - info: [ADB] Getting device platform version
+2019-04-03 06:55:07:526 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell getprop ro.build.version.release'
+2019-04-03 06:55:07:549 - info: [debug] [ADB] Current device property 'ro.build.version.release': 6.0
+2019-04-03 06:55:07:550 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell wm size'
+2019-04-03 06:55:07:921 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell wm density'
+2019-04-03 06:55:08:023 - info: [debug] [UiAutomator2] [UIAutomator2] 
+2019-04-03 06:55:08:024 - info: [debug] [UiAutomator2] [UIAutomator2] io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:.
+2019-04-03 06:55:08:024 - info: [debug] [UiAutomator2] [UIAutomator2] 
+2019-04-03 06:55:08:024 - info: [debug] [UiAutomator2] [UIAutomator2] Time: 13.055
+2019-04-03 06:55:08:024 - info: [debug] [UiAutomator2] [UIAutomator2] 
+2019-04-03 06:55:08:024 - info: [debug] [UiAutomator2] [UIAutomator2] OK (1 test)
+2019-04-03 06:55:08:025 - info: [debug] [UiAutomator2] [UIAutomator2] 
+2019-04-03 06:55:08:025 - info: [debug] [UiAutomator2] [UIAutomator2] 
+2019-04-03 06:55:08:314 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell getprop ro.product.model'
+2019-04-03 06:55:08:336 - info: [debug] [ADB] Current device property 'ro.product.model': Samsung Galaxy S6
+2019-04-03 06:55:08:337 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell getprop ro.product.manufacturer'
+2019-04-03 06:55:08:358 - info: [debug] [ADB] Current device property 'ro.product.manufacturer': Genymotion
+2019-04-03 06:55:08:358 - info: [debug] [ADB] Device API level: 23
+2019-04-03 06:55:08:358 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am force-stop io.appium.uiautomator2.server'
+2019-04-03 06:55:08:728 - info: [debug] [ADB] Checking app cert for /usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v1.15.1.apk
+2019-04-03 06:55:08:729 - info: [debug] [ADB] Starting '/Users/xinxi/Library/Android/sdk/build-tools/28.0.3/apksigner' with args '["verify","--print-certs","/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v1.15.1.apk"]'
+2019-04-03 06:55:09:412 - info: [debug] [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2019-04-03 06:55:09:412 - info: [debug] [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2019-04-03 06:55:09:412 - info: [debug] [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2019-04-03 06:55:09:413 - info: [debug] [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2019-04-03 06:55:09:413 - info: [debug] [ADB] WARNING: META-INF/INDEX.LIST not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+2019-04-03 06:55:09:413 - info: [debug] [ADB] WARNING: META-INF/io.netty.versions.properties not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+2019-04-03 06:55:09:413 - info: [debug] [ADB] 
+2019-04-03 06:55:09:413 - info: [debug] [ADB] '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v1.15.1.apk' is already signed.
+2019-04-03 06:55:09:414 - info: [debug] [ADB] Checking app cert for /usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk
+2019-04-03 06:55:09:414 - info: [debug] [ADB] Starting '/Users/xinxi/Library/Android/sdk/build-tools/28.0.3/apksigner' with args '["verify","--print-certs","/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk"]'
+2019-04-03 06:55:09:937 - info: [debug] [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2019-04-03 06:55:09:937 - info: [debug] [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2019-04-03 06:55:09:937 - info: [debug] [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2019-04-03 06:55:09:937 - info: [debug] [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2019-04-03 06:55:09:937 - info: [debug] [ADB] 
+2019-04-03 06:55:09:937 - info: [debug] [ADB] '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' is already signed.
+2019-04-03 06:55:09:938 - info: [debug] [ADB] Getting install status for io.appium.uiautomator2.server
+2019-04-03 06:55:09:940 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages io.appium.uiautomator2.server'
+2019-04-03 06:55:10:130 - info: [debug] [ADB] App is installed
+2019-04-03 06:55:10:130 - info: [debug] [ADB] Getting package info for 'io.appium.uiautomator2.server'
+2019-04-03 06:55:10:130 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package io.appium.uiautomator2.server'
+2019-04-03 06:55:10:175 - info: [debug] [ADB] The installed 'io.appium.uiautomator2.server' package does not require upgrade ('1.15.1' >= '1.15.1')
+2019-04-03 06:55:10:175 - info: [debug] [ADB] Getting install status for io.appium.uiautomator2.server.test
+2019-04-03 06:55:10:176 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages io.appium.uiautomator2.server.test'
+2019-04-03 06:55:10:372 - info: [debug] [ADB] App is installed
+2019-04-03 06:55:10:372 - info: [debug] [ADB] Getting package info for 'io.appium.uiautomator2.server.test'
+2019-04-03 06:55:10:373 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package io.appium.uiautomator2.server.test'
+2019-04-03 06:55:10:410 - warn: [ADB] Cannot read version codes of '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' and/or 'io.appium.uiautomator2.server.test'
+2019-04-03 06:55:10:411 - warn: [ADB] Cannot read version names of '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' and/or 'io.appium.uiautomator2.server.test'. Assuming correct app version is already installed
+2019-04-03 06:55:10:411 - info: [debug] [UiAutomator2] Waiting up to 20000ms for instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' to be available
+2019-04-03 06:55:10:411 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list instrumentation'
+2019-04-03 06:55:10:582 - info: [debug] [UiAutomator2] Instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' available
+2019-04-03 06:55:10:582 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 wait-for-device'
+2019-04-03 06:55:10:597 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell echo ping'
+2019-04-03 06:55:10:618 - info: [debug] [AndroidDriver] Pushing settings apk to device...
+2019-04-03 06:55:10:618 - info: [debug] [ADB] Getting install status for io.appium.settings
+2019-04-03 06:55:10:618 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages io.appium.settings'
+2019-04-03 06:55:10:796 - info: [debug] [ADB] App is installed
+2019-04-03 06:55:10:796 - info: [debug] [ADB] Getting package info for 'io.appium.settings'
+2019-04-03 06:55:10:796 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package io.appium.settings'
+2019-04-03 06:55:10:829 - info: [debug] [ADB] The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')
+2019-04-03 06:55:10:829 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell ps'
+2019-04-03 06:55:10:866 - info: [debug] [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2019-04-03 06:55:10:866 - info: [debug] [ADB] Device API level: 23
+2019-04-03 06:55:10:866 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell appops set io.appium.settings android\:mock_location allow'
+2019-04-03 06:55:11:266 - warn: [AndroidDriver] setDeviceLanguageCountry requires language or country.
+2019-04-03 06:55:11:267 - warn: [AndroidDriver] Got language: 'null' and country: 'null'
+2019-04-03 06:55:11:267 - info: [debug] [Logcat] Starting logcat capture
+2019-04-03 06:55:11:289 - info: [debug] [AndroidDriver] Pushing unlock helper app to device...
+2019-04-03 06:55:11:290 - info: [debug] [ADB] Getting install status for io.appium.unlock
+2019-04-03 06:55:11:290 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages io.appium.unlock'
+2019-04-03 06:55:11:586 - info: [debug] [ADB] App is installed
+2019-04-03 06:55:11:587 - info: [debug] [ADB] Getting package info for 'io.appium.unlock'
+2019-04-03 06:55:11:587 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package io.appium.unlock'
+2019-04-03 06:55:11:627 - info: [debug] [ADB] The installed 'io.appium.unlock' package does not require upgrade ('2.0.0' >= '2.0.0')
+2019-04-03 06:55:11:628 - info: [debug] [UiAutomator2] Forwarding UiAutomator2 Server port 6790 to 8206
+2019-04-03 06:55:11:628 - info: [debug] [ADB] Forwarding system: 8206 to device: 6790
+2019-04-03 06:55:11:628 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 forward tcp\:8206 tcp\:6790'
+2019-04-03 06:55:11:649 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell rm -rf /data/local/tmp/strings.json'
+2019-04-03 06:55:11:675 - info: [debug] [UiAutomator2] No app capability. Assuming it is already on the device
+2019-04-03 06:55:11:675 - info: [debug] [ADB] Getting install status for com.xueqiu.android
+2019-04-03 06:55:11:675 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages com.xueqiu.android'
+2019-04-03 06:55:11:917 - info: [debug] [ADB] App is installed
+2019-04-03 06:55:11:917 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am force-stop com.xueqiu.android'
+2019-04-03 06:55:12:279 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm clear com.xueqiu.android'
+2019-04-03 06:55:12:456 - info: [debug] [ADB] Device API level: 23
+2019-04-03 06:55:12:457 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package com.xueqiu.android'
+2019-04-03 06:55:12:480 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm dump com.xueqiu.android'
+2019-04-03 06:55:12:724 - info: [debug] [ADB] Got the following command chunks to execute: pm,grant,com.xueqiu.android,android.permission.WRITE_EXTERNAL_STORAGE,;,pm,grant,com.xueqiu.android,android.permission.READ_PHONE_STATE,;,pm,grant,com.xueqiu.android,android.permission.ACCESS_FINE_LOCATION,;,pm,grant,com.xueqiu.android,android.permission.ACCESS_COARSE_LOCATION,;,pm,grant,com.xueqiu.android,android.permission.SYSTEM_ALERT_WINDOW,;,pm,grant,com.xueqiu.android,android.permission.READ_EXTERNAL_STORAGE,;,pm,grant,com.xueqiu.android,android.permission.RECORD_AUDIO,;,pm,grant,com.xueqiu.android,android.permission.CAMERA,;,pm,grant,com.xueqiu.android,android.permission.MOUNT_UNMOUNT_FILESYSTEMS,;,pm,grant,com.xueqiu.android,android.permission.CALL_PHONE,;
+2019-04-03 06:55:12:725 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm grant com.xueqiu.android android.permission.WRITE_EXTERNAL_STORAGE \; pm grant com.xueqiu.android android.permission.READ_PHONE_STATE \; pm grant com.xueqiu.android android.permission.ACCESS_FINE_LOCATION \; pm grant com.xueqiu.android android.permission.ACCESS_COARSE_LOCATION \; pm grant com.xueqiu.android android.permission.SYSTEM_ALERT_WINDOW \; pm grant com.xueqiu.android android.permission.READ_EXTERNAL_STORAGE \; pm grant com.xueqiu.android android.permission.RECORD_AUDIO \; pm grant com.xueqiu.android android.permission.CAMERA \; pm grant com.xueqiu.android android.permission.MOUNT_UNMOUNT_FILESYSTEMS \; pm grant com.xueqiu.android android.permission.CALL_PHONE \;'
+2019-04-03 06:55:14:158 - info: [debug] [AndroidDriver] Performed fast reset on the installed 'com.xueqiu.android' application (stop and clear)
+2019-04-03 06:55:14:158 - info: [debug] [ADB] Checking app cert for null
+2019-04-03 06:55:14:160 - info: [debug] [ADB] 'null' doesn't exist
+2019-04-03 06:55:14:160 - info: [debug] [ADB] Getting all processes with uiautomator
+2019-04-03 06:55:14:160 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell ps'
+2019-04-03 06:55:14:185 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am force-stop io.appium.uiautomator2.server'
+2019-04-03 06:55:14:548 - info: [UiAutomator2] Starting uiautomator2 server 1.15.1
+2019-04-03 06:55:14:548 - info: [UiAutomator2] Using UIAutomator2 server from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v1.15.1.apk' and test from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+2019-04-03 06:55:14:549 - info: [UiAutomator2] Running command: 'adb -s 192.168.56.101:5555 shell am instrument -w io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner'
+2019-04-03 06:55:14:549 - info: [UiAutomator2] Waiting up to 20000ms for UiAutomator2 to be online...
+2019-04-03 06:55:14:549 - info: [debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+2019-04-03 06:55:14:550 - info: [debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8206/wd/hub/status] with no body
+2019-04-03 06:55:15:562 - info: [debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+2019-04-03 06:55:15:562 - info: [debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8206/wd/hub/status] with no body
+2019-04-03 06:55:16:571 - info: [debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+2019-04-03 06:55:16:572 - info: [debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8206/wd/hub/status] with no body
+2019-04-03 06:55:16:583 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"SESSIONID\",\"status\":0,\"value\":\"Status Invoked\"}"
+2019-04-03 06:55:16:584 - info: [debug] [JSONWP Proxy] Matched '/session' to command name 'createSession'
+2019-04-03 06:55:16:584 - info: [debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://localhost:8206/wd/hub/session] with body: {"desiredCapabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2"},"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2","deviceUDID":"192.168.56.101:5555","platformVersion":"6.0","deviceScreenSize":"1440x2560","deviceScreenDensity":640,"deviceModel":"Samsung Galaxy S6","deviceManufacturer":"Genymotion","deviceApiLevel":23}}
+2019-04-03 06:55:16:594 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1fc38c88-9608-4ba3-aaf3-48a1401d32b7","status":0,"value":"Created Session"}
+2019-04-03 06:55:16:594 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys window'
+2019-04-03 06:55:16:621 - info: [AndroidDriver] Screen already unlocked, doing nothing
+2019-04-03 06:55:16:621 - info: [UiAutomator2] UiAutomator2 did not start the activity we were waiting for, 'com.xueqiu.android/.view.WelcomeActivityAlias'. Starting it ourselves
+2019-04-03 06:55:16:621 - info: [debug] [ADB] Device API level: 23
+2019-04-03 06:55:16:622 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am start -W -n com.xueqiu.android/.view.WelcomeActivityAlias -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2019-04-03 06:55:17:758 - info: [debug] [JSONWP Proxy] Proxying [GET /appium/device/pixel_ratio] to [GET http://localhost:8206/wd/hub/session/1fc38c88-9608-4ba3-aaf3-48a1401d32b7/appium/device/pixel_ratio] with body: {}
+2019-04-03 06:55:17:768 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"1fc38c88-9608-4ba3-aaf3-48a1401d32b7\",\"status\":0,\"value\":4}"
+2019-04-03 06:55:17:769 - info: [debug] [JSONWP Proxy] Matched '/appium/device/system_bars' to command name 'getSystemBars'
+2019-04-03 06:55:17:769 - info: [debug] [JSONWP Proxy] Proxying [GET /appium/device/system_bars] to [GET http://localhost:8206/wd/hub/session/1fc38c88-9608-4ba3-aaf3-48a1401d32b7/appium/device/system_bars] with body: {}
+2019-04-03 06:55:17:775 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"1fc38c88-9608-4ba3-aaf3-48a1401d32b7\",\"status\":0,\"value\":{\"statusBar\":96}}"
+2019-04-03 06:55:17:776 - info: [debug] [JSONWP Proxy] Matched '/window/current/size' to command name 'getWindowSize'
+2019-04-03 06:55:17:776 - info: [debug] [JSONWP Proxy] Proxying [GET /window/current/size] to [GET http://localhost:8206/wd/hub/session/1fc38c88-9608-4ba3-aaf3-48a1401d32b7/window/current/size] with body: {}
+2019-04-03 06:55:17:785 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"1fc38c88-9608-4ba3-aaf3-48a1401d32b7\",\"status\":0,\"value\":{\"height\":2560,\"width\":1440}}"
+2019-04-03 06:55:17:786 - info: [Appium] New AndroidUiautomator2Driver session created successfully, session e23b4efd-c34e-41f9-987b-e87d41ffaaf6 added to master session list
+2019-04-03 06:55:17:786 - info: [debug] [BaseDriver] Event 'newSessionStarted' logged at 1554274517786 (14:55:17 GMT+0800 (CST))
+2019-04-03 06:55:17:787 - info: [debug] [W3C] Responding to client with driver.createSession() result: {"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2"},"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2","deviceUDID":"192.168.56.101:5555","platformVersion":"6.0","deviceScreenSize":"1440x2560","deviceScreenDensity":640,"deviceModel":"Samsung Galaxy S6","deviceManufacturer":"Genymotion","deviceApiLevel":23,"pixelRatio":4,"statBarHeight":96,"viewportRect":{"left":0,"top":96,"width":1440,"height":2464}}}
+2019-04-03 06:55:17:788 - info: [HTTP] <-- POST /wd/hub/session 200 11056 ms - 979
+2019-04-03 06:55:17:788 - info: [HTTP] 
+2019-04-03 06:55:17:791 - info: [HTTP] --> POST /wd/hub/session/e23b4efd-c34e-41f9-987b-e87d41ffaaf6/timeouts
+2019-04-03 06:55:17:791 - info: [HTTP] {"implicit":6000,"sessionId":"e23b4efd-c34e-41f9-987b-e87d41ffaaf6"}
+2019-04-03 06:55:17:791 - info: [debug] [W3C] Calling AppiumDriver.timeouts() with args: [null,null,null,null,6000,"e23b4efd-c34e-41f9-987b-e87d41ffaaf6"]
+2019-04-03 06:55:17:793 - info: [debug] [BaseDriver] W3C timeout argument: {"implicit":6000}}
+2019-04-03 06:55:17:793 - info: [debug] [BaseDriver] Set implicit wait to 6000ms
+2019-04-03 06:55:17:793 - info: [debug] [W3C] Responding to client with driver.timeouts() result: null
+2019-04-03 06:55:17:794 - info: [HTTP] <-- POST /wd/hub/session/e23b4efd-c34e-41f9-987b-e87d41ffaaf6/timeouts 200 3 ms - 14
+2019-04-03 06:55:17:794 - info: [HTTP] 
+2019-04-03 06:55:17:796 - info: [HTTP] --> POST /wd/hub/session/e23b4efd-c34e-41f9-987b-e87d41ffaaf6/elements
+2019-04-03 06:55:17:796 - info: [HTTP] {"using":"xpath","value":"//*[@text='好的']","sessionId":"e23b4efd-c34e-41f9-987b-e87d41ffaaf6"}
+2019-04-03 06:55:17:797 - info: [debug] [W3C] Calling AppiumDriver.findElements() with args: ["xpath","//*[@text='好的']","e23b4efd-c34e-41f9-987b-e87d41ffaaf6"]
+2019-04-03 06:55:17:800 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-04-03 06:55:17:800 - info: [debug] [BaseDriver] Waiting up to 6000 ms for condition
+2019-04-03 06:55:17:802 - info: [debug] [JSONWP Proxy] Matched '/elements' to command name 'findElements'
+2019-04-03 06:55:17:802 - info: [debug] [JSONWP Proxy] Proxying [POST /elements] to [POST http://localhost:8206/wd/hub/session/1fc38c88-9608-4ba3-aaf3-48a1401d32b7/elements] with body: {"strategy":"xpath","selector":"//*[@text='好的']","context":"","multiple":true}
+2019-04-03 06:55:19:773 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1fc38c88-9608-4ba3-aaf3-48a1401d32b7","status":0,"value":[]}
+2019-04-03 06:55:19:773 - info: [debug] [BaseDriver] Waited for 1973 ms so far
+2019-04-03 06:55:20:277 - info: [debug] [JSONWP Proxy] Matched '/elements' to command name 'findElements'
+2019-04-03 06:55:20:277 - info: [debug] [JSONWP Proxy] Proxying [POST /elements] to [POST http://localhost:8206/wd/hub/session/1fc38c88-9608-4ba3-aaf3-48a1401d32b7/elements] with body: {"strategy":"xpath","selector":"//*[@text='好的']","context":"","multiple":true}
+2019-04-03 06:55:23:391 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1fc38c88-9608-4ba3-aaf3-48a1401d32b7","status":0,"value":[]}
+2019-04-03 06:55:23:392 - info: [debug] [BaseDriver] Waited for 5592 ms so far
+2019-04-03 06:55:23:898 - info: [debug] [JSONWP Proxy] Matched '/elements' to command name 'findElements'
+2019-04-03 06:55:23:898 - info: [debug] [JSONWP Proxy] Proxying [POST /elements] to [POST http://localhost:8206/wd/hub/session/1fc38c88-9608-4ba3-aaf3-48a1401d32b7/elements] with body: {"strategy":"xpath","selector":"//*[@text='好的']","context":"","multiple":true}
+2019-04-03 06:55:24:555 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"1fc38c88-9608-4ba3-aaf3-48a1401d32b7","status":0,"value":[]}
+2019-04-03 06:55:24:556 - info: [debug] [W3C] Responding to client with driver.findElements() result: []
+2019-04-03 06:55:24:557 - info: [HTTP] <-- POST /wd/hub/session/e23b4efd-c34e-41f9-987b-e87d41ffaaf6/elements 200 6761 ms - 12
+2019-04-03 06:55:24:558 - info: [HTTP] 
+2019-04-03 06:55:24:559 - info: [HTTP] --> GET /wd/hub/session/e23b4efd-c34e-41f9-987b-e87d41ffaaf6/screenshot
+2019-04-03 06:55:24:560 - info: [HTTP] {}
+2019-04-03 06:55:24:560 - info: [debug] [W3C] Calling AppiumDriver.getScreenshot() with args: ["e23b4efd-c34e-41f9-987b-e87d41ffaaf6"]
+2019-04-03 06:55:24:561 - info: [debug] [JSONWP Proxy] Matched '/screenshot' to command name 'getScreenshot'
+2019-04-03 06:55:24:562 - info: [debug] [JSONWP Proxy] Proxying [GET /screenshot] to [GET http://localhost:8206/wd/hub/session/1fc38c88-9608-4ba3-aaf3-48a1401d32b7/screenshot] with no body
+2019-04-03 06:55:25:871 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"1fc38c88-9608-4ba3-aaf3-48a1401d32b7\",\"status\":0,\"value\":\"iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAIAAADIlhKYAAAAA3NCSVQICAjb4U\\/gAAAgAElEQVR4\\nnOzdeXRc130n+N99W20AChsXCJAoLhBJUSJF0TIpW5ZEWY4lKqOOJlQ8siPZ3UmkTKYdx8fJHHs6\\nycycntPOnOO05dPtxI7cdo44bUfe1FIkO5Yck9pBURQJgitAgACIfS3U\\/rZ7548HFIooLFWFVxv4\\n\\/RwdHdRDvfsuQBCs963f\\/V2m6zoBAAAAAAAAAFQyqdQTAAAAAAAAAABYLQQcAAAAAAAAAFDxEHAA\\nAAAAAAAAQMVDwAEAAAAAAAAAFQ8BBwAAAAAAAABUPAQcAAAAAAAAAFDxEHAAAAAAAAAAQMVDwAEA\\nAAAAAAAAFQ8BBwAAAAAAAABUPAQcAAAAAAAAAFDxEHAAAAAAAAAAQMVDwAEAAAAAAAAAFQ8BBwAA\\nAAAAAABUPAQcAAAAAAAAAFDxEHAAAAAAAAAAQMVDwAEAAAAAAAAAFQ8BBwAAAAAAAABUPAQcAAAA\\nAAAAAFDxlFJPAAAAAAAAIH9dXV1Lfaq1tbWYM6kglmUpSolvBgcHByORSE6nNDY21tXVybJcoClB\\npVtTAYcQIhKJXLlyJRwO+\\/3+zZs319fXl3pSAAAAAADgjq6ursHBwYmJicHBwcnJycnJyWzOamho\\naGhoaG5ubmxsbG5uRurR1dW1fv36YDBY2mlEIpGJiYmcTgkEAsFgEAEHLGXtBBxOuvHee++1tbVN\\nTk5WV1d\\/\\/OMfv++++\\/x+P2Os1LMDAAAAAIB8dHV1tbe3Dw4OdnZ25jeCE4Wkn37LLbc0Nzfv2bPn\\nOgw7urq6RkdH169fX+qJALhv7QQctm2fP3\\/+jTfeCIfDQoiZmZn3...
+2019-04-03 06:55:25:931 - info: [debug] [W3C] Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAIAAADIlhKYAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4\nnOzdeXRc130n+N99W20AChsXCJAoLhBJUSJF0TIpW5ZEWY4lKqOOJlQ8siPZ3UmkTKYdx8fJHHs6\nycycntPOnOO05dPtxI7cdo44bUfe1FIkO5Yck9pBURQJgitAgACIfS3U/rZ7548HFIooLFWFVxv4\n/RwdHdRDvfsuQBCs963f/V2m6zoBAAAAAAAAAFQyqdQTAAAAAAAAAABYLQQcAAAAAAAAAFDxEHAA\nAAAAAAAAQMVDwAEAAAAAAAAAFQ8BBwAAAAAAAABUPAQcAAAAAAAAAFDxEHAAAAAAAAAAQMVDwAEA\nAAAAAAAAFQ8BBwAAAAAAAABUPAQcAAAAAAAAAFDxEHAAAAAAAAAAQMVDwAEAAAAAAAAAFQ8BBwAA\nAAAAAABUPAQcAAAAAAAAAFDxEHAAAAAAAAAAQMVDwAEAAAAAAAAAFQ8BBwAAAAAAAABUPAQcAAAA\nAAAAAFDxlFJPAAAAAAAAIH9dXV1Lfaq1tbWYM6kglmUpSolvBgcHByORSE6nNDY21tXVybJcoClB\npVtTAYcQIhKJXLlyJRwO+/3+zZs319fXl3pSAAAAAADgjq6ursHBwYmJicHBwcnJycnJyWzOamho\naGhoaG5ubmxsbG5uRurR1dW1fv36YDBY2mlEIpGJiYmcTgkEAsFgEAEHLGXtBBxOuvHee++1tbVN\nTk5WV1d//OMfv++++/x+P2Os1LMDAAAAAIB8dHV1tbe3Dw4OdnZ25jeCE4Wkn37LLbc0Nzfv2bPn\nOgw7urq6RkdH169fX+qJALhv7QQctm2fP3/+jTfeCIfDQoiZmZn333+/pqZm//79qqqWenYAAAAA\nAJCDM2fOvPfee11dXYlEwvXBOzs7Ozs7jx496vP5Wltb77777t27d7t+lTLkpBulngVAoaydgGNi\nYuL06d...
+2019-04-03 06:55:25:937 - info: [HTTP] <-- GET /wd/hub/session/e23b4efd-c34e-41f9-987b-e87d41ffaaf6/screenshot 200 1377 ms - 1061076
+2019-04-03 06:55:25:937 - info: [HTTP] 
+2019-04-03 06:55:25:954 - info: [HTTP] --> POST /wd/hub/session
+2019-04-03 06:55:25:954 - info: [HTTP] {"capabilities":{"firstMatch":[{"platformName":"android","appium:deviceName":"192.168.56.101:5555","appium:appPackage":"com.xueqiu.android","appium:appActivity":".view.WelcomeActivityAlias","appium:autoGrantPermissions":true,"appium:automationName":"UiAutomator2"}]},"desiredCapabilities":{"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2"}}
+2019-04-03 06:55:25:954 - info: [debug] [W3C] Calling AppiumDriver.createSession() with args: [{"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2"},null,{"firstMatch":[{"platformName":"android","appium:deviceName":"192.168.56.101:5555","appium:appPackage":"com.xueqiu.android","appium:appActivity":".view.WelcomeActivityAlias","appium:autoGrantPermissions":true,"appium:automationName":"UiAutomator2"}]}]
+2019-04-03 06:55:25:954 - info: [debug] [BaseDriver] Event 'newSessionRequested' logged at 1554274525954 (14:55:25 GMT+0800 (CST))
+2019-04-03 06:55:25:955 - info: [Appium] Creating new AndroidUiautomator2Driver (v1.16.0) session
+2019-04-03 06:55:25:955 - info: [Appium] Capabilities:
+2019-04-03 06:55:25:955 - info: [Appium]   platformName: android
+2019-04-03 06:55:25:955 - info: [Appium]   deviceName: 192.168.56.101:5555
+2019-04-03 06:55:25:955 - info: [Appium]   appPackage: com.xueqiu.android
+2019-04-03 06:55:25:956 - info: [Appium]   appActivity: .view.WelcomeActivityAlias
+2019-04-03 06:55:25:956 - info: [Appium]   autoGrantPermissions: true
+2019-04-03 06:55:25:956 - info: [Appium]   automationName: UiAutomator2
+2019-04-03 06:55:25:956 - info: [Appium] Session override is on. Deleting other 1 active session.
+2019-04-03 06:55:25:956 - info: [Appium] Removing session e23b4efd-c34e-41f9-987b-e87d41ffaaf6 from our master session list
+2019-04-03 06:55:25:956 - info: [debug] [UiAutomator2] Deleting UiAutomator2 session
+2019-04-03 06:55:25:957 - info: [debug] [UiAutomator2] Deleting UiAutomator2 server session
+2019-04-03 06:55:25:957 - info: [debug] [JSONWP Proxy] Matched '/' to command name 'deleteSession'
+2019-04-03 06:55:25:957 - info: [debug] [JSONWP Proxy] Proxying [DELETE /] to [DELETE http://localhost:8206/wd/hub/session/1fc38c88-9608-4ba3-aaf3-48a1401d32b7] with no body
+2019-04-03 06:55:25:969 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"1fc38c88-9608-4ba3-aaf3-48a1401d32b7\",\"status\":0,\"value\":\"Session deleted\"}"
+2019-04-03 06:55:25:970 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am force-stop com.xueqiu.android'
+2019-04-03 06:55:26:376 - info: [debug] [Logcat] Stopping logcat capture
+2019-04-03 06:55:26:380 - info: [debug] [ADB] Removing forwarded port socket connection: 8206 
+2019-04-03 06:55:26:381 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 forward --remove tcp\:8206'
+2019-04-03 06:55:26:401 - info: [debug] [BaseDriver] W3C capabilities {"alwaysMatch":{"platformNa... and MJSONWP desired capabilities {"platformName":"android","... were provided
+2019-04-03 06:55:26:401 - info: [debug] [BaseDriver] Creating session with W3C capabilities: {"alwaysMatch":{"platformNa...
+2019-04-03 06:55:26:406 - info: [BaseDriver] Session created with session id: 760a9d1c-6548-4532-ac22-07c52b37c726
+2019-04-03 06:55:26:500 - info: [debug] [UiAutomator2] [UIAutomator2] 
+2019-04-03 06:55:26:500 - info: [debug] [UiAutomator2] [UIAutomator2] io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:.
+2019-04-03 06:55:26:500 - info: [debug] [UiAutomator2] [UIAutomator2] 
+2019-04-03 06:55:26:501 - info: [debug] [UiAutomator2] [UIAutomator2] Time: 11.012
+2019-04-03 06:55:26:501 - info: [debug] [UiAutomator2] [UIAutomator2] 
+2019-04-03 06:55:26:501 - info: [debug] [UiAutomator2] [UIAutomator2] OK (1 test)
+2019-04-03 06:55:26:501 - info: [debug] [UiAutomator2] [UIAutomator2] 
+2019-04-03 06:55:26:501 - info: [debug] [UiAutomator2] [UIAutomator2] 
+2019-04-03 06:55:26:527 - info: [AndroidDriver] Java version is: 1.8.0_161
+2019-04-03 06:55:26:527 - info: [AndroidDriver] Retrieving device list
+2019-04-03 06:55:26:527 - info: [debug] [ADB] Trying to find a connected android device
+2019-04-03 06:55:26:527 - info: [debug] [ADB] Getting connected devices...
+2019-04-03 06:55:26:541 - info: [debug] [ADB] 1 device(s) connected
+2019-04-03 06:55:26:541 - info: [AndroidDriver] Using device: 192.168.56.101:5555
+2019-04-03 06:55:26:542 - info: [debug] [ADB] Setting device id to 192.168.56.101:5555
+2019-04-03 06:55:26:542 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell getprop ro.build.version.sdk'
+2019-04-03 06:55:26:563 - info: [debug] [ADB] Current device property 'ro.build.version.sdk': 23
+2019-04-03 06:55:26:564 - info: [debug] [ADB] Device API level: 23
+2019-04-03 06:55:26:564 - warn: [AndroidDriver] No app sent in, not parsing package/activity
+2019-04-03 06:55:26:564 - info: [ADB] Getting device platform version
+2019-04-03 06:55:26:564 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell getprop ro.build.version.release'
+2019-04-03 06:55:26:588 - info: [debug] [ADB] Current device property 'ro.build.version.release': 6.0
+2019-04-03 06:55:26:588 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell wm size'
+2019-04-03 06:55:26:954 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell wm density'
+2019-04-03 06:55:27:314 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell getprop ro.product.model'
+2019-04-03 06:55:27:335 - info: [debug] [ADB] Current device property 'ro.product.model': Samsung Galaxy S6
+2019-04-03 06:55:27:335 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell getprop ro.product.manufacturer'
+2019-04-03 06:55:27:355 - info: [debug] [ADB] Current device property 'ro.product.manufacturer': Genymotion
+2019-04-03 06:55:27:355 - info: [debug] [ADB] Device API level: 23
+2019-04-03 06:55:27:355 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am force-stop io.appium.uiautomator2.server'
+2019-04-03 06:55:27:719 - info: [debug] [ADB] Checking app cert for /usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v1.15.1.apk
+2019-04-03 06:55:27:720 - info: [debug] [ADB] Starting '/Users/xinxi/Library/Android/sdk/build-tools/28.0.3/apksigner' with args '["verify","--print-certs","/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v1.15.1.apk"]'
+2019-04-03 06:55:28:141 - info: [debug] [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2019-04-03 06:55:28:141 - info: [debug] [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2019-04-03 06:55:28:141 - info: [debug] [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2019-04-03 06:55:28:141 - info: [debug] [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2019-04-03 06:55:28:141 - info: [debug] [ADB] WARNING: META-INF/INDEX.LIST not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+2019-04-03 06:55:28:141 - info: [debug] [ADB] WARNING: META-INF/io.netty.versions.properties not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+2019-04-03 06:55:28:141 - info: [debug] [ADB] 
+2019-04-03 06:55:28:142 - info: [debug] [ADB] '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v1.15.1.apk' is already signed.
+2019-04-03 06:55:28:142 - info: [debug] [ADB] Checking app cert for /usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk
+2019-04-03 06:55:28:142 - info: [debug] [ADB] Starting '/Users/xinxi/Library/Android/sdk/build-tools/28.0.3/apksigner' with args '["verify","--print-certs","/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk"]'
+2019-04-03 06:55:28:568 - info: [debug] [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2019-04-03 06:55:28:568 - info: [debug] [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2019-04-03 06:55:28:568 - info: [debug] [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2019-04-03 06:55:28:568 - info: [debug] [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2019-04-03 06:55:28:568 - info: [debug] [ADB] 
+2019-04-03 06:55:28:568 - info: [debug] [ADB] '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' is already signed.
+2019-04-03 06:55:28:569 - info: [debug] [ADB] Getting install status for io.appium.uiautomator2.server
+2019-04-03 06:55:28:569 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages io.appium.uiautomator2.server'
+2019-04-03 06:55:28:724 - info: [debug] [ADB] App is installed
+2019-04-03 06:55:28:725 - info: [debug] [ADB] Getting package info for 'io.appium.uiautomator2.server'
+2019-04-03 06:55:28:725 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package io.appium.uiautomator2.server'
+2019-04-03 06:55:28:755 - info: [debug] [ADB] The installed 'io.appium.uiautomator2.server' package does not require upgrade ('1.15.1' >= '1.15.1')
+2019-04-03 06:55:28:755 - info: [debug] [ADB] Getting install status for io.appium.uiautomator2.server.test
+2019-04-03 06:55:28:755 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages io.appium.uiautomator2.server.test'
+2019-04-03 06:55:28:907 - info: [debug] [ADB] App is installed
+2019-04-03 06:55:28:908 - info: [debug] [ADB] Getting package info for 'io.appium.uiautomator2.server.test'
+2019-04-03 06:55:28:908 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package io.appium.uiautomator2.server.test'
+2019-04-03 06:55:28:935 - warn: [ADB] Cannot read version codes of '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' and/or 'io.appium.uiautomator2.server.test'
+2019-04-03 06:55:28:935 - warn: [ADB] Cannot read version names of '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' and/or 'io.appium.uiautomator2.server.test'. Assuming correct app version is already installed
+2019-04-03 06:55:28:936 - info: [debug] [UiAutomator2] Waiting up to 20000ms for instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' to be available
+2019-04-03 06:55:28:936 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list instrumentation'
+2019-04-03 06:55:29:089 - info: [debug] [UiAutomator2] Instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' available
+2019-04-03 06:55:29:089 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 wait-for-device'
+2019-04-03 06:55:29:103 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell echo ping'
+2019-04-03 06:55:29:122 - info: [debug] [AndroidDriver] Pushing settings apk to device...
+2019-04-03 06:55:29:123 - info: [debug] [ADB] Getting install status for io.appium.settings
+2019-04-03 06:55:29:123 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages io.appium.settings'
+2019-04-03 06:55:29:278 - info: [debug] [ADB] App is installed
+2019-04-03 06:55:29:279 - info: [debug] [ADB] Getting package info for 'io.appium.settings'
+2019-04-03 06:55:29:279 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package io.appium.settings'
+2019-04-03 06:55:29:309 - info: [debug] [ADB] The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')
+2019-04-03 06:55:29:310 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell ps'
+2019-04-03 06:55:29:343 - info: [debug] [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2019-04-03 06:55:29:343 - info: [debug] [ADB] Device API level: 23
+2019-04-03 06:55:29:343 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell appops set io.appium.settings android\:mock_location allow'
+2019-04-03 06:55:29:704 - warn: [AndroidDriver] setDeviceLanguageCountry requires language or country.
+2019-04-03 06:55:29:704 - warn: [AndroidDriver] Got language: 'null' and country: 'null'
+2019-04-03 06:55:29:704 - info: [debug] [Logcat] Starting logcat capture
+2019-04-03 06:55:29:723 - info: [debug] [AndroidDriver] Pushing unlock helper app to device...
+2019-04-03 06:55:29:724 - info: [debug] [ADB] Getting install status for io.appium.unlock
+2019-04-03 06:55:29:724 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages io.appium.unlock'
+2019-04-03 06:55:29:966 - info: [debug] [ADB] App is installed
+2019-04-03 06:55:29:966 - info: [debug] [ADB] Getting package info for 'io.appium.unlock'
+2019-04-03 06:55:29:966 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package io.appium.unlock'
+2019-04-03 06:55:30:005 - info: [debug] [ADB] The installed 'io.appium.unlock' package does not require upgrade ('2.0.0' >= '2.0.0')
+2019-04-03 06:55:30:006 - info: [debug] [UiAutomator2] Forwarding UiAutomator2 Server port 6790 to 8206
+2019-04-03 06:55:30:006 - info: [debug] [ADB] Forwarding system: 8206 to device: 6790
+2019-04-03 06:55:30:006 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 forward tcp\:8206 tcp\:6790'
+2019-04-03 06:55:30:024 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell rm -rf /data/local/tmp/strings.json'
+2019-04-03 06:55:30:052 - info: [debug] [UiAutomator2] No app capability. Assuming it is already on the device
+2019-04-03 06:55:30:052 - info: [debug] [ADB] Getting install status for com.xueqiu.android
+2019-04-03 06:55:30:052 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages com.xueqiu.android'
+2019-04-03 06:55:30:286 - info: [debug] [ADB] App is installed
+2019-04-03 06:55:30:286 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am force-stop com.xueqiu.android'
+2019-04-03 06:55:30:660 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm clear com.xueqiu.android'
+2019-04-03 06:55:30:831 - info: [debug] [ADB] Device API level: 23
+2019-04-03 06:55:30:831 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package com.xueqiu.android'
+2019-04-03 06:55:30:857 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm dump com.xueqiu.android'
+2019-04-03 06:55:31:104 - info: [debug] [ADB] Got the following command chunks to execute: pm,grant,com.xueqiu.android,android.permission.WRITE_EXTERNAL_STORAGE,;,pm,grant,com.xueqiu.android,android.permission.READ_PHONE_STATE,;,pm,grant,com.xueqiu.android,android.permission.ACCESS_FINE_LOCATION,;,pm,grant,com.xueqiu.android,android.permission.ACCESS_COARSE_LOCATION,;,pm,grant,com.xueqiu.android,android.permission.SYSTEM_ALERT_WINDOW,;,pm,grant,com.xueqiu.android,android.permission.READ_EXTERNAL_STORAGE,;,pm,grant,com.xueqiu.android,android.permission.RECORD_AUDIO,;,pm,grant,com.xueqiu.android,android.permission.CAMERA,;,pm,grant,com.xueqiu.android,android.permission.MOUNT_UNMOUNT_FILESYSTEMS,;,pm,grant,com.xueqiu.android,android.permission.CALL_PHONE,;
+2019-04-03 06:55:31:104 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm grant com.xueqiu.android android.permission.WRITE_EXTERNAL_STORAGE \; pm grant com.xueqiu.android android.permission.READ_PHONE_STATE \; pm grant com.xueqiu.android android.permission.ACCESS_FINE_LOCATION \; pm grant com.xueqiu.android android.permission.ACCESS_COARSE_LOCATION \; pm grant com.xueqiu.android android.permission.SYSTEM_ALERT_WINDOW \; pm grant com.xueqiu.android android.permission.READ_EXTERNAL_STORAGE \; pm grant com.xueqiu.android android.permission.RECORD_AUDIO \; pm grant com.xueqiu.android android.permission.CAMERA \; pm grant com.xueqiu.android android.permission.MOUNT_UNMOUNT_FILESYSTEMS \; pm grant com.xueqiu.android android.permission.CALL_PHONE \;'
+2019-04-03 06:55:32:593 - info: [debug] [AndroidDriver] Performed fast reset on the installed 'com.xueqiu.android' application (stop and clear)
+2019-04-03 06:55:32:593 - info: [debug] [ADB] Checking app cert for null
+2019-04-03 06:55:32:594 - info: [debug] [ADB] 'null' doesn't exist
+2019-04-03 06:55:32:594 - info: [debug] [ADB] Getting all processes with uiautomator
+2019-04-03 06:55:32:595 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell ps'
+2019-04-03 06:55:32:627 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am force-stop io.appium.uiautomator2.server'
+2019-04-03 06:55:32:993 - info: [UiAutomator2] Starting uiautomator2 server 1.15.1
+2019-04-03 06:55:32:993 - info: [UiAutomator2] Using UIAutomator2 server from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v1.15.1.apk' and test from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+2019-04-03 06:55:32:994 - info: [UiAutomator2] Running command: 'adb -s 192.168.56.101:5555 shell am instrument -w io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner'
+2019-04-03 06:55:32:994 - info: [UiAutomator2] Waiting up to 20000ms for UiAutomator2 to be online...
+2019-04-03 06:55:32:994 - info: [debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+2019-04-03 06:55:32:994 - info: [debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8206/wd/hub/status] with no body
+2019-04-03 06:55:34:008 - info: [debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+2019-04-03 06:55:34:009 - info: [debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8206/wd/hub/status] with no body
+2019-04-03 06:55:35:019 - info: [debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+2019-04-03 06:55:35:019 - info: [debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8206/wd/hub/status] with no body
+2019-04-03 06:55:35:036 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"SESSIONID\",\"status\":0,\"value\":\"Status Invoked\"}"
+2019-04-03 06:55:35:036 - info: [debug] [JSONWP Proxy] Matched '/session' to command name 'createSession'
+2019-04-03 06:55:35:036 - info: [debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://localhost:8206/wd/hub/session] with body: {"desiredCapabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2"},"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2","deviceUDID":"192.168.56.101:5555","platformVersion":"6.0","deviceScreenSize":"1440x2560","deviceScreenDensity":640,"deviceModel":"Samsung Galaxy S6","deviceManufacturer":"Genymotion","deviceApiLevel":23}}
+2019-04-03 06:55:35:044 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"e8cb9e25-dfaf-45ff-a775-16b7d61f2315","status":0,"value":"Created Session"}
+2019-04-03 06:55:35:044 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys window'
+2019-04-03 06:55:35:069 - info: [AndroidDriver] Screen already unlocked, doing nothing
+2019-04-03 06:55:35:069 - info: [UiAutomator2] UiAutomator2 did not start the activity we were waiting for, 'com.xueqiu.android/.view.WelcomeActivityAlias'. Starting it ourselves
+2019-04-03 06:55:35:069 - info: [debug] [ADB] Device API level: 23
+2019-04-03 06:55:35:069 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am start -W -n com.xueqiu.android/.view.WelcomeActivityAlias -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2019-04-03 06:55:36:324 - info: [debug] [JSONWP Proxy] Proxying [GET /appium/device/pixel_ratio] to [GET http://localhost:8206/wd/hub/session/e8cb9e25-dfaf-45ff-a775-16b7d61f2315/appium/device/pixel_ratio] with body: {}
+2019-04-03 06:55:36:347 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"e8cb9e25-dfaf-45ff-a775-16b7d61f2315\",\"status\":0,\"value\":4}"
+2019-04-03 06:55:36:349 - info: [debug] [JSONWP Proxy] Matched '/appium/device/system_bars' to command name 'getSystemBars'
+2019-04-03 06:55:36:349 - info: [debug] [JSONWP Proxy] Proxying [GET /appium/device/system_bars] to [GET http://localhost:8206/wd/hub/session/e8cb9e25-dfaf-45ff-a775-16b7d61f2315/appium/device/system_bars] with body: {}
+2019-04-03 06:55:36:364 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"e8cb9e25-dfaf-45ff-a775-16b7d61f2315\",\"status\":0,\"value\":{\"statusBar\":96}}"
+2019-04-03 06:55:36:366 - info: [debug] [JSONWP Proxy] Matched '/window/current/size' to command name 'getWindowSize'
+2019-04-03 06:55:36:367 - info: [debug] [JSONWP Proxy] Proxying [GET /window/current/size] to [GET http://localhost:8206/wd/hub/session/e8cb9e25-dfaf-45ff-a775-16b7d61f2315/window/current/size] with body: {}
+2019-04-03 06:55:36:377 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"e8cb9e25-dfaf-45ff-a775-16b7d61f2315\",\"status\":0,\"value\":{\"height\":2560,\"width\":1440}}"
+2019-04-03 06:55:36:378 - info: [Appium] New AndroidUiautomator2Driver session created successfully, session 760a9d1c-6548-4532-ac22-07c52b37c726 added to master session list
+2019-04-03 06:55:36:380 - info: [debug] [BaseDriver] Event 'newSessionStarted' logged at 1554274536379 (14:55:36 GMT+0800 (CST))
+2019-04-03 06:55:36:382 - info: [debug] [W3C] Responding to client with driver.createSession() result: {"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2"},"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2","deviceUDID":"192.168.56.101:5555","platformVersion":"6.0","deviceScreenSize":"1440x2560","deviceScreenDensity":640,"deviceModel":"Samsung Galaxy S6","deviceManufacturer":"Genymotion","deviceApiLevel":23,"pixelRatio":4,"statBarHeight":96,"viewportRect":{"left":0,"top":96,"width":1440,"height":2464}}}
+2019-04-03 06:55:36:385 - info: [HTTP] <-- POST /wd/hub/session 200 10429 ms - 979
+2019-04-03 06:55:36:385 - info: [HTTP] 
+2019-04-03 06:55:36:387 - info: [HTTP] --> POST /wd/hub/session/760a9d1c-6548-4532-ac22-07c52b37c726/timeouts
+2019-04-03 06:55:36:388 - info: [HTTP] {"implicit":6000,"sessionId":"760a9d1c-6548-4532-ac22-07c52b37c726"}
+2019-04-03 06:55:36:388 - info: [debug] [W3C] Calling AppiumDriver.timeouts() with args: [null,null,null,null,6000,"760a9d1c-6548-4532-ac22-07c52b37c726"]
+2019-04-03 06:55:36:391 - info: [debug] [BaseDriver] W3C timeout argument: {"implicit":6000}}
+2019-04-03 06:55:36:391 - info: [debug] [BaseDriver] Set implicit wait to 6000ms
+2019-04-03 06:55:36:392 - info: [debug] [W3C] Responding to client with driver.timeouts() result: null
+2019-04-03 06:55:36:392 - info: [HTTP] <-- POST /wd/hub/session/760a9d1c-6548-4532-ac22-07c52b37c726/timeouts 200 5 ms - 14
+2019-04-03 06:55:36:393 - info: [HTTP] 
+2019-04-03 06:55:36:397 - info: [HTTP] --> POST /wd/hub/session/760a9d1c-6548-4532-ac22-07c52b37c726/elements
+2019-04-03 06:55:36:397 - info: [HTTP] {"using":"xpath","value":"//*[@text='好的']","sessionId":"760a9d1c-6548-4532-ac22-07c52b37c726"}
+2019-04-03 06:55:36:398 - info: [debug] [W3C] Calling AppiumDriver.findElements() with args: ["xpath","//*[@text='好的']","760a9d1c-6548-4532-ac22-07c52b37c726"]
+2019-04-03 06:55:36:399 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-04-03 06:55:36:400 - info: [debug] [BaseDriver] Waiting up to 6000 ms for condition
+2019-04-03 06:55:36:400 - info: [debug] [JSONWP Proxy] Matched '/elements' to command name 'findElements'
+2019-04-03 06:55:36:401 - info: [debug] [JSONWP Proxy] Proxying [POST /elements] to [POST http://localhost:8206/wd/hub/session/e8cb9e25-dfaf-45ff-a775-16b7d61f2315/elements] with body: {"strategy":"xpath","selector":"//*[@text='好的']","context":"","multiple":true}
+2019-04-03 06:55:37:637 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"e8cb9e25-dfaf-45ff-a775-16b7d61f2315","status":0,"value":[]}
+2019-04-03 06:55:37:637 - info: [debug] [BaseDriver] Waited for 1237 ms so far
+2019-04-03 06:55:38:137 - info: [debug] [JSONWP Proxy] Matched '/elements' to command name 'findElements'
+2019-04-03 06:55:38:138 - info: [debug] [JSONWP Proxy] Proxying [POST /elements] to [POST http://localhost:8206/wd/hub/session/e8cb9e25-dfaf-45ff-a775-16b7d61f2315/elements] with body: {"strategy":"xpath","selector":"//*[@text='好的']","context":"","multiple":true}
+2019-04-03 06:55:38:583 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"e8cb9e25-dfaf-45ff-a775-16b7d61f2315","status":0,"value":[]}
+2019-04-03 06:55:38:584 - info: [debug] [BaseDriver] Waited for 2184 ms so far
+2019-04-03 06:55:39:088 - info: [debug] [JSONWP Proxy] Matched '/elements' to command name 'findElements'
+2019-04-03 06:55:39:089 - info: [debug] [JSONWP Proxy] Proxying [POST /elements] to [POST http://localhost:8206/wd/hub/session/e8cb9e25-dfaf-45ff-a775-16b7d61f2315/elements] with body: {"strategy":"xpath","selector":"//*[@text='好的']","context":"","multiple":true}
+2019-04-03 06:55:40:409 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"e8cb9e25-dfaf-45ff-a775-16b7d61f2315","status":0,"value":[]}
+2019-04-03 06:55:40:409 - info: [debug] [BaseDriver] Waited for 4009 ms so far
+2019-04-03 06:55:40:913 - info: [debug] [JSONWP Proxy] Matched '/elements' to command name 'findElements'
+2019-04-03 06:55:40:914 - info: [debug] [JSONWP Proxy] Proxying [POST /elements] to [POST http://localhost:8206/wd/hub/session/e8cb9e25-dfaf-45ff-a775-16b7d61f2315/elements] with body: {"strategy":"xpath","selector":"//*[@text='好的']","context":"","multiple":true}
+2019-04-03 06:55:41:657 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"e8cb9e25-dfaf-45ff-a775-16b7d61f2315","status":0,"value":[]}
+2019-04-03 06:55:41:658 - info: [debug] [BaseDriver] Waited for 5258 ms so far
+2019-04-03 06:55:42:160 - info: [debug] [JSONWP Proxy] Matched '/elements' to command name 'findElements'
+2019-04-03 06:55:42:160 - info: [debug] [JSONWP Proxy] Proxying [POST /elements] to [POST http://localhost:8206/wd/hub/session/e8cb9e25-dfaf-45ff-a775-16b7d61f2315/elements] with body: {"strategy":"xpath","selector":"//*[@text='好的']","context":"","multiple":true}
+2019-04-03 06:55:43:464 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"e8cb9e25-dfaf-45ff-a775-16b7d61f2315","status":0,"value":[]}
+2019-04-03 06:55:43:465 - info: [debug] [W3C] Responding to client with driver.findElements() result: []
+2019-04-03 06:55:43:466 - info: [HTTP] <-- POST /wd/hub/session/760a9d1c-6548-4532-ac22-07c52b37c726/elements 200 7068 ms - 12
+2019-04-03 06:55:43:466 - info: [HTTP] 
+2019-04-03 06:55:43:467 - info: [HTTP] --> GET /wd/hub/session/760a9d1c-6548-4532-ac22-07c52b37c726/screenshot
+2019-04-03 06:55:43:468 - info: [HTTP] {}
+2019-04-03 06:55:43:468 - info: [debug] [W3C] Calling AppiumDriver.getScreenshot() with args: ["760a9d1c-6548-4532-ac22-07c52b37c726"]
+2019-04-03 06:55:43:469 - info: [debug] [JSONWP Proxy] Matched '/screenshot' to command name 'getScreenshot'
+2019-04-03 06:55:43:469 - info: [debug] [JSONWP Proxy] Proxying [GET /screenshot] to [GET http://localhost:8206/wd/hub/session/e8cb9e25-dfaf-45ff-a775-16b7d61f2315/screenshot] with no body
+2019-04-03 06:55:45:236 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"e8cb9e25-dfaf-45ff-a775-16b7d61f2315\",\"status\":0,\"value\":\"iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAIAAADIlhKYAAAAA3NCSVQICAjb4U\\/gAAAgAElEQVR4\\nnOzdeXRc130n+N99W20AChsXCJAoLhBJUSJF0TIpW5ZEWY4lKqOOJlQ8siPZ3UmkTKYdx8fJHHs6\\nycycntPOnOO05dPtxI7cdo44bUfe1FIkO5Yck9pBURQJgitAgACIfS3U\\/rZ7548HFIooLFWFVxv4\\n\\/RwdHdRDvfsuQBCs963f\\/V2m6zoBAAAAAAAAAFQyqdQTAAAAAAAAAABYLQQcAAAAAAAAAFDxEHAA\\nAAAAAAAAQMVDwAEAAAAAAAAAFQ8BBwAAAAAAAABUPAQcAAAAAAAAAFDxEHAAAAAAAAAAQMVDwAEA\\nAAAAAAAAFQ8BBwAAAAAAAABUPAQcAAAAAAAAAFDxEHAAAAAAAAAAQMVDwAEAAAAAAAAAFQ8BBwAA\\nAAAAAABUPAQcAAAAAAAAAFDxEHAAAAAAAAAAQMVDwAEAAAAAAAAAFQ8BBwAAAAAAAABUPAQcAAAA\\nAAAAAFDxlFJPAAAAAAAAIH9dXV1Lfaq1tbWYM6kglmUpSolvBgcHByORSE6nNDY21tXVybJcoClB\\npVtTAYcQIhKJXLlyJRwO+\\/3+zZs319fXl3pSAAAAAADgjq6ursHBwYmJicHBwcnJycnJyWzOamho\\naGhoaG5ubmxsbG5uRurR1dW1fv36YDBY2mlEIpGJiYmcTgkEAsFgEAEHLGXtBBxOuvHee++1tbVN\\nTk5WV1d\\/\\/OMfv++++\\/x+P2Os1LMDAAAAAIB8dHV1tbe3Dw4OdnZ25jeCE4Wkn37LLbc0Nzfv2bPn\\nOgw7urq6RkdH169fX+qJALhv7QQctm2fP3\\/+jTfeCIfDQoiZmZn3...
+2019-04-03 06:55:45:319 - info: [debug] [W3C] Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAIAAADIlhKYAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4\nnOzdeXRc130n+N99W20AChsXCJAoLhBJUSJF0TIpW5ZEWY4lKqOOJlQ8siPZ3UmkTKYdx8fJHHs6\nycycntPOnOO05dPtxI7cdo44bUfe1FIkO5Yck9pBURQJgitAgACIfS3U/rZ7548HFIooLFWFVxv4\n/RwdHdRDvfsuQBCs963f/V2m6zoBAAAAAAAAAFQyqdQTAAAAAAAAAABYLQQcAAAAAAAAAFDxEHAA\nAAAAAAAAQMVDwAEAAAAAAAAAFQ8BBwAAAAAAAABUPAQcAAAAAAAAAFDxEHAAAAAAAAAAQMVDwAEA\nAAAAAAAAFQ8BBwAAAAAAAABUPAQcAAAAAAAAAFDxEHAAAAAAAAAAQMVDwAEAAAAAAAAAFQ8BBwAA\nAAAAAABUPAQcAAAAAAAAAFDxEHAAAAAAAAAAQMVDwAEAAAAAAAAAFQ8BBwAAAAAAAABUPAQcAAAA\nAAAAAFDxlFJPAAAAAAAAIH9dXV1Lfaq1tbWYM6kglmUpSolvBgcHByORSE6nNDY21tXVybJcoClB\npVtTAYcQIhKJXLlyJRwO+/3+zZs319fXl3pSAAAAAADgjq6ursHBwYmJicHBwcnJycnJyWzOamho\naGhoaG5ubmxsbG5uRurR1dW1fv36YDBY2mlEIpGJiYmcTgkEAsFgEAEHLGXtBBxOuvHee++1tbVN\nTk5WV1d//OMfv++++/x+P2Os1LMDAAAAAIB8dHV1tbe3Dw4OdnZ25jeCE4Wkn37LLbc0Nzfv2bPn\nOgw7urq6RkdH169fX+qJALhv7QQctm2fP3/+jTfeCIfDQoiZmZn333+/pqZm//79qqqWenYAAAAA\nAJCDM2fOvPfee11dXYlEwvXBOzs7Ozs7jx496vP5Wltb77777t27d7t+lTLkpBulngVAoaydgGNi\nYuL06d...
+2019-04-03 06:55:45:329 - info: [HTTP] <-- GET /wd/hub/session/760a9d1c-6548-4532-ac22-07c52b37c726/screenshot 200 1861 ms - 1572838
+2019-04-03 06:55:45:329 - info: [HTTP] 
+2019-04-03 06:55:45:354 - info: [HTTP] --> POST /wd/hub/session
+2019-04-03 06:55:45:354 - info: [HTTP] {"capabilities":{"firstMatch":[{"platformName":"android","appium:deviceName":"192.168.56.101:5555","appium:appPackage":"com.xueqiu.android","appium:appActivity":".view.WelcomeActivityAlias","appium:autoGrantPermissions":true,"appium:automationName":"UiAutomator2"}]},"desiredCapabilities":{"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2"}}
+2019-04-03 06:55:45:354 - info: [debug] [W3C] Calling AppiumDriver.createSession() with args: [{"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2"},null,{"firstMatch":[{"platformName":"android","appium:deviceName":"192.168.56.101:5555","appium:appPackage":"com.xueqiu.android","appium:appActivity":".view.WelcomeActivityAlias","appium:autoGrantPermissions":true,"appium:automationName":"UiAutomator2"}]}]
+2019-04-03 06:55:45:354 - info: [debug] [BaseDriver] Event 'newSessionRequested' logged at 1554274545354 (14:55:45 GMT+0800 (CST))
+2019-04-03 06:55:45:355 - info: [Appium] Creating new AndroidUiautomator2Driver (v1.16.0) session
+2019-04-03 06:55:45:355 - info: [Appium] Capabilities:
+2019-04-03 06:55:45:355 - info: [Appium]   platformName: android
+2019-04-03 06:55:45:355 - info: [Appium]   deviceName: 192.168.56.101:5555
+2019-04-03 06:55:45:355 - info: [Appium]   appPackage: com.xueqiu.android
+2019-04-03 06:55:45:355 - info: [Appium]   appActivity: .view.WelcomeActivityAlias
+2019-04-03 06:55:45:356 - info: [Appium]   autoGrantPermissions: true
+2019-04-03 06:55:45:356 - info: [Appium]   automationName: UiAutomator2
+2019-04-03 06:55:45:357 - info: [Appium] Session override is on. Deleting other 1 active session.
+2019-04-03 06:55:45:357 - info: [Appium] Removing session 760a9d1c-6548-4532-ac22-07c52b37c726 from our master session list
+2019-04-03 06:55:45:357 - info: [debug] [UiAutomator2] Deleting UiAutomator2 session
+2019-04-03 06:55:45:357 - info: [debug] [UiAutomator2] Deleting UiAutomator2 server session
+2019-04-03 06:55:45:358 - info: [debug] [JSONWP Proxy] Matched '/' to command name 'deleteSession'
+2019-04-03 06:55:45:358 - info: [debug] [JSONWP Proxy] Proxying [DELETE /] to [DELETE http://localhost:8206/wd/hub/session/e8cb9e25-dfaf-45ff-a775-16b7d61f2315] with no body
+2019-04-03 06:55:45:372 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"e8cb9e25-dfaf-45ff-a775-16b7d61f2315\",\"status\":0,\"value\":\"Session deleted\"}"
+2019-04-03 06:55:45:373 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am force-stop com.xueqiu.android'
+2019-04-03 06:55:45:807 - info: [debug] [Logcat] Stopping logcat capture
+2019-04-03 06:55:45:809 - info: [debug] [ADB] Removing forwarded port socket connection: 8206 
+2019-04-03 06:55:45:809 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 forward --remove tcp\:8206'
+2019-04-03 06:55:45:831 - info: [debug] [BaseDriver] W3C capabilities {"alwaysMatch":{"platformNa... and MJSONWP desired capabilities {"platformName":"android","... were provided
+2019-04-03 06:55:45:832 - info: [debug] [BaseDriver] Creating session with W3C capabilities: {"alwaysMatch":{"platformNa...
+2019-04-03 06:55:45:835 - info: [BaseDriver] Session created with session id: cee8c366-f599-4430-a21e-3de81dab1671
+2019-04-03 06:55:45:909 - info: [debug] [UiAutomator2] [UIAutomator2] 
+2019-04-03 06:55:45:909 - info: [debug] [UiAutomator2] [UIAutomator2] io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:.
+2019-04-03 06:55:45:909 - info: [debug] [UiAutomator2] [UIAutomator2] 
+2019-04-03 06:55:45:909 - info: [debug] [UiAutomator2] [UIAutomator2] Time: 12.014
+2019-04-03 06:55:45:909 - info: [debug] [UiAutomator2] [UIAutomator2] 
+2019-04-03 06:55:45:910 - info: [debug] [UiAutomator2] [UIAutomator2] OK (1 test)
+2019-04-03 06:55:45:910 - info: [debug] [UiAutomator2] [UIAutomator2] 
+2019-04-03 06:55:45:910 - info: [debug] [UiAutomator2] [UIAutomator2] 
+2019-04-03 06:55:45:928 - info: [AndroidDriver] Java version is: 1.8.0_161
+2019-04-03 06:55:45:930 - info: [AndroidDriver] Retrieving device list
+2019-04-03 06:55:45:930 - info: [debug] [ADB] Trying to find a connected android device
+2019-04-03 06:55:45:930 - info: [debug] [ADB] Getting connected devices...
+2019-04-03 06:55:45:944 - info: [debug] [ADB] 1 device(s) connected
+2019-04-03 06:55:45:945 - info: [AndroidDriver] Using device: 192.168.56.101:5555
+2019-04-03 06:55:45:945 - info: [debug] [ADB] Setting device id to 192.168.56.101:5555
+2019-04-03 06:55:45:945 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell getprop ro.build.version.sdk'
+2019-04-03 06:55:45:965 - info: [debug] [ADB] Current device property 'ro.build.version.sdk': 23
+2019-04-03 06:55:45:965 - info: [debug] [ADB] Device API level: 23
+2019-04-03 06:55:45:966 - warn: [AndroidDriver] No app sent in, not parsing package/activity
+2019-04-03 06:55:45:966 - info: [ADB] Getting device platform version
+2019-04-03 06:55:45:966 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell getprop ro.build.version.release'
+2019-04-03 06:55:45:986 - info: [debug] [ADB] Current device property 'ro.build.version.release': 6.0
+2019-04-03 06:55:45:987 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell wm size'
+2019-04-03 06:55:46:346 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell wm density'
+2019-04-03 06:55:46:708 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell getprop ro.product.model'
+2019-04-03 06:55:46:733 - info: [debug] [ADB] Current device property 'ro.product.model': Samsung Galaxy S6
+2019-04-03 06:55:46:733 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell getprop ro.product.manufacturer'
+2019-04-03 06:55:46:753 - info: [debug] [ADB] Current device property 'ro.product.manufacturer': Genymotion
+2019-04-03 06:55:46:753 - info: [debug] [ADB] Device API level: 23
+2019-04-03 06:55:46:754 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am force-stop io.appium.uiautomator2.server'
+2019-04-03 06:55:47:114 - info: [debug] [ADB] Checking app cert for /usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v1.15.1.apk
+2019-04-03 06:55:47:115 - info: [debug] [ADB] Starting '/Users/xinxi/Library/Android/sdk/build-tools/28.0.3/apksigner' with args '["verify","--print-certs","/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v1.15.1.apk"]'
+2019-04-03 06:55:47:607 - info: [debug] [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2019-04-03 06:55:47:607 - info: [debug] [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2019-04-03 06:55:47:607 - info: [debug] [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2019-04-03 06:55:47:607 - info: [debug] [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2019-04-03 06:55:47:607 - info: [debug] [ADB] WARNING: META-INF/INDEX.LIST not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+2019-04-03 06:55:47:607 - info: [debug] [ADB] WARNING: META-INF/io.netty.versions.properties not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+2019-04-03 06:55:47:607 - info: [debug] [ADB] 
+2019-04-03 06:55:47:607 - info: [debug] [ADB] '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v1.15.1.apk' is already signed.
+2019-04-03 06:55:47:608 - info: [debug] [ADB] Checking app cert for /usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk
+2019-04-03 06:55:47:608 - info: [debug] [ADB] Starting '/Users/xinxi/Library/Android/sdk/build-tools/28.0.3/apksigner' with args '["verify","--print-certs","/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk"]'
+2019-04-03 06:55:48:064 - info: [debug] [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2019-04-03 06:55:48:064 - info: [debug] [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2019-04-03 06:55:48:064 - info: [debug] [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2019-04-03 06:55:48:064 - info: [debug] [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2019-04-03 06:55:48:064 - info: [debug] [ADB] 
+2019-04-03 06:55:48:064 - info: [debug] [ADB] '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' is already signed.
+2019-04-03 06:55:48:064 - info: [debug] [ADB] Getting install status for io.appium.uiautomator2.server
+2019-04-03 06:55:48:065 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages io.appium.uiautomator2.server'
+2019-04-03 06:55:48:219 - info: [debug] [ADB] App is installed
+2019-04-03 06:55:48:219 - info: [debug] [ADB] Getting package info for 'io.appium.uiautomator2.server'
+2019-04-03 06:55:48:219 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package io.appium.uiautomator2.server'
+2019-04-03 06:55:48:248 - info: [debug] [ADB] The installed 'io.appium.uiautomator2.server' package does not require upgrade ('1.15.1' >= '1.15.1')
+2019-04-03 06:55:48:248 - info: [debug] [ADB] Getting install status for io.appium.uiautomator2.server.test
+2019-04-03 06:55:48:249 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages io.appium.uiautomator2.server.test'
+2019-04-03 06:55:48:405 - info: [debug] [ADB] App is installed
+2019-04-03 06:55:48:406 - info: [debug] [ADB] Getting package info for 'io.appium.uiautomator2.server.test'
+2019-04-03 06:55:48:406 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package io.appium.uiautomator2.server.test'
+2019-04-03 06:55:48:436 - warn: [ADB] Cannot read version codes of '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' and/or 'io.appium.uiautomator2.server.test'
+2019-04-03 06:55:48:436 - warn: [ADB] Cannot read version names of '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' and/or 'io.appium.uiautomator2.server.test'. Assuming correct app version is already installed
+2019-04-03 06:55:48:436 - info: [debug] [UiAutomator2] Waiting up to 20000ms for instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' to be available
+2019-04-03 06:55:48:436 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list instrumentation'
+2019-04-03 06:55:48:590 - info: [debug] [UiAutomator2] Instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' available
+2019-04-03 06:55:48:590 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 wait-for-device'
+2019-04-03 06:55:48:604 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell echo ping'
+2019-04-03 06:55:48:622 - info: [debug] [AndroidDriver] Pushing settings apk to device...
+2019-04-03 06:55:48:622 - info: [debug] [ADB] Getting install status for io.appium.settings
+2019-04-03 06:55:48:623 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages io.appium.settings'
+2019-04-03 06:55:48:782 - info: [debug] [ADB] App is installed
+2019-04-03 06:55:48:783 - info: [debug] [ADB] Getting package info for 'io.appium.settings'
+2019-04-03 06:55:48:783 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package io.appium.settings'
+2019-04-03 06:55:48:812 - info: [debug] [ADB] The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')
+2019-04-03 06:55:48:813 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell ps'
+2019-04-03 06:55:48:840 - info: [debug] [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2019-04-03 06:55:48:841 - info: [debug] [ADB] Device API level: 23
+2019-04-03 06:55:48:841 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell appops set io.appium.settings android\:mock_location allow'
+2019-04-03 06:55:49:203 - warn: [AndroidDriver] setDeviceLanguageCountry requires language or country.
+2019-04-03 06:55:49:203 - warn: [AndroidDriver] Got language: 'null' and country: 'null'
+2019-04-03 06:55:49:203 - info: [debug] [Logcat] Starting logcat capture
+2019-04-03 06:55:49:223 - info: [debug] [AndroidDriver] Pushing unlock helper app to device...
+2019-04-03 06:55:49:223 - info: [debug] [ADB] Getting install status for io.appium.unlock
+2019-04-03 06:55:49:223 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages io.appium.unlock'
+2019-04-03 06:55:49:471 - info: [debug] [ADB] App is installed
+2019-04-03 06:55:49:471 - info: [debug] [ADB] Getting package info for 'io.appium.unlock'
+2019-04-03 06:55:49:471 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package io.appium.unlock'
+2019-04-03 06:55:49:499 - info: [debug] [ADB] The installed 'io.appium.unlock' package does not require upgrade ('2.0.0' >= '2.0.0')
+2019-04-03 06:55:49:500 - info: [debug] [UiAutomator2] Forwarding UiAutomator2 Server port 6790 to 8206
+2019-04-03 06:55:49:500 - info: [debug] [ADB] Forwarding system: 8206 to device: 6790
+2019-04-03 06:55:49:500 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 forward tcp\:8206 tcp\:6790'
+2019-04-03 06:55:49:514 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell rm -rf /data/local/tmp/strings.json'
+2019-04-03 06:55:49:533 - info: [debug] [UiAutomator2] No app capability. Assuming it is already on the device
+2019-04-03 06:55:49:534 - info: [debug] [ADB] Getting install status for com.xueqiu.android
+2019-04-03 06:55:49:534 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages com.xueqiu.android'
+2019-04-03 06:55:49:694 - info: [debug] [ADB] App is installed
+2019-04-03 06:55:49:694 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am force-stop com.xueqiu.android'
+2019-04-03 06:55:50:062 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm clear com.xueqiu.android'
+2019-04-03 06:55:50:233 - info: [debug] [ADB] Device API level: 23
+2019-04-03 06:55:50:233 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package com.xueqiu.android'
+2019-04-03 06:55:50:255 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm dump com.xueqiu.android'
+2019-04-03 06:55:50:476 - info: [debug] [ADB] Got the following command chunks to execute: pm,grant,com.xueqiu.android,android.permission.WRITE_EXTERNAL_STORAGE,;,pm,grant,com.xueqiu.android,android.permission.READ_PHONE_STATE,;,pm,grant,com.xueqiu.android,android.permission.ACCESS_FINE_LOCATION,;,pm,grant,com.xueqiu.android,android.permission.ACCESS_COARSE_LOCATION,;,pm,grant,com.xueqiu.android,android.permission.SYSTEM_ALERT_WINDOW,;,pm,grant,com.xueqiu.android,android.permission.READ_EXTERNAL_STORAGE,;,pm,grant,com.xueqiu.android,android.permission.RECORD_AUDIO,;,pm,grant,com.xueqiu.android,android.permission.CAMERA,;,pm,grant,com.xueqiu.android,android.permission.MOUNT_UNMOUNT_FILESYSTEMS,;,pm,grant,com.xueqiu.android,android.permission.CALL_PHONE,;
+2019-04-03 06:55:50:476 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm grant com.xueqiu.android android.permission.WRITE_EXTERNAL_STORAGE \; pm grant com.xueqiu.android android.permission.READ_PHONE_STATE \; pm grant com.xueqiu.android android.permission.ACCESS_FINE_LOCATION \; pm grant com.xueqiu.android android.permission.ACCESS_COARSE_LOCATION \; pm grant com.xueqiu.android android.permission.SYSTEM_ALERT_WINDOW \; pm grant com.xueqiu.android android.permission.READ_EXTERNAL_STORAGE \; pm grant com.xueqiu.android android.permission.RECORD_AUDIO \; pm grant com.xueqiu.android android.permission.CAMERA \; pm grant com.xueqiu.android android.permission.MOUNT_UNMOUNT_FILESYSTEMS \; pm grant com.xueqiu.android android.permission.CALL_PHONE \;'
+2019-04-03 06:55:51:896 - info: [debug] [AndroidDriver] Performed fast reset on the installed 'com.xueqiu.android' application (stop and clear)
+2019-04-03 06:55:51:896 - info: [debug] [ADB] Checking app cert for null
+2019-04-03 06:55:51:898 - info: [debug] [ADB] 'null' doesn't exist
+2019-04-03 06:55:51:898 - info: [debug] [ADB] Getting all processes with uiautomator
+2019-04-03 06:55:51:898 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell ps'
+2019-04-03 06:55:51:923 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am force-stop io.appium.uiautomator2.server'
+2019-04-03 06:55:52:280 - info: [UiAutomator2] Starting uiautomator2 server 1.15.1
+2019-04-03 06:55:52:280 - info: [UiAutomator2] Using UIAutomator2 server from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v1.15.1.apk' and test from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+2019-04-03 06:55:52:280 - info: [UiAutomator2] Running command: 'adb -s 192.168.56.101:5555 shell am instrument -w io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner'
+2019-04-03 06:55:52:281 - info: [UiAutomator2] Waiting up to 20000ms for UiAutomator2 to be online...
+2019-04-03 06:55:52:281 - info: [debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+2019-04-03 06:55:52:282 - info: [debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8206/wd/hub/status] with no body
+2019-04-03 06:55:53:290 - info: [debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+2019-04-03 06:55:53:291 - info: [debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8206/wd/hub/status] with no body
+2019-04-03 06:55:54:299 - info: [debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+2019-04-03 06:55:54:300 - info: [debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8206/wd/hub/status] with no body
+2019-04-03 06:55:54:319 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"SESSIONID\",\"status\":0,\"value\":\"Status Invoked\"}"
+2019-04-03 06:55:54:319 - info: [debug] [JSONWP Proxy] Matched '/session' to command name 'createSession'
+2019-04-03 06:55:54:319 - info: [debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://localhost:8206/wd/hub/session] with body: {"desiredCapabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2"},"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2","deviceUDID":"192.168.56.101:5555","platformVersion":"6.0","deviceScreenSize":"1440x2560","deviceScreenDensity":640,"deviceModel":"Samsung Galaxy S6","deviceManufacturer":"Genymotion","deviceApiLevel":23}}
+2019-04-03 06:55:54:327 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a90e1610-1a15-4f9e-a206-31398b8eb531","status":0,"value":"Created Session"}
+2019-04-03 06:55:54:327 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys window'
+2019-04-03 06:55:54:352 - info: [AndroidDriver] Screen already unlocked, doing nothing
+2019-04-03 06:55:54:353 - info: [UiAutomator2] UiAutomator2 did not start the activity we were waiting for, 'com.xueqiu.android/.view.WelcomeActivityAlias'. Starting it ourselves
+2019-04-03 06:55:54:353 - info: [debug] [ADB] Device API level: 23
+2019-04-03 06:55:54:353 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am start -W -n com.xueqiu.android/.view.WelcomeActivityAlias -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2019-04-03 06:56:00:104 - info: [debug] [JSONWP Proxy] Proxying [GET /appium/device/pixel_ratio] to [GET http://localhost:8206/wd/hub/session/a90e1610-1a15-4f9e-a206-31398b8eb531/appium/device/pixel_ratio] with body: {}
+2019-04-03 06:56:00:114 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"a90e1610-1a15-4f9e-a206-31398b8eb531\",\"status\":0,\"value\":4}"
+2019-04-03 06:56:00:115 - info: [debug] [JSONWP Proxy] Matched '/appium/device/system_bars' to command name 'getSystemBars'
+2019-04-03 06:56:00:116 - info: [debug] [JSONWP Proxy] Proxying [GET /appium/device/system_bars] to [GET http://localhost:8206/wd/hub/session/a90e1610-1a15-4f9e-a206-31398b8eb531/appium/device/system_bars] with body: {}
+2019-04-03 06:56:00:125 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"a90e1610-1a15-4f9e-a206-31398b8eb531\",\"status\":0,\"value\":{\"statusBar\":96}}"
+2019-04-03 06:56:00:126 - info: [debug] [JSONWP Proxy] Matched '/window/current/size' to command name 'getWindowSize'
+2019-04-03 06:56:00:126 - info: [debug] [JSONWP Proxy] Proxying [GET /window/current/size] to [GET http://localhost:8206/wd/hub/session/a90e1610-1a15-4f9e-a206-31398b8eb531/window/current/size] with body: {}
+2019-04-03 06:56:00:142 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"a90e1610-1a15-4f9e-a206-31398b8eb531\",\"status\":0,\"value\":{\"height\":2560,\"width\":1440}}"
+2019-04-03 06:56:00:144 - info: [Appium] New AndroidUiautomator2Driver session created successfully, session cee8c366-f599-4430-a21e-3de81dab1671 added to master session list
+2019-04-03 06:56:00:144 - info: [debug] [BaseDriver] Event 'newSessionStarted' logged at 1554274560144 (14:56:00 GMT+0800 (CST))
+2019-04-03 06:56:00:145 - info: [debug] [W3C] Responding to client with driver.createSession() result: {"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2"},"platformName":"android","deviceName":"192.168.56.101:5555","appPackage":"com.xueqiu.android","appActivity":".view.WelcomeActivityAlias","autoGrantPermissions":true,"automationName":"UiAutomator2","deviceUDID":"192.168.56.101:5555","platformVersion":"6.0","deviceScreenSize":"1440x2560","deviceScreenDensity":640,"deviceModel":"Samsung Galaxy S6","deviceManufacturer":"Genymotion","deviceApiLevel":23,"pixelRatio":4,"statBarHeight":96,"viewportRect":{"left":0,"top":96,"width":1440,"height":2464}}}
+2019-04-03 06:56:00:146 - info: [HTTP] <-- POST /wd/hub/session 200 14792 ms - 979
+2019-04-03 06:56:00:146 - info: [HTTP] 
+2019-04-03 06:56:00:149 - info: [HTTP] --> POST /wd/hub/session/cee8c366-f599-4430-a21e-3de81dab1671/timeouts
+2019-04-03 06:56:00:149 - info: [HTTP] {"implicit":6000,"sessionId":"cee8c366-f599-4430-a21e-3de81dab1671"}
+2019-04-03 06:56:00:150 - info: [debug] [W3C] Calling AppiumDriver.timeouts() with args: [null,null,null,null,6000,"cee8c366-f599-4430-a21e-3de81dab1671"]
+2019-04-03 06:56:00:153 - info: [debug] [BaseDriver] W3C timeout argument: {"implicit":6000}}
+2019-04-03 06:56:00:153 - info: [debug] [BaseDriver] Set implicit wait to 6000ms
+2019-04-03 06:56:00:154 - info: [debug] [W3C] Responding to client with driver.timeouts() result: null
+2019-04-03 06:56:00:155 - info: [HTTP] <-- POST /wd/hub/session/cee8c366-f599-4430-a21e-3de81dab1671/timeouts 200 5 ms - 14
+2019-04-03 06:56:00:155 - info: [HTTP] 
+2019-04-03 06:56:00:157 - info: [HTTP] --> POST /wd/hub/session/cee8c366-f599-4430-a21e-3de81dab1671/elements
+2019-04-03 06:56:00:157 - info: [HTTP] {"using":"xpath","value":"//*[@text='好的']","sessionId":"cee8c366-f599-4430-a21e-3de81dab1671"}
+2019-04-03 06:56:00:158 - info: [debug] [W3C] Calling AppiumDriver.findElements() with args: ["xpath","//*[@text='好的']","cee8c366-f599-4430-a21e-3de81dab1671"]
+2019-04-03 06:56:00:160 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-04-03 06:56:00:161 - info: [debug] [BaseDriver] Waiting up to 6000 ms for condition
+2019-04-03 06:56:00:162 - info: [debug] [JSONWP Proxy] Matched '/elements' to command name 'findElements'
+2019-04-03 06:56:00:162 - info: [debug] [JSONWP Proxy] Proxying [POST /elements] to [POST http://localhost:8206/wd/hub/session/a90e1610-1a15-4f9e-a206-31398b8eb531/elements] with body: {"strategy":"xpath","selector":"//*[@text='好的']","context":"","multiple":true}
+2019-04-03 06:56:02:168 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a90e1610-1a15-4f9e-a206-31398b8eb531","status":0,"value":[]}
+2019-04-03 06:56:02:169 - info: [debug] [BaseDriver] Waited for 2007 ms so far
+2019-04-03 06:56:02:669 - info: [debug] [JSONWP Proxy] Matched '/elements' to command name 'findElements'
+2019-04-03 06:56:02:669 - info: [debug] [JSONWP Proxy] Proxying [POST /elements] to [POST http://localhost:8206/wd/hub/session/a90e1610-1a15-4f9e-a206-31398b8eb531/elements] with body: {"strategy":"xpath","selector":"//*[@text='好的']","context":"","multiple":true}
+2019-04-03 06:56:06:713 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"a90e1610-1a15-4f9e-a206-31398b8eb531","status":0,"value":[]}
+2019-04-03 06:56:06:714 - info: [debug] [W3C] Responding to client with driver.findElements() result: []
+2019-04-03 06:56:06:714 - info: [HTTP] <-- POST /wd/hub/session/cee8c366-f599-4430-a21e-3de81dab1671/elements 200 6557 ms - 12
+2019-04-03 06:56:06:715 - info: [HTTP] 
+2019-04-03 06:56:06:716 - info: [HTTP] --> GET /wd/hub/session/cee8c366-f599-4430-a21e-3de81dab1671/screenshot
+2019-04-03 06:56:06:716 - info: [HTTP] {}
+2019-04-03 06:56:06:717 - info: [debug] [W3C] Calling AppiumDriver.getScreenshot() with args: ["cee8c366-f599-4430-a21e-3de81dab1671"]
+2019-04-03 06:56:06:719 - info: [debug] [JSONWP Proxy] Matched '/screenshot' to command name 'getScreenshot'
+2019-04-03 06:56:06:720 - info: [debug] [JSONWP Proxy] Proxying [GET /screenshot] to [GET http://localhost:8206/wd/hub/session/a90e1610-1a15-4f9e-a206-31398b8eb531/screenshot] with no body
+2019-04-03 06:56:08:053 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"a90e1610-1a15-4f9e-a206-31398b8eb531\",\"status\":0,\"value\":\"iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAIAAADIlhKYAAAAA3NCSVQICAjb4U\\/gAAAgAElEQVR4\\nnOzdeXRc130n+N99W20AChs3AeIOcZNEUZRMSqYlUaZjmcqoowkZj+xIdse25PHEdnzcmWNPJ5mZ\\n03PamRO745xuJ3aotn3EaTneJEux7FiSTcraQFIUCYIESYAACRD7jtrrLffOHw8oFKuwVBVebeD3\\nc3R0UA\\/17rsAQbDet373d1k8HicAAAAAAAAAgHImFXsCAAAAAAAAAABLhYADAAAAAAAAAMoeAg4A\\nAAAAAAAAKHsIOAAAAAAAAACg7CHgAAAAAAAAAICyh4ADAAAAAAAAAMoeAg4AAAAAAAAAKHsIOAAA\\nAAAAAACg7CHgAAAAAAAAAICyh4ADAAAAAAAAAMoeAg4AAAAAAAAAKHsIOAAAAAAAAACg7CHgAAAA\\nAAAAAICyh4ADAAAAAAAAAMoeAg4AAAAAAAAAKHsIOAAAAAAAAACg7CHgAAAAAAAAAICyh4ADAAAA\\nAAAAAMqeUuwJAAAAAAAA5K6jo2O+TzU1NRVyJmXENE1FKfLNYF9fXzAYzOqU+vr6mpoaWZbzNCUo\\nd8sq4BBCBIPBq1evBgIBr9e7YcOG2traYk8KAAAAAACc0dHR0dfXNzo62tfXNzY2NjY2lslZdXV1\\ndXV1DQ0N9fX1DQ0NSD06OjpWrlzp9\\/uLO41gMDg6OprVKT6fz+\\/3I+CA+SyfgMNON959993m5uax\\nsbHKysoPfvCDDz74oNfrZYwVe3YAAAAAAJCLjo6OlpaWvr6+9vb23Eawo5Dk02+77baGhoadO3fe\\nhGFHR0fH0NDQypUriz0RAOctn4DDsqy2trY33ngjEAgIIaampk6ePFlVVbVnzx...
+2019-04-03 06:56:08:115 - info: [debug] [W3C] Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAIAAADIlhKYAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4\nnOzdeXRc130n+N99W20AChs3AeIOcZNEUZRMSqYlUaZjmcqoowkZj+xIdse25PHEdnzcmWNPJ5mZ\n03PamRO745xuJ3aotn3EaTneJEux7FiSTcraQFIUCYIESYAACRD7jtrrLffOHw8oFKuwVBVebeD3\nc3R0UA/17rsAQbDet373d1k8HicAAAAAAAAAgHImFXsCAAAAAAAAAABLhYADAAAAAAAAAMoeAg4A\nAAAAAAAAKHsIOAAAAAAAAACg7CHgAAAAAAAAAICyh4ADAAAAAAAAAMoeAg4AAAAAAAAAKHsIOAAA\nAAAAAACg7CHgAAAAAAAAAICyh4ADAAAAAAAAAMoeAg4AAAAAAAAAKHsIOAAAAAAAAACg7CHgAAAA\nAAAAAICyh4ADAAAAAAAAAMoeAg4AAAAAAAAAKHsIOAAAAAAAAACg7CHgAAAAAAAAAICyh4ADAAAA\nAAAAAMqeUuwJAAAAAAAA5K6jo2O+TzU1NRVyJmXENE1FKfLNYF9fXzAYzOqU+vr6mpoaWZbzNCUo\nd8sq4BBCBIPBq1evBgIBr9e7YcOG2traYk8KAAAAAACc0dHR0dfXNzo62tfXNzY2NjY2lslZdXV1\ndXV1DQ0N9fX1DQ0NSD06OjpWrlzp9/uLO41gMDg6OprVKT6fz+/3I+CA+SyfgMNON959993m5uax\nsbHKysoPfvCDDz74oNfrZYwVe3YAAAAAAJCLjo6OlpaWvr6+9vb23Eawo5Dk02+77baGhoadO3fe\nhGFHR0fH0NDQypUriz0RAOctn4DDsqy2trY33ngjEAgIIaampk6ePFlVVbVnzx5VVYs9OwAAAAAA\nyMK5c+fefffdjo6OaDTq+ODt7e3t7e3Hjh3zeDxNTU333XffnXfe6fhVSpCdbhR7FgD5snwCjtHR\n0bNnz4...
+2019-04-03 06:56:08:123 - info: [HTTP] <-- GET /wd/hub/session/cee8c366-f599-4430-a21e-3de81dab1671/screenshot 200 1406 ms - 1425832
+2019-04-03 06:56:08:123 - info: [HTTP] 
+2019-04-03 06:56:08:157 - error: uncaughtException: write EPIPE date=Wed Apr 03 2019 14:56:08 GMT+0800 (CST), pid=22106, uid=501, gid=20, cwd=/Users/xinxi/PycharmProjects/mitmproxytest, execPath=/usr/local/bin/node, version=v8.12.0, argv=[/usr/local/bin/node, /usr/local/bin/appium, --log, appium.log, --session-override], rss=118407168, heapTotal=108040192, heapUsed=94815560, external=1521108, loadavg=[2.82421875, 2.5869140625, 2.53466796875], uptime=5347, trace=[column=14, file=net.js, function=WriteWrap.afterWrite, line=868, method=afterWrite, native=false], stack=[Error: write EPIPE,     at WriteWrap.afterWrite (net.js:868:14)]
+2019-04-03 06:56:08:159 - error: uncaughtException: write EPIPE date=Wed Apr 03 2019 14:56:08 GMT+0800 (CST), pid=22106, uid=501, gid=20, cwd=/Users/xinxi/PycharmProjects/mitmproxytest, execPath=/usr/local/bin/node, version=v8.12.0, argv=[/usr/local/bin/node, /usr/local/bin/appium, --log, appium.log, --session-override], rss=118480896, heapTotal=108040192, heapUsed=92944568, external=95300, loadavg=[2.82421875, 2.5869140625, 2.53466796875], uptime=5347, trace=[column=14, file=net.js, function=WriteWrap.afterWrite, line=868, method=afterWrite, native=false], stack=[Error: write EPIPE,     at WriteWrap.afterWrite (net.js:868:14)]
