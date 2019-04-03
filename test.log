@@ -1,0 +1,1629 @@
+Loading script /Users/xinxi/PycharmProjects/mitmproxytest/src/proxyt_client.py
+Proxy server listening at http://*:8080
+192.168.128.181:57603: clientconnect
+192.168.128.181:57603: GET https://umas.xueqiu.com/domains.json?env=production
+                    << 200 OK 570b
+192.168.128.181:57625: clientconnect
+192.168.128.181:57625: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294439263.1554294628952&_s=6c356a&network=WIFI&promotion_id=2097&page_id=0x00&x=1.2&brand=unknown&version=11.17&action_time=1554294628952&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:57637: clientconnect
+192.168.128.181:57637: GET https://umas.xueqiu.com/domains.json?env=production
+                    << 200 OK 570b
+192.168.128.181:57647: clientconnect
+192.168.128.181:57647: POST https://api.xueqiu.com/upload/mobile/offlineFile?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294439263.1554294631400&_s=a7585b
+                    << 200 OK 30b
+192.168.128.181:57603: clientdisconnect
+192.168.128.181:57647: clientdisconnect
+192.168.128.181:57637: clientdisconnect
+192.168.128.181:57625: clientdisconnect
+192.168.128.181:57755: clientconnect
+192.168.128.181:57757: clientconnect
+192.168.128.181:57755: POST https://api.sobot.com/chat-sdk/sdk/user/v1/config.action
+                    << 200 OK 135b
+192.168.128.181:57757: POST https://api.sobot.com/chat-sdk/sdk/user/v1/collect.action
+                    << 200 OK 33b
+192.168.128.181:57765: clientconnect
+192.168.128.181:57767: clientconnect
+192.168.128.181:57767: GET https://qmas.xueqiu.com/domains.json?env=production
+                    << 200 OK 570b
+192.168.128.181:57769: clientconnect
+192.168.128.181:57770: clientconnect
+192.168.128.181:57765: POST https://register.xmpush.xiaomi.com/pass/register
+                    << 200 OK 381b
+192.168.128.181:57770: GET https://qmas.xueqiu.com/routers.json?env=production&timestamp=0&app=xueqiu&v=1
+                    << 200 OK 363b
+192.168.128.181:57774: clientconnect
+192.168.128.181:57769: POST https://api.xueqiu.com/provider/oauth/token?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.0.0.1554294640564&_s=727399
+                    << 200 OK 546b
+192.168.128.181:57774: GET http://resolver.msg.xiaomi.net/gslb/?ver=4.0&type=wifi&uuid=0&list=app.chat.xiaomi.net%2Cresolver.msg.xiaomi.net&sdkver=36&osver=23&os=Samsung%20Galaxy%20S6%3A233&mi=0&key=ef9901425f521e793fbef89baa5f5435
+                    << 200 OK 932b
+192.168.128.181:57776: clientconnect
+==================================================拦截request开始==================================================
+==================================================拦截request结束==================================================
+= 请求域名:api.xueqiu.com=
+=请求接口地址:https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294640860&_s=0733ca&x=0.223=
+=请求方法:GET=
+=请求body
+=
+192.168.128.181:57777: clientconnect
+192.168.128.181:57778: clientconnect
+192.168.128.181:57779: clientconnect
+192.168.128.181:57781: clientconnect
+192.168.128.181:57782: clientconnect
+192.168.128.181:57783: clientconnect
+192.168.128.181:57769: GET https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294640860&_s=0733ca&x=0.223
+                    << 200 OK 295b
+==================================================拦截response开始==================================================
+https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294640860&_s=0733ca&x=0.223
+==================================================mock数据==================================================
+{"list": [{"category": 200, "column": "\u5934\u6761_20190403203040", "en": "recommend_v10_9"}, {"category": 6, "column": "\u76f4\u64ad", "en": "livenews"}, {"category": 105, "column": "\u6caa\u6df1", "en": "cn"}, {"category": 115, "column": "\u79d1\u521b\u677f", "en": "tech_board"}, {"category": 102, "column": "\u6e2f\u80a11111", "en": "hk"}, {"category": 104, "column": "\u57fa\u91d1111", "en": "financial_management"}, {"category": 101, "column": "\u7f8e\u80a111", "en": "us"}, {"category": 111, "column": "\u623f\u4ea7", "en": "property"}, {"category": 113, "column": "\u79c1\u52df", "en": "private_fund"}, {"category": 114, "column": "\u6c7d\u8f66", "en": "car"}, {"category": 110, "column": "\u4fdd\u9669", "en": "insurance"}]}
+==================================================mock数据==================================================
+=响应header:
+Headers[(b'Server', b'openresty/1.11.2.4'), (b'Date', b'Wed, 03 Apr 2019 12:30:40 GMT'), (b'Content-Type', b'application/json;charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Vary', b'Accept-Encoding'), (b'Trace-Id', b'aab486976d8d5d22'), (b'X-Application-Context', b'application:production,server'), (b'Content-Language', b'en-US'), (b'Cache-Control', b'private, no-store, no-cache, must-revalidate, max-age=0'), (b'P3P', b'"CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT""'), (b'Content-Encoding', b'gzip'), (b'content-length', b'295')]=
+=响应状态码:
+200=
+==================================================拦截response结束==================================================
+192.168.128.181:57779: GET https://api.xueqiu.com/etc/prompt/bomb_box/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294640886&_s=d8a736&uid=1838001425
+                    << 200 OK 85b
+192.168.128.181:57791: clientconnect
+192.168.128.181:57769: GET https://api.xueqiu.com/rec/channel/channel_list.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294640898&_s=e92e5e&size=8&context=new_user
+                    << 200  34b
+192.168.128.181:57778: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294640868&_s=21b610&system_version=6.0&updated=0&type=stk_quote_main_type_field
+                    << 200 OK 391b
+192.168.128.181:57782: GET https://api.xueqiu.com/user/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294640882&_s=fed285&id=1838001425
+                    << 200 OK 420b
+192.168.128.181:57776: GET https://api.xueqiu.com/statuses/switch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294640861&_s=390190&
+                    << 200 OK 282b
+192.168.128.181:57781: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294640882&_s=6ceb9c&system_version=6.0&updated=0&type=feature_grayscale_config
+                    << 200 OK 128b
+192.168.128.181:57783: GET https://stock.xueqiu.com/v5/stock/indicator/setting/list.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294640888&_s=d8de75&uid=1838001425
+                    << 200 OK 323b
+192.168.128.181:57777: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294640867&_s=be8562&system_version=6.0&updated=1506064170181&type=stk_quote_type_field7
+                    << 200 OK 2.15k
+192.168.128.181:57793: clientconnect
+192.168.128.181:57794: clientconnect
+192.168.128.181:57778: clientdisconnect
+192.168.128.181:57769: clientdisconnect
+192.168.128.181:57779: clientdisconnect
+192.168.128.181:57776: GET https://api.xueqiu.com/imgroups/joined_list.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294640949&_s=d5afd9&x=0.89
+                    << 200 OK 22b
+192.168.128.181:57777: GET https://api.xueqiu.com/mobile_client/setting.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294640947&_s=b1699b&system_version=6.0&ts=1554294640946&sid=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a&device_id=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a&imei=000000000000000&old_device_id=&version=11.17&mac=08%3A00%3A27%3A6D%3A7D%3A5A&manufactory=Genymotion&channel=tx&type=1&model=Samsung+Galaxy+S6
+                    << 200 OK 36b
+192.168.128.181:57791: GET https://xueqiu.yun.pingan.com/tc/snowx/PAMID/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294640900&_s=8e9fa9&tid=PAMID
+                    << 200 OK 272b
+192.168.128.181:57797: clientconnect
+192.168.128.181:57782: clientdisconnect
+192.168.128.181:57776: GET https://api.xueqiu.com/users/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294641280&_s=633bae&x=0.377&id=6633747978%2C9485866208&simple_user=1
+                    << 200 OK 735b
+192.168.128.181:57799: clientconnect
+192.168.128.181:57800: clientconnect
+192.168.128.181:57793: GET https://tc.xueqiu.com/tc/snowx/GLZQ/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294640900&_s=c1917a&tid=GLZQ
+                    << 200 OK 165b
+==================================================拦截request开始==================================================
+==================================================拦截request结束==================================================
+= 请求域名:api.xueqiu.com=
+=请求接口地址:https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294641339&_s=deb3ba&=
+=请求方法:GET=
+=请求body
+=
+192.168.128.181:57783: GET https://stock.xueqiu.com/v5/stock/indicator/setting/list.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294641328&_s=1d5ca8&uid=1838001425
+                    << 200 OK 323b
+192.168.128.181:57803: clientconnect
+192.168.128.181:57794: GET https://tc.xueqiu.com/tc/snowx/GJZQ/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294640901&_s=5af23f&tid=GJZQ
+                    << 200 OK 165b
+192.168.128.181:57804: clientconnect
+192.168.128.181:57805: clientconnect
+192.168.128.181:57781: GET https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294641339&_s=deb3ba&
+                    << 200 OK 295b
+==================================================拦截response开始==================================================
+https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294641339&_s=deb3ba&
+==================================================mock数据==================================================
+{"list": [{"category": 200, "column": "\u5934\u6761_20190403203041", "en": "recommend_v10_9"}, {"category": 6, "column": "\u76f4\u64ad", "en": "livenews"}, {"category": 105, "column": "\u6caa\u6df1", "en": "cn"}, {"category": 115, "column": "\u79d1\u521b\u677f", "en": "tech_board"}, {"category": 102, "column": "\u6e2f\u80a11111", "en": "hk"}, {"category": 104, "column": "\u57fa\u91d1111", "en": "financial_management"}, {"category": 101, "column": "\u7f8e\u80a111", "en": "us"}, {"category": 111, "column": "\u623f\u4ea7", "en": "property"}, {"category": 113, "column": "\u79c1\u52df", "en": "private_fund"}, {"category": 114, "column": "\u6c7d\u8f66", "en": "car"}, {"category": 110, "column": "\u4fdd\u9669", "en": "insurance"}]}
+==================================================mock数据==================================================
+=响应header:
+Headers[(b'Server', b'openresty/1.11.2.4'), (b'Date', b'Wed, 03 Apr 2019 12:30:41 GMT'), (b'Content-Type', b'application/json;charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Vary', b'Accept-Encoding'), (b'Trace-Id', b'c706bf825619785a'), (b'X-Application-Context', b'application:production,server'), (b'Content-Language', b'en-US'), (b'Cache-Control', b'private, no-store, no-cache, must-revalidate, max-age=0'), (b'P3P', b'"CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT""'), (b'Content-Encoding', b'gzip'), (b'content-length', b'295')]=
+=响应状态码:
+200=
+==================================================拦截response结束==================================================
+192.168.128.181:57797: GET https://qmas.xueqiu.com/domains.json?env=production
+                    << 200 OK 570b
+192.168.128.181:57777: GET https://api.xueqiu.com/mobile/android/isgray.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294641338&_s=8d573f&system_version=6.0&version=11.17
+                    << 200 OK 79b
+192.168.128.181:57808: clientconnect
+192.168.128.181:57776: POST https://api.xueqiu.com/etc/mobile/state.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294639490.1554294641336&_s=c3e3b7
+                    << 200 OK 36b
+192.168.128.181:57811: clientconnect
+192.168.128.181:57812: clientconnect
+192.168.128.181:57793: GET https://tc.xueqiu.com/tc/snowx/app/reddot/query.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294641347&_s=667272&config_key=broker%3Ared_point_mapper_8_6
+                    << 200 OK 410b
+192.168.128.181:57781: GET https://api.xueqiu.com/etc/prompt/bomb_box/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294641345&_s=7a2035&uid=1838001425
+                    << 200 OK 85b
+192.168.128.181:57814: clientconnect
+192.168.128.181:57791: clientdisconnect
+192.168.128.181:57799: GET https://api.xueqiu.com/statuses/switch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294641339&_s=deb3ba&
+                    << 200 OK 282b
+192.168.128.181:57783: clientdisconnect
+192.168.128.181:57815: clientconnect
+192.168.128.181:57794: clientdisconnect
+192.168.128.181:57800: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294641340&_s=5d3e18&system_version=6.0&updated=1512547809384&type=stk_quote_type_field7
+                    << 200 OK 40b
+192.168.128.181:57808: GET https://qmas.xueqiu.com/routers.json?env=production&timestamp=0&app=xueqiu&v=1
+                    << 200 OK 363b
+192.168.128.181:57805: GET https://api.xueqiu.com/user/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294641344&_s=000ee9&id=1838001425
+                    << 200 OK 421b
+192.168.128.181:57777: clientdisconnect
+192.168.128.181:57804: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294641343&_s=6c4556&system_version=6.0&updated=1540464918213&type=feature_grayscale_config
+                    << 200 OK 40b
+192.168.128.181:57803: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294641341&_s=ef95d3&system_version=6.0&updated=1502957694391&type=stk_quote_main_type_field
+                    << 200 OK 40b
+192.168.128.181:57776: clientdisconnect
+192.168.128.181:57799: clientdisconnect
+192.168.128.181:57793: GET https://tc.xueqiu.com/tc/snowx/GLZQ/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294641392&_s=cdbc2c&tid=GLZQ
+                    << 200 OK 165b
+192.168.128.181:57781: clientdisconnect
+192.168.128.181:57814: GET https://xueqiu.yun.pingan.com/tc/snowx/PAMID/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294641389&_s=81dc8a&tid=PAMID
+                    << 200 OK 272b
+192.168.128.181:57800: clientdisconnect
+192.168.128.181:57815: GET https://tc.xueqiu.com/tc/snowx/GJZQ/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294641392&_s=4a8c05&tid=GJZQ
+                    << 200 OK 165b
+192.168.128.181:57805: clientdisconnect
+192.168.128.181:57811: GET https://promo.xueqiu.com/promotion/display_cache.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294641348&_s=4908ea&screen_type=3&date=1554294641348&platform_id=0x04&page_id=0x01
+                    << 200 OK 401b
+192.168.128.181:57804: clientdisconnect
+192.168.128.181:57820: clientconnect
+192.168.128.181:57821: clientconnect
+192.168.128.181:57822: clientconnect
+192.168.128.181:57803: GET https://api.xueqiu.com/cubes/discover/editorial/list.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294643008&_s=be94d8&x=0.535&count=6&page=1
+                    << 200 OK 560b
+192.168.128.181:57812: POST http://alog.umeng.com/app_logs
+                    << 200 OK 1.05k
+192.168.128.181:57812: clientdisconnect
+192.168.128.181:57820: GET https://api.xueqiu.com/statuses/home/hot_spot.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294643009&_s=4e4185&
+                    << 200 OK 80b
+192.168.128.181:57793: clientdisconnect
+192.168.128.181:57822: GET https://api.xueqiu.com/v4/statuses/public_timeline_by_category.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294643024&_s=6ff0ee&count=8&network_type=wifi&category=6
+                    << 200 OK 1.86k
+192.168.128.181:57814: clientdisconnect
+192.168.128.181:57821: GET https://api.xueqiu.com/v4/statuses/public_timeline_by_category.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294643013&_s=76359a&count=8&network_type=wifi&category=200
+                    << 200 OK 5.49k
+192.168.128.181:57803: GET https://api.xueqiu.com/remind/unread.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294643353&_s=b7698b&x=0.199
+                    << 200 OK 160b
+192.168.128.181:57815: clientdisconnect
+192.168.128.181:57826: clientconnect
+192.168.128.181:57827: clientconnect
+192.168.128.181:57828: clientconnect
+192.168.128.181:57831: clientconnect
+192.168.128.181:57828: GET https://xqimg.imedao.com/169e155cf75697d43fc51b50.jpeg!345x210.webp
+                    << 200 OK 13.28k
+192.168.128.181:57826: GET https://xqimg.imedao.com/169e155ce28691853feb2f39.jpeg!345x210.webp
+                    << 200 OK 18.34k
+192.168.128.181:57831: GET https://xqimg.imedao.com/169e27df5ec6d0d43fe70af4.png!345x210.webp
+                    << 200 OK 9.09k
+192.168.128.181:57827: GET https://xqimg.imedao.com/169e155cbb2691843fe5864e.jpeg!345x210.webp
+                    << 200 OK 12.08k
+192.168.128.181:57828: GET https://xqimg.imedao.com/169e27b25d86c1ec3fc71ac6.png!345x210.webp
+                    << 200 OK 4.18k
+192.168.128.181:57826: GET https://xqimg.imedao.com/169e276923e6cf413fd532ec.png!345x210.webp
+                    << 200 OK 6.91k
+192.168.128.181:57811: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294644474&_s=9b2165&network=WIFI&promotion_id=10000019234&page_id=0x00&x=0.38&brand=unknown&version=11.17&action_time=1554294644474&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:57834: clientconnect
+192.168.128.181:57835: clientconnect
+192.168.128.181:57836: clientconnect
+192.168.128.181:57837: clientconnect
+192.168.128.181:57822: GET https://api.xueqiu.com/privacy/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294645866&_s=49ae74&
+                    << 200 OK 247b
+192.168.128.181:57821: GET https://api.xueqiu.com/user/setting/select.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294645865&_s=46f8d5&types=is_open%2Cbegin_time%2Cend_time%2Cdirect_message%2Ccomment%2Cmention_me%2Cmention%2Cnew_follower%2Cnews_message%2Ctrade_message%2Clike_receive%2Cmart_message%2Cstatus_message%2Cimage_watermark%2Cpraise_shake%2Creject_stranger_msg%2Cpublic_timeline%2Cpaid_mention%2Cnotice
+                    << 200 OK 237b
+192.168.128.181:57803: GET https://api.xueqiu.com/cubes/discover/element/buttons.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294645862&_s=98d510&x=0.28
+                    << 200 OK 645b
+192.168.128.181:57820: GET https://api.xueqiu.com/cubes/discover/rank/cube/filter.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294645863&_s=e7440f&updateTime=0&category=0
+                    << 200 OK 491b
+192.168.128.181:57822: GET https://api.xueqiu.com/promotion/display_ad_batch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294645869&_s=56ed7b&uid=1838001425&platform_id=0x04&page_id=0x08%2C0x22
+                    << 200 OK 279b
+192.168.128.181:57821: GET https://api.xueqiu.com/promotion/display_ad_batch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294645872&_s=b63f0c&uid=1838001425&platform_id=0x04&page_id=0x16%2C0x11%2C0x18
+                    << 200 OK 57b
+192.168.128.181:57834: GET https://tc.xueqiu.com/tc/snowx/trade/setting/query.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294645867&_s=122e2a&keys=position_card_display
+                    << 200 OK 98b
+192.168.128.181:57842: clientconnect
+192.168.128.181:57803: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294645873&_s=dc53b1&system_version=6.0&updated=1512547809384&type=stk_cata
+                    << 200 OK 419b
+192.168.128.181:57820: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294645874&_s=fe30c1&system_version=6.0&updated=0&type=stk_hqzx_menu
+                    << 200 OK 166b
+192.168.128.181:57836: GET https://api.xueqiu.com/friendships/groups.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294645867&_s=56b633&
+                    << 200 OK 214b
+192.168.128.181:57822: GET https://api.xueqiu.com/share/get_content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294645873&_s=35b00a&special_id=0&updated=0&amount=0&id=0&type=8&user_id=0
+                    << 200 OK 203b
+192.168.128.181:57837: GET https://api.xueqiu.com/promotion/search_ad.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294645868&_s=d558d5&pos_id=0&uid=1838001425&platform_id=0x04&page_id=0x07
+                    << 200 OK 136b
+192.168.128.181:57821: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294645874&_s=075388&system_version=6.0&updated=0&type=android_upgrade_config
+                    << 200 OK 424b
+192.168.128.181:57803: GET https://api.xueqiu.com/statuses/abtest/switch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294645875&_s=0f77db&
+                    << 200 OK 68b
+192.168.128.181:57835: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294645868&_s=e5e0a7&system_version=6.0&updated=0&type=profile_menu_v10.9_anonymous
+                    << 200 OK 1009b
+192.168.128.181:57820: GET https://api.xueqiu.com/stock/privilege/userprivilege/query.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294645876&_s=1686b2&
+                    << 200 OK 62b
+192.168.128.181:57822: GET https://api.xueqiu.com/cubes/discover/element/buttons.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294646380&_s=2ca79c&x=0.468
+                    << 200 OK 645b
+192.168.128.181:57835: GET https://api.xueqiu.com/privacy/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294646389&_s=b3d720&
+                    << 200 OK 247b
+192.168.128.181:57836: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294645876&_s=63f9f7&system_version=6.0&updated=0&type=trade_support_brokers
+                    << 200 OK 89b
+192.168.128.181:57834: GET https://tc.xueqiu.com/tc/snowx/trade/setting/query.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294646390&_s=9df7af&keys=position_card_display
+                    << 200 OK 98b
+192.168.128.181:57821: GET https://api.xueqiu.com/cubes/discover/rank/cube/filter.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294646382&_s=c6148c&updateTime=1443054663000&category=0
+                    << 200 OK 48b
+192.168.128.181:57837: GET https://api.xueqiu.com/user/setting/select.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294646384&_s=8e4f40&types=is_open%2Cbegin_time%2Cend_time%2Cdirect_message%2Ccomment%2Cmention_me%2Cmention%2Cnew_follower%2Cnews_message%2Ctrade_message%2Clike_receive%2Cmart_message%2Cstatus_message%2Cimage_watermark%2Cpraise_shake%2Creject_stranger_msg%2Cpublic_timeline%2Cpaid_mention%2Cnotice
+                    << 200 OK 237b
+192.168.128.181:57803: GET https://api.xueqiu.com/friendships/groups.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294646391&_s=4929cd&
+                    << 200 OK 214b
+192.168.128.181:57842: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294645875&_s=9df471&system_version=6.0&updated=0&type=trade_home_menu_config_v10.0
+                    << 200 OK 884b
+192.168.128.181:57820: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294646392&_s=71495e&system_version=6.0&updated=0&type=profile_menu_v10.9_anonymous
+                    << 200 OK 1009b
+192.168.128.181:57821: GET https://api.xueqiu.com/share/get_content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294646397&_s=7ed248&special_id=0&updated=0&amount=0&id=0&type=8&user_id=0
+                    << 200 OK 203b
+192.168.128.181:57822: GET https://api.xueqiu.com/promotion/search_ad.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294646393&_s=a962ba&pos_id=0&uid=1838001425&platform_id=0x04&page_id=0x07
+                    << 200 OK 136b
+192.168.128.181:57835: GET https://api.xueqiu.com/promotion/display_ad_batch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294646393&_s=3a953e&uid=1838001425&platform_id=0x04&page_id=0x08%2C0x22
+                    << 200 OK 279b
+192.168.128.181:57836: GET https://api.xueqiu.com/promotion/display_ad_batch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294646395&_s=997267&uid=1838001425&platform_id=0x04&page_id=0x16%2C0x11%2C0x18
+                    << 200 OK 57b
+192.168.128.181:57835: GET https://api.xueqiu.com/stock/privilege/userprivilege/query.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294646406&_s=b661d5&
+                    << 200 OK 62b
+192.168.128.181:57803: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294646399&_s=400edf&system_version=6.0&updated=1512547809384&type=stk_cata
+                    << 200 OK 419b
+192.168.128.181:57820: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294646404&_s=b92282&system_version=6.0&updated=0&type=trade_home_menu_config_v10.0
+                    << 200 OK 884b
+192.168.128.181:57811: clientdisconnect
+192.168.128.181:57837: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294646400&_s=55df31&system_version=6.0&updated=0&type=stk_hqzx_menu
+                    << 200 OK 166b
+192.168.128.181:57842: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294646403&_s=e08b61&system_version=6.0&updated=0&type=android_upgrade_config
+                    << 200 OK 424b
+192.168.128.181:57834: clientdisconnect
+192.168.128.181:57821: GET https://api.xueqiu.com/statuses/abtest/switch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294646405&_s=41cf5b&
+                    << 200 OK 68b
+192.168.128.181:57822: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294646406&_s=0f4a77&system_version=6.0&updated=0&type=trade_support_brokers
+                    << 200 OK 89b
+192.168.128.181:57836: clientdisconnect
+192.168.128.181:57835: clientdisconnect
+192.168.128.181:57803: clientdisconnect
+192.168.128.181:57820: GET https://api.xueqiu.com/app/mobile_module?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294641337.1554294647227&_s=5e9387&x=0.502
+                    << 200 OK 326b
+192.168.128.181:57844: clientconnect
+192.168.128.181:57844: GET https://assets.imedao.com/mobile-modules/mobile-module-broker-1553765861556.tar.gz HTTP/2.0
+                    << 200  730.59k
+192.168.128.181:57844: GET https://assets.imedao.com/mobile-modules/mobile-module-wallet-1553765861556.tar.gz HTTP/2.0
+                    << 200  168.08k
+192.168.128.181:57808: clientdisconnect
+192.168.128.181:57797: clientdisconnect
+192.168.128.181:57774: clientdisconnect
+192.168.128.181:57765: clientdisconnect
+192.168.128.181:57826: clientdisconnect
+192.168.128.181:57757: clientdisconnect
+192.168.128.181:57820: clientdisconnect
+192.168.128.181:57831: clientdisconnect
+192.168.128.181:57755: clientdisconnect
+192.168.128.181:57822: clientdisconnect
+192.168.128.181:57821: clientdisconnect
+192.168.128.181:57828: clientdisconnect
+192.168.128.181:57767: clientdisconnect
+192.168.128.181:57837: clientdisconnect
+192.168.128.181:57842: clientdisconnect
+192.168.128.181:57827: clientdisconnect
+192.168.128.181:57770: clientdisconnect
+192.168.128.181:57844: clientdisconnect
+192.168.128.181:57861: clientconnect
+192.168.128.181:57861: POST http://www.google-analytics.com/collect
+                    << 200 OK 35b
+192.168.128.181:57861: clientdisconnect
+192.168.128.181:57998: clientconnect
+192.168.128.181:58000: clientconnect
+192.168.128.181:57998: POST https://api.sobot.com/chat-sdk/sdk/user/v1/config.action
+                    << 200 OK 135b
+192.168.128.181:58000: POST https://api.sobot.com/chat-sdk/sdk/user/v1/collect.action
+                    << 200 OK 33b
+192.168.128.181:58008: clientconnect
+192.168.128.181:58010: clientconnect
+192.168.128.181:58012: clientconnect
+192.168.128.181:58010: GET https://qmas.xueqiu.com/domains.json?env=production
+                    << 200 OK 570b
+192.168.128.181:58008: POST https://register.xmpush.xiaomi.com/pass/register
+                    << 200 OK 381b
+192.168.128.181:58014: clientconnect
+192.168.128.181:58012: POST https://api.xueqiu.com/provider/oauth/token?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.0.0.1554294661259&_s=9dc446
+                    << 200 OK 546b
+192.168.128.181:58014: GET https://qmas.xueqiu.com/routers.json?env=production&timestamp=0&app=xueqiu&v=1
+                    << 200 OK 363b
+192.168.128.181:58017: clientconnect
+192.168.128.181:58017: GET http://resolver.msg.xiaomi.net/gslb/?ver=4.0&type=wifi&uuid=0&list=app.chat.xiaomi.net%2Cresolver.msg.xiaomi.net&sdkver=36&osver=23&os=Samsung%20Galaxy%20S6%3A233&mi=0&key=ef9901425f521e793fbef89baa5f5435
+                    << 200 OK 932b
+192.168.128.181:58019: clientconnect
+==================================================拦截request开始==================================================
+==================================================拦截request结束==================================================
+= 请求域名:api.xueqiu.com=
+=请求接口地址:https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294661593&_s=d7a5fe&x=0.242=
+=请求方法:GET=
+=请求body
+=
+192.168.128.181:58020: clientconnect
+192.168.128.181:58012: GET https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294661593&_s=d7a5fe&x=0.242
+                    << 200 OK 295b
+==================================================拦截response开始==================================================
+https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294661593&_s=d7a5fe&x=0.242
+==================================================mock数据==================================================
+{"list": [{"category": 200, "column": "\u5934\u6761_20190403203101", "en": "recommend_v10_9"}, {"category": 6, "column": "\u76f4\u64ad", "en": "livenews"}, {"category": 105, "column": "\u6caa\u6df1", "en": "cn"}, {"category": 115, "column": "\u79d1\u521b\u677f", "en": "tech_board"}, {"category": 102, "column": "\u6e2f\u80a11111", "en": "hk"}, {"category": 104, "column": "\u57fa\u91d1111", "en": "financial_management"}, {"category": 101, "column": "\u7f8e\u80a111", "en": "us"}, {"category": 111, "column": "\u623f\u4ea7", "en": "property"}, {"category": 113, "column": "\u79c1\u52df", "en": "private_fund"}, {"category": 114, "column": "\u6c7d\u8f66", "en": "car"}, {"category": 110, "column": "\u4fdd\u9669", "en": "insurance"}]}
+==================================================mock数据==================================================
+=响应header:
+Headers[(b'Server', b'openresty/1.11.2.4'), (b'Date', b'Wed, 03 Apr 2019 12:31:01 GMT'), (b'Content-Type', b'application/json;charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Vary', b'Accept-Encoding'), (b'Trace-Id', b'd39456714c5bba9d'), (b'X-Application-Context', b'application:production,server'), (b'Content-Language', b'en-US'), (b'Cache-Control', b'private, no-store, no-cache, must-revalidate, max-age=0'), (b'P3P', b'"CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT""'), (b'Content-Encoding', b'gzip'), (b'content-length', b'295')]=
+=响应状态码:
+200=
+==================================================拦截response结束==================================================
+192.168.128.181:58022: clientconnect
+192.168.128.181:58023: clientconnect
+192.168.128.181:58024: clientconnect
+192.168.128.181:58025: clientconnect
+192.168.128.181:58026: clientconnect
+192.168.128.181:58012: GET https://api.xueqiu.com/rec/channel/channel_list.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294661621&_s=1e63f2&size=8&context=new_user
+                    << 200  34b
+192.168.128.181:58033: clientconnect
+192.168.128.181:58019: GET https://api.xueqiu.com/statuses/switch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294661594&_s=6126dc&
+                    << 200 OK 282b
+192.168.128.181:58034: clientconnect
+192.168.128.181:58020: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294661601&_s=b63fe5&system_version=6.0&updated=1506064170181&type=stk_quote_type_field7
+                    << 200 OK 2.15k
+192.168.128.181:58037: clientconnect
+192.168.128.181:58022: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294661602&_s=21c279&system_version=6.0&updated=0&type=stk_quote_main_type_field
+                    << 200 OK 391b
+192.168.128.181:58040: clientconnect
+192.168.128.181:58025: GET https://api.xueqiu.com/etc/prompt/bomb_box/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294661607&_s=f92d67&uid=1838001425
+                    << 200 OK 85b
+192.168.128.181:58026: GET https://api.xueqiu.com/user/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294661606&_s=73387d&id=1838001425
+                    << 200 OK 420b
+192.168.128.181:58024: GET https://api.xueqiu.com/v5/stock/indicator/setting/list.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294661610&_s=bbe1a6&uid=1838001425
+                    << 404 Not Found 137b
+192.168.128.181:58012: GET https://api.xueqiu.com/mobile_client/setting.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294661769&_s=4a6c5b&system_version=6.0&ts=1554294661768&sid=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a&device_id=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a&imei=000000000000000&old_device_id=&x=0.147&version=11.17&mac=08%3A00%3A27%3A6D%3A7D%3A5A&manufactory=Genymotion&channel=tx&type=1&model=Samsung+Galaxy+S6
+                    << 200 OK 36b
+192.168.128.181:58023: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294661606&_s=bbd5b5&system_version=6.0&updated=0&type=feature_grayscale_config
+                    << 200 OK 128b
+192.168.128.181:58020: clientdisconnect
+192.168.128.181:58022: clientdisconnect
+192.168.128.181:58033: GET https://xueqiu.yun.pingan.com/tc/snowx/PAMID/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294661623&_s=662e98&tid=PAMID
+                    << 200 OK 272b
+192.168.128.181:58040: GET https://qmas.xueqiu.com/domains.json?env=production
+                    << 200 OK 570b
+192.168.128.181:58025: clientdisconnect
+192.168.128.181:58042: clientconnect
+192.168.128.181:58043: clientconnect
+192.168.128.181:58019: GET https://api.xueqiu.com/imgroups/joined_list.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294661770&_s=ed0a55&
+                    << 200 OK 22b
+192.168.128.181:58037: GET https://tc.xueqiu.com/tc/snowx/GJZQ/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294661624&_s=c3bf8d&tid=GJZQ
+                    << 200 OK 165b
+192.168.128.181:58046: clientconnect
+==================================================拦截request开始==================================================
+==================================================拦截request结束==================================================
+= 请求域名:api.xueqiu.com=
+=请求接口地址:https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294662096&_s=6db1aa&=
+=请求方法:GET=
+=请求body
+=
+192.168.128.181:58024: GET https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294662096&_s=6db1aa&
+                    << 200 OK 295b
+==================================================拦截response开始==================================================
+https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294662096&_s=6db1aa&
+==================================================mock数据==================================================
+{"list": [{"category": 200, "column": "\u5934\u6761_20190403203102", "en": "recommend_v10_9"}, {"category": 6, "column": "\u76f4\u64ad", "en": "livenews"}, {"category": 105, "column": "\u6caa\u6df1", "en": "cn"}, {"category": 115, "column": "\u79d1\u521b\u677f", "en": "tech_board"}, {"category": 102, "column": "\u6e2f\u80a11111", "en": "hk"}, {"category": 104, "column": "\u57fa\u91d1111", "en": "financial_management"}, {"category": 101, "column": "\u7f8e\u80a111", "en": "us"}, {"category": 111, "column": "\u623f\u4ea7", "en": "property"}, {"category": 113, "column": "\u79c1\u52df", "en": "private_fund"}, {"category": 114, "column": "\u6c7d\u8f66", "en": "car"}, {"category": 110, "column": "\u4fdd\u9669", "en": "insurance"}]}
+==================================================mock数据==================================================
+=响应header:
+Headers[(b'Server', b'openresty/1.11.2.4'), (b'Date', b'Wed, 03 Apr 2019 12:31:02 GMT'), (b'Content-Type', b'application/json;charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Vary', b'Accept-Encoding'), (b'Trace-Id', b'4b9f7e4d5bebe2b0'), (b'X-Application-Context', b'application:production,server'), (b'Content-Language', b'en-US'), (b'Cache-Control', b'private, no-store, no-cache, must-revalidate, max-age=0'), (b'P3P', b'"CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT""'), (b'Content-Encoding', b'gzip'), (b'content-length', b'295')]=
+=响应状态码:
+200=
+==================================================拦截response结束==================================================
+192.168.128.181:58034: GET https://tc.xueqiu.com/tc/snowx/GLZQ/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294661623&_s=d48f19&tid=GLZQ
+                    << 200 OK 165b
+192.168.128.181:58048: clientconnect
+192.168.128.181:58019: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294662102&_s=4cfe64&system_version=6.0&updated=1506064170181&type=stk_quote_type_field7
+                    << 200 OK 2.15k
+192.168.128.181:58042: GET https://qmas.xueqiu.com/routers.json?env=production&timestamp=0&app=xueqiu&v=1
+                    << 200 OK 363b
+192.168.128.181:58026: GET https://api.xueqiu.com/statuses/switch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294662098&_s=786026&
+                    << 200 OK 282b
+192.168.128.181:58023: GET https://api.xueqiu.com/mobile/android/isgray.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294662093&_s=0b8a16&system_version=6.0&version=11.17
+                    << 200 OK 79b
+192.168.128.181:58012: POST https://api.xueqiu.com/etc/mobile/state.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294660172.1554294662090&_s=cc6af8
+                    << 200 OK 36b
+192.168.128.181:58049: clientconnect
+192.168.128.181:58033: GET https://xueqiu.yun.pingan.com/tc/snowx/PAMID/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294662204&_s=6affe9&x=0.559&tid=PAMID
+                    << 200 OK 272b
+192.168.128.181:58024: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294662106&_s=49eed7&system_version=6.0&updated=0&type=feature_grayscale_config
+                    << 200 OK 128b
+192.168.128.181:58043: GET https://stock.xueqiu.com/v5/stock/indicator/setting/list.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294662085&_s=b028a4&x=0.451&uid=1838001425
+                    << 200 OK 323b
+192.168.128.181:58019: GET https://api.xueqiu.com/etc/prompt/bomb_box/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294662109&_s=b24bda&uid=1838001425
+                    << 200 OK 85b
+192.168.128.181:58052: clientconnect
+192.168.128.181:58026: clientdisconnect
+192.168.128.181:58023: clientdisconnect
+192.168.128.181:58037: GET https://tc.xueqiu.com/tc/snowx/GLZQ/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294662211&_s=f59e90&tid=GLZQ
+                    << 200 OK 165b
+192.168.128.181:58053: clientconnect
+192.168.128.181:58046: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294662105&_s=1ffa8e&system_version=6.0&updated=0&type=stk_quote_main_type_field
+                    << 200 OK 391b
+192.168.128.181:58033: clientdisconnect
+192.168.128.181:58034: GET https://tc.xueqiu.com/tc/snowx/app/reddot/query.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294662120&_s=f5501f&config_key=broker%3Ared_point_mapper_8_6
+                    << 200 OK 410b
+192.168.128.181:58012: GET https://api.xueqiu.com/users/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294662324&_s=1dbc92&x=0.699&id=6633747978%2C9485866208&simple_user=1
+                    << 200 OK 739b
+192.168.128.181:58043: clientdisconnect
+192.168.128.181:58024: clientdisconnect
+192.168.128.181:58049: GET https://promo.xueqiu.com/promotion/display_cache.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294662126&_s=589d3a&screen_type=3&date=1554294662125&platform_id=0x04&page_id=0x01
+                    << 200 OK 402b
+192.168.128.181:58019: clientdisconnect
+192.168.128.181:58053: POST http://alog.umeng.com/app_logs
+                    << 200 OK 1.05k
+192.168.128.181:58053: clientdisconnect
+192.168.128.181:58052: GET https://tc.xueqiu.com/tc/snowx/GJZQ/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294662212&_s=176c34&tid=GJZQ
+                    << 200 OK 165b
+192.168.128.181:58037: clientdisconnect
+192.168.128.181:58048: GET https://api.xueqiu.com/user/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294662107&_s=89bba0&id=1838001425
+                    << 200 OK 422b
+192.168.128.181:58046: clientdisconnect
+192.168.128.181:58057: clientconnect
+192.168.128.181:58058: clientconnect
+192.168.128.181:58048: GET https://api.xueqiu.com/statuses/home/hot_spot.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294663749&_s=34b5bf&
+                    << 200 OK 80b
+192.168.128.181:58012: GET https://api.xueqiu.com/cubes/discover/editorial/list.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294663748&_s=b67e6a&x=0.503&count=6&page=1
+                    << 200 OK 560b
+192.168.128.181:58058: GET https://api.xueqiu.com/v4/statuses/public_timeline_by_category.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294663756&_s=a5180f&count=8&network_type=wifi&category=6
+                    << 200 OK 1.86k
+192.168.128.181:58034: clientdisconnect
+192.168.128.181:58057: GET https://api.xueqiu.com/v4/statuses/public_timeline_by_category.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294663753&_s=fdc98e&count=8&network_type=wifi&category=200
+                    << 200 OK 4.68k
+192.168.128.181:58049: clientdisconnect
+192.168.128.181:58012: GET https://api.xueqiu.com/remind/unread.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294664145&_s=dbe341&x=0.385
+                    << 200 OK 160b
+192.168.128.181:58061: clientconnect
+192.168.128.181:58063: clientconnect
+192.168.128.181:58061: GET https://xqimg.imedao.com/169dd2ccae25ef7c3feaaaf7.jpeg!345x210.webp
+                    << 200 OK 18.02k
+192.168.128.181:58063: GET https://xqimg.imedao.com/169e24ba38a6c73e3fed4563.jpg!345x210.webp
+                    << 200 OK 8.33k
+192.168.128.181:58065: clientconnect
+192.168.128.181:58065: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294665379&_s=37b149&network=WIFI&promotion_id=10000019234&page_id=0x00&x=0.42&brand=unknown&version=11.17&action_time=1554294665379&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58052: clientdisconnect
+192.168.128.181:58067: clientconnect
+192.168.128.181:58068: clientconnect
+192.168.128.181:58069: clientconnect
+192.168.128.181:58070: clientconnect
+192.168.128.181:58012: GET https://api.xueqiu.com/cubes/discover/element/buttons.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294666595&_s=2224c8&x=0.96
+                    << 200 OK 645b
+192.168.128.181:58058: GET https://api.xueqiu.com/privacy/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294666599&_s=14b65b&
+                    << 200 OK 247b
+192.168.128.181:58057: GET https://api.xueqiu.com/user/setting/select.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294666599&_s=141ea2&types=is_open%2Cbegin_time%2Cend_time%2Cdirect_message%2Ccomment%2Cmention_me%2Cmention%2Cnew_follower%2Cnews_message%2Ctrade_message%2Clike_receive%2Cmart_message%2Cstatus_message%2Cimage_watermark%2Cpraise_shake%2Creject_stranger_msg%2Cpublic_timeline%2Cpaid_mention%2Cnotice
+                    << 200 OK 237b
+192.168.128.181:58048: GET https://api.xueqiu.com/cubes/discover/rank/cube/filter.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294666598&_s=c40298&updateTime=0&category=0
+                    << 200 OK 491b
+192.168.128.181:58012: GET https://api.xueqiu.com/promotion/display_ad_batch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294666602&_s=28df92&uid=1838001425&platform_id=0x04&page_id=0x08%2C0x22
+                    << 200 OK 279b
+192.168.128.181:58058: GET https://api.xueqiu.com/promotion/display_ad_batch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294666602&_s=44a927&uid=1838001425&platform_id=0x04&page_id=0x16%2C0x11%2C0x18
+                    << 200 OK 57b
+192.168.128.181:58068: GET https://api.xueqiu.com/friendships/groups.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294666600&_s=487394&
+                    << 200 OK 214b
+192.168.128.181:58069: GET https://api.xueqiu.com/promotion/search_ad.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294666601&_s=c80ae7&pos_id=0&uid=1838001425&platform_id=0x04&page_id=0x07
+                    << 200 OK 136b
+192.168.128.181:58070: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294666601&_s=ecc566&system_version=6.0&updated=0&type=profile_menu_v10.9_anonymous
+                    << 200 OK 1009b
+192.168.128.181:58057: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294666604&_s=ad6248&system_version=6.0&updated=0&type=stk_hqzx_menu
+                    << 200 OK 166b
+192.168.128.181:58048: GET https://api.xueqiu.com/share/get_content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294666603&_s=1c13c8&special_id=0&updated=0&amount=0&id=0&type=8&user_id=0
+                    << 200 OK 203b
+192.168.128.181:58058: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294666604&_s=3e8a1b&system_version=6.0&updated=0&type=android_upgrade_config
+                    << 200 OK 424b
+192.168.128.181:58012: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294666603&_s=0ee006&system_version=6.0&updated=1512547809384&type=stk_cata
+                    << 200 OK 419b
+192.168.128.181:58067: GET https://tc.xueqiu.com/tc/snowx/trade/setting/query.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294666600&_s=1a64fd&keys=position_card_display
+                    << 200 OK 98b
+192.168.128.181:58075: clientconnect
+192.168.128.181:58068: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294666604&_s=2951dc&system_version=6.0&updated=0&type=trade_home_menu_config_v10.0
+                    << 200 OK 884b
+192.168.128.181:58057: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294666607&_s=b0bb54&system_version=6.0&updated=0&type=trade_support_brokers
+                    << 200 OK 89b
+192.168.128.181:58069: GET https://api.xueqiu.com/statuses/abtest/switch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294666605&_s=f67779&
+                    << 200 OK 68b
+192.168.128.181:58070: GET https://api.xueqiu.com/stock/privilege/userprivilege/query.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294666606&_s=1664d9&
+                    << 200 OK 62b
+192.168.128.181:58012: GET https://api.xueqiu.com/user/setting/select.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294667135&_s=a6c09f&types=is_open%2Cbegin_time%2Cend_time%2Cdirect_message%2Ccomment%2Cmention_me%2Cmention%2Cnew_follower%2Cnews_message%2Ctrade_message%2Clike_receive%2Cmart_message%2Cstatus_message%2Cimage_watermark%2Cpraise_shake%2Creject_stranger_msg%2Cpublic_timeline%2Cpaid_mention%2Cnotice
+                    << 200 OK 237b
+192.168.128.181:58057: GET https://api.xueqiu.com/friendships/groups.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294667142&_s=530af3&
+                    << 200 OK 214b
+192.168.128.181:58067: GET https://tc.xueqiu.com/tc/snowx/trade/setting/query.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294667136&_s=c9cbb0&keys=position_card_display
+                    << 200 OK 98b
+192.168.128.181:58048: GET https://api.xueqiu.com/cubes/discover/element/buttons.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294667132&_s=c2bfd2&x=0.501
+                    << 200 OK 645b
+192.168.128.181:58070: GET https://api.xueqiu.com/promotion/search_ad.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294667148&_s=4843f8&pos_id=0&uid=1838001425&platform_id=0x04&page_id=0x07
+                    << 200 OK 136b
+192.168.128.181:58068: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294667146&_s=0e237f&system_version=6.0&updated=1551776791779&type=profile_menu_v10.9_anonymous
+                    << 200 OK 40b
+192.168.128.181:58075: GET https://api.xueqiu.com/privacy/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294667136&_s=f8a6c4&
+                    << 200 OK 247b
+192.168.128.181:58058: GET https://api.xueqiu.com/cubes/discover/rank/cube/filter.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294667133&_s=1ada44&updateTime=1443054663000&category=0
+                    << 200 OK 48b
+192.168.128.181:58057: GET https://api.xueqiu.com/promotion/display_ad_batch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294667155&_s=56e9d5&uid=1838001425&platform_id=0x04&page_id=0x16%2C0x11%2C0x18
+                    << 200 OK 57b
+192.168.128.181:58012: GET https://api.xueqiu.com/promotion/display_ad_batch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294667154&_s=92e26e&uid=1838001425&platform_id=0x04&page_id=0x08%2C0x22
+                    << 200 OK 279b
+192.168.128.181:58069: GET https://api.xueqiu.com/share/get_content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294667156&_s=58ced5&special_id=0&updated=0&amount=0&id=0&type=8&user_id=0
+                    << 200 OK 203b
+192.168.128.181:58048: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294667157&_s=dd67de&system_version=6.0&updated=1512547809384&type=stk_cata
+                    << 200 OK 419b
+192.168.128.181:58058: GET https://api.xueqiu.com/statuses/abtest/switch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294667166&_s=2e83a1&x=0.563
+                    << 200 OK 68b
+192.168.128.181:58068: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294667159&_s=b572d1&system_version=6.0&updated=0&type=stk_hqzx_menu
+                    << 200 OK 166b
+192.168.128.181:58070: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294667160&_s=2f6064&system_version=6.0&updated=0&type=android_upgrade_config
+                    << 200 OK 424b
+192.168.128.181:58057: GET https://api.xueqiu.com/stock/privilege/userprivilege/query.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294667168&_s=240053&
+                    << 200 OK 62b
+192.168.128.181:58075: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294667165&_s=ec5c5e&system_version=6.0&updated=0&type=trade_home_menu_config_v10.0
+                    << 200 OK 884b
+192.168.128.181:58012: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294667170&_s=7821a5&system_version=6.0&updated=0&type=trade_support_brokers
+                    << 200 OK 89b
+192.168.128.181:58065: clientdisconnect
+192.168.128.181:58067: clientdisconnect
+192.168.128.181:58069: clientdisconnect
+192.168.128.181:58048: clientdisconnect
+192.168.128.181:58058: clientdisconnect
+192.168.128.181:58012: GET https://api.xueqiu.com/app/mobile_module?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294662090.1554294668053&_s=d6e3f9&x=0.571
+                    << 200 OK 326b
+192.168.128.181:58081: clientconnect
+192.168.128.181:58081: GET https://assets.imedao.com/mobile-modules/mobile-module-broker-1553765861556.tar.gz HTTP/2.0
+                    << 200  730.59k
+192.168.128.181:58081: GET https://assets.imedao.com/mobile-modules/mobile-module-wallet-1553765861556.tar.gz HTTP/2.0
+                    << 200  168.08k
+192.168.128.181:58084: clientconnect
+192.168.128.181:58081: GET https://assets.imedao.com/mobile-modules/mobile-module-static-1553765861556.tar.gz HTTP/2.0
+                    << 200  1.85m
+192.168.128.181:58075: clientdisconnect
+192.168.128.181:58068: clientdisconnect
+192.168.128.181:57998: clientdisconnect
+192.168.128.181:58063: clientdisconnect
+192.168.128.181:58014: clientdisconnect
+192.168.128.181:58012: clientdisconnect
+192.168.128.181:58081: clientdisconnect
+192.168.128.181:58057: clientdisconnect
+192.168.128.181:58000: clientdisconnect
+192.168.128.181:58010: clientdisconnect
+192.168.128.181:58040: clientdisconnect
+192.168.128.181:58017: clientdisconnect
+192.168.128.181:58070: clientdisconnect
+192.168.128.181:58061: clientdisconnect
+192.168.128.181:58042: clientdisconnect
+192.168.128.181:58008: clientdisconnect
+192.168.128.181:58097: clientconnect
+192.168.128.181:58084: GET http://connectivitycheck.gstatic.com/generate_204
+ << Server connection to ('connectivitycheck.gstatic.com', 80) failed: Error connecting to "connectivitycheck.gstatic.com": [Errno 8] nodename nor servname provided, or not known
+192.168.128.181:58084: clientdisconnect
+192.168.128.181:58097: POST http://www.google-analytics.com/collect
+                    << 200 OK 35b
+192.168.128.181:58097: clientdisconnect
+192.168.128.181:58234: clientconnect
+192.168.128.181:58236: clientconnect
+192.168.128.181:58234: POST https://api.sobot.com/chat-sdk/sdk/user/v1/config.action
+                    << 200 OK 135b
+192.168.128.181:58242: clientconnect
+192.168.128.181:58246: clientconnect
+192.168.128.181:58236: POST https://api.sobot.com/chat-sdk/sdk/user/v1/collect.action
+                    << 200 OK 33b
+192.168.128.181:58248: clientconnect
+192.168.128.181:58246: GET https://qmas.xueqiu.com/domains.json?env=production
+                    << 200 OK 570b
+192.168.128.181:58250: clientconnect
+192.168.128.181:58242: POST https://register.xmpush.xiaomi.com/pass/register
+                    << 200 OK 381b
+192.168.128.181:58248: POST https://api.xueqiu.com/provider/oauth/token?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.0.0.1554294681587&_s=bdca29
+                    << 200 OK 546b
+192.168.128.181:58250: GET https://qmas.xueqiu.com/routers.json?env=production&timestamp=0&app=xueqiu&v=1
+                    << 200 OK 363b
+192.168.128.181:58253: clientconnect
+192.168.128.181:58253: GET http://resolver.msg.xiaomi.net/gslb/?ver=4.0&type=wifi&uuid=0&list=app.chat.xiaomi.net%2Cresolver.msg.xiaomi.net&sdkver=36&osver=23&os=Samsung%20Galaxy%20S6%3A233&mi=0&key=ef9901425f521e793fbef89baa5f5435
+                    << 200 OK 932b
+==================================================拦截request开始==================================================
+==================================================拦截request结束==================================================
+= 请求域名:api.xueqiu.com=
+=请求接口地址:https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294681974&_s=853c7d&x=0.214=
+=请求方法:GET=
+=请求body
+=
+192.168.128.181:58256: clientconnect
+192.168.128.181:58257: clientconnect
+192.168.128.181:58258: clientconnect
+192.168.128.181:58259: clientconnect
+192.168.128.181:58260: clientconnect
+192.168.128.181:58261: clientconnect
+192.168.128.181:58255: clientconnect
+192.168.128.181:58248: GET https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294681974&_s=853c7d&x=0.214
+                    << 200 OK 295b
+==================================================拦截response开始==================================================
+https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294681974&_s=853c7d&x=0.214
+==================================================mock数据==================================================
+{"list": [{"category": 200, "column": "\u5934\u6761_20190403203122", "en": "recommend_v10_9"}, {"category": 6, "column": "\u76f4\u64ad", "en": "livenews"}, {"category": 105, "column": "\u6caa\u6df1", "en": "cn"}, {"category": 115, "column": "\u79d1\u521b\u677f", "en": "tech_board"}, {"category": 102, "column": "\u6e2f\u80a11111", "en": "hk"}, {"category": 104, "column": "\u57fa\u91d1111", "en": "financial_management"}, {"category": 101, "column": "\u7f8e\u80a111", "en": "us"}, {"category": 111, "column": "\u623f\u4ea7", "en": "property"}, {"category": 113, "column": "\u79c1\u52df", "en": "private_fund"}, {"category": 114, "column": "\u6c7d\u8f66", "en": "car"}, {"category": 110, "column": "\u4fdd\u9669", "en": "insurance"}]}
+==================================================mock数据==================================================
+=响应header:
+Headers[(b'Server', b'openresty/1.11.2.4'), (b'Date', b'Wed, 03 Apr 2019 12:31:21 GMT'), (b'Content-Type', b'application/json;charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Vary', b'Accept-Encoding'), (b'Trace-Id', b'f49e1bda98e330b7'), (b'X-Application-Context', b'application:production,server'), (b'Content-Language', b'en-US'), (b'Cache-Control', b'private, no-store, no-cache, must-revalidate, max-age=0'), (b'P3P', b'"CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT""'), (b'Content-Encoding', b'gzip'), (b'content-length', b'295')]=
+=响应状态码:
+200=
+==================================================拦截response结束==================================================
+192.168.128.181:58259: GET https://api.xueqiu.com/etc/prompt/bomb_box/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294682003&_s=bc643e&uid=1838001425
+                    << 200 OK 85b
+192.168.128.181:58248: GET https://api.xueqiu.com/rec/channel/channel_list.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294682010&_s=bfa709&size=8&context=new_user
+                    << 200  34b
+192.168.128.181:58257: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294681999&_s=71ec05&system_version=6.0&updated=0&type=feature_grayscale_config
+                    << 200 OK 128b
+192.168.128.181:58260: GET https://stock.xueqiu.com/v5/stock/indicator/setting/list.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294682007&_s=2d09a4&uid=1838001425
+                    << 200 OK 323b
+192.168.128.181:58256: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294681986&_s=8bd335&system_version=6.0&updated=0&type=stk_quote_main_type_field
+                    << 200 OK 391b
+192.168.128.181:58258: GET https://api.xueqiu.com/user/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294682001&_s=2483c0&id=1838001425
+                    << 200 OK 421b
+192.168.128.181:58255: GET https://api.xueqiu.com/statuses/switch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294681975&_s=9432b7&
+                    << 200 OK 282b
+192.168.128.181:58270: clientconnect
+192.168.128.181:58271: clientconnect
+192.168.128.181:58248: clientdisconnect
+192.168.128.181:58259: clientdisconnect
+192.168.128.181:58274: clientconnect
+192.168.128.181:58255: GET https://api.xueqiu.com/imgroups/joined_list.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294682076&_s=715a75&
+                    << 200 OK 22b
+192.168.128.181:58275: clientconnect
+192.168.128.181:58261: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294681986&_s=225127&system_version=6.0&updated=1506064170181&type=stk_quote_type_field7
+                    << 200 OK 2.15k
+192.168.128.181:58256: GET https://api.xueqiu.com/mobile_client/setting.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294682074&_s=71a082&system_version=6.0&ts=1554294682071&sid=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a&device_id=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a&imei=000000000000000&old_device_id=&version=11.17&mac=08%3A00%3A27%3A6D%3A7D%3A5A&manufactory=Genymotion&channel=tx&type=1&model=Samsung+Galaxy+S6
+                    << 200 OK 36b
+192.168.128.181:58257: clientdisconnect
+192.168.128.181:58270: GET https://tc.xueqiu.com/tc/snowx/GLZQ/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294682017&_s=59e7cf&tid=GLZQ
+                    << 200 OK 165b
+192.168.128.181:58260: clientdisconnect
+192.168.128.181:58275: GET https://qmas.xueqiu.com/domains.json?env=production
+                    << 200 OK 570b
+192.168.128.181:58278: clientconnect
+192.168.128.181:58271: GET https://xueqiu.yun.pingan.com/tc/snowx/PAMID/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294682016&_s=72270d&tid=PAMID
+                    << 200 OK 272b
+192.168.128.181:58274: GET https://tc.xueqiu.com/tc/snowx/GJZQ/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294682018&_s=7a6027&tid=GJZQ
+                    << 200 OK 165b
+192.168.128.181:58258: clientdisconnect
+192.168.128.181:58255: clientdisconnect
+192.168.128.181:58280: clientconnect
+192.168.128.181:58281: clientconnect
+192.168.128.181:58282: clientconnect
+192.168.128.181:58283: clientconnect
+192.168.128.181:58284: clientconnect
+192.168.128.181:58285: clientconnect
+192.168.128.181:58283: CONNECT api.xueqiu.com:443
+ << Server connection to ('api.xueqiu.com', 443) failed: Error connecting to "api.xueqiu.com": [Errno 8] nodename nor servname provided, or not known
+192.168.128.181:58283: clientdisconnect
+192.168.128.181:58291: clientconnect
+192.168.128.181:58256: POST https://api.xueqiu.com/etc/mobile/state.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294680517.1554294682554&_s=59345f
+                    << 200 OK 36b
+192.168.128.181:58261: GET https://api.xueqiu.com/users/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294682559&_s=8e927e&id=6633747978%2C9485866208&simple_user=1
+                    << 200 OK 741b
+==================================================拦截request开始==================================================
+==================================================拦截request结束==================================================
+192.168.128.181:58278: GET https://qmas.xueqiu.com/routers.json?env=production&timestamp=0&app=xueqiu&v=1
+                    << 200 OK 363b
+= 请求域名:api.xueqiu.com=
+=请求接口地址:https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294682565&_s=af5d93&=
+=请求方法:GET=
+=请求body
+=
+192.168.128.181:58282: GET https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294682565&_s=af5d93&
+                    << 200 OK 295b
+==================================================拦截response开始==================================================
+https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294682565&_s=af5d93&
+==================================================mock数据==================================================
+{"list": [{"category": 200, "column": "\u5934\u6761_20190403203122", "en": "recommend_v10_9"}, {"category": 6, "column": "\u76f4\u64ad", "en": "livenews"}, {"category": 105, "column": "\u6caa\u6df1", "en": "cn"}, {"category": 115, "column": "\u79d1\u521b\u677f", "en": "tech_board"}, {"category": 102, "column": "\u6e2f\u80a11111", "en": "hk"}, {"category": 104, "column": "\u57fa\u91d1111", "en": "financial_management"}, {"category": 101, "column": "\u7f8e\u80a111", "en": "us"}, {"category": 111, "column": "\u623f\u4ea7", "en": "property"}, {"category": 113, "column": "\u79c1\u52df", "en": "private_fund"}, {"category": 114, "column": "\u6c7d\u8f66", "en": "car"}, {"category": 110, "column": "\u4fdd\u9669", "en": "insurance"}]}
+==================================================mock数据==================================================
+=响应header:
+Headers[(b'Server', b'openresty/1.11.2.4'), (b'Date', b'Wed, 03 Apr 2019 12:31:22 GMT'), (b'Content-Type', b'application/json;charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Vary', b'Accept-Encoding'), (b'Trace-Id', b'991b06c7240c857f'), (b'X-Application-Context', b'application:production,server'), (b'Content-Language', b'en-US'), (b'Cache-Control', b'private, no-store, no-cache, must-revalidate, max-age=0'), (b'P3P', b'"CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT""'), (b'Content-Encoding', b'gzip'), (b'content-length', b'295')]=
+=响应状态码:
+200=
+==================================================拦截response结束==================================================
+192.168.128.181:58281: GET https://api.xueqiu.com/mobile/android/isgray.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294682559&_s=846b05&system_version=6.0&version=11.17
+                    << 200 OK 79b
+192.168.128.181:58280: GET https://stock.xueqiu.com/v5/stock/indicator/setting/list.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294682545&_s=d69885&x=0.525&uid=1838001425
+                    << 200 OK 323b
+192.168.128.181:58293: clientconnect
+192.168.128.181:58284: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294682567&_s=1cd352&system_version=6.0&updated=1506064170181&type=stk_quote_type_field7
+                    << 200 OK 2.15k
+192.168.128.181:58256: GET https://api.xueqiu.com/user/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294682571&_s=c652fb&id=1838001425
+                    << 200 OK 420b
+192.168.128.181:58291: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294682569&_s=18cf6b&system_version=6.0&updated=0&type=feature_grayscale_config
+                    << 200 OK 128b
+192.168.128.181:58285: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294682568&_s=eb4261&system_version=6.0&updated=0&type=stk_quote_main_type_field
+                    << 200 OK 391b
+192.168.128.181:58274: clientdisconnect
+192.168.128.181:58261: GET https://api.xueqiu.com/etc/prompt/bomb_box/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294682572&_s=76736a&uid=1838001425
+                    << 200 OK 85b
+192.168.128.181:58295: clientconnect
+192.168.128.181:58282: clientdisconnect
+192.168.128.181:58280: clientdisconnect
+192.168.128.181:58296: clientconnect
+192.168.128.181:58281: clientdisconnect
+192.168.128.181:58271: GET https://xueqiu.yun.pingan.com/tc/snowx/PAMID/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294682690&_s=7d91d6&x=0.115&tid=PAMID
+                    << 200 OK 272b
+192.168.128.181:58284: clientdisconnect
+192.168.128.181:58270: GET https://tc.xueqiu.com/tc/snowx/app/reddot/query.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294682574&_s=906a8a&config_key=broker%3Ared_point_mapper_8_6
+                    << 200 OK 410b
+192.168.128.181:58256: clientdisconnect
+192.168.128.181:58299: clientconnect
+192.168.128.181:58293: GET https://promo.xueqiu.com/promotion/display_cache.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294682575&_s=0579ee&screen_type=3&date=1554294682575&platform_id=0x04&page_id=0x01
+                    << 200 OK 402b
+192.168.128.181:58291: clientdisconnect
+192.168.128.181:58295: GET https://tc.xueqiu.com/tc/snowx/GLZQ/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294682693&_s=728522&tid=GLZQ
+                    << 200 OK 165b
+192.168.128.181:58285: clientdisconnect
+192.168.128.181:58296: GET https://tc.xueqiu.com/tc/snowx/GJZQ/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294682694&_s=97b90d&tid=GJZQ
+                    << 200 OK 165b
+192.168.128.181:58261: clientdisconnect
+192.168.128.181:58299: POST http://alog.umeng.com/app_logs
+                    << 200 OK 1.05k
+192.168.128.181:58299: clientdisconnect
+192.168.128.181:58306: clientconnect
+192.168.128.181:58307: clientconnect
+192.168.128.181:58308: clientconnect
+192.168.128.181:58309: clientconnect
+192.168.128.181:58310: clientconnect
+192.168.128.181:58306: GET https://api.xueqiu.com/cubes/discover/editorial/list.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294684588&_s=d215a2&count=6&page=1
+                    << 200 OK 560b
+192.168.128.181:58271: clientdisconnect
+192.168.128.181:58308: GET https://api.xueqiu.com/remind/unread.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294684583&_s=7ac7c9&x=0.449
+                    << 200 OK 160b
+192.168.128.181:58270: clientdisconnect
+192.168.128.181:58310: GET https://api.xueqiu.com/v4/statuses/public_timeline_by_category.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294684603&_s=35495e&count=8&network_type=wifi&category=6
+                    << 200 OK 1.86k
+192.168.128.181:58307: GET https://api.xueqiu.com/statuses/home/hot_spot.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294684588&_s=efb535&
+                    << 200 OK 80b
+192.168.128.181:58293: clientdisconnect
+192.168.128.181:58295: clientdisconnect
+192.168.128.181:58309: GET https://api.xueqiu.com/v4/statuses/public_timeline_by_category.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294684590&_s=bb3109&count=8&network_type=wifi&category=200
+                    << 200 OK 5.04k
+192.168.128.181:58296: clientdisconnect
+192.168.128.181:58319: clientconnect
+192.168.128.181:58320: clientconnect
+192.168.128.181:58321: clientconnect
+192.168.128.181:58325: clientconnect
+192.168.128.181:58319: GET https://xqimg.imedao.com/169d1ac219644af73feb7643.jpg!345x210.webp
+                    << 200 OK 10.43k
+192.168.128.181:58321: GET https://xqimg.imedao.com/169d1ad4a87442023fe2ff52.jpg!345x210.webp
+                    << 200 OK 8.26k
+192.168.128.181:58325: GET https://xqimg.imedao.com/169e22042536b13e3feb7d9c.jpeg!345x210.webp
+                    << 200 OK 14.16k
+192.168.128.181:58320: GET https://xqimg.imedao.com/169d1acbb4b446e23fd21e69.jpg!345x210.webp
+                    << 200 OK 18.03k
+192.168.128.181:58319: GET https://xqimg.imedao.com/169e22043266b13f3fbda278.jpeg!345x210.webp
+                    << 200 OK 8.89k
+192.168.128.181:58321: GET https://xqimg.imedao.com/169e22043ee6bf003fb2c744.jpeg!345x210.webp
+                    << 200 OK 15.47k
+192.168.128.181:58327: clientconnect
+192.168.128.181:58327: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294685889&_s=27c081&network=WIFI&promotion_id=10000019234&page_id=0x00&x=0.697&brand=unknown&version=11.17&action_time=1554294685889&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58306: clientdisconnect
+192.168.128.181:58329: clientconnect
+192.168.128.181:58330: clientconnect
+192.168.128.181:58331: clientconnect
+192.168.128.181:58332: clientconnect
+192.168.128.181:58310: GET https://api.xueqiu.com/privacy/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294686992&_s=07f479&
+                    << 200 OK 247b
+192.168.128.181:58308: GET https://api.xueqiu.com/cubes/discover/element/buttons.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294686990&_s=1c96cb&x=0.115
+                    << 200 OK 645b
+192.168.128.181:58307: GET https://api.xueqiu.com/cubes/discover/rank/cube/filter.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294686991&_s=a77f90&updateTime=0&category=0
+                    << 200 OK 491b
+192.168.128.181:58309: GET https://api.xueqiu.com/user/setting/select.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294686991&_s=7e83fd&types=is_open%2Cbegin_time%2Cend_time%2Cdirect_message%2Ccomment%2Cmention_me%2Cmention%2Cnew_follower%2Cnews_message%2Ctrade_message%2Clike_receive%2Cmart_message%2Cstatus_message%2Cimage_watermark%2Cpraise_shake%2Creject_stranger_msg%2Cpublic_timeline%2Cpaid_mention%2Cnotice
+                    << 200 OK 237b
+192.168.128.181:58310: GET https://api.xueqiu.com/promotion/display_ad_batch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294687006&_s=9d4477&uid=1838001425&platform_id=0x04&page_id=0x08%2C0x22
+                    << 200 OK 279b
+192.168.128.181:58307: GET https://api.xueqiu.com/share/get_content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294687016&_s=468ab2&special_id=0&updated=0&amount=0&id=0&type=8&user_id=0
+                    << 200 OK 203b
+192.168.128.181:58329: GET https://tc.xueqiu.com/tc/snowx/trade/setting/query.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294686992&_s=f2485f&keys=position_card_display
+                    << 200 OK 98b
+192.168.128.181:58308: GET https://api.xueqiu.com/promotion/display_ad_batch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294687008&_s=fdc356&uid=1838001425&platform_id=0x04&page_id=0x16%2C0x11%2C0x18
+                    << 200 OK 57b
+192.168.128.181:58338: clientconnect
+192.168.128.181:58332: GET https://api.xueqiu.com/promotion/search_ad.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294687000&_s=8ceec2&pos_id=0&uid=1838001425&platform_id=0x04&page_id=0x07
+                    << 200 OK 136b
+192.168.128.181:58309: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294687017&_s=667111&system_version=6.0&updated=1512547809384&type=stk_cata
+                    << 200 OK 419b
+192.168.128.181:58331: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294686999&_s=92caea&system_version=6.0&updated=0&type=profile_menu_v10.9_anonymous
+                    << 200 OK 1009b
+192.168.128.181:58330: GET https://api.xueqiu.com/friendships/groups.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294686996&_s=e7b1fd&
+                    << 200 OK 214b
+192.168.128.181:58310: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294687020&_s=ca5e15&system_version=6.0&updated=0&type=stk_hqzx_menu
+                    << 200 OK 166b
+192.168.128.181:58307: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294687021&_s=07ebdc&system_version=6.0&updated=0&type=android_upgrade_config
+                    << 200 OK 424b
+192.168.128.181:58332: GET https://api.xueqiu.com/stock/privilege/userprivilege/query.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294687023&_s=edcada&
+                    << 200 OK 62b
+192.168.128.181:58338: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294687021&_s=237b5e&system_version=6.0&updated=0&type=trade_home_menu_config_v10.0
+                    << 200 OK 884b
+192.168.128.181:58309: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294687024&_s=b856ab&system_version=6.0&updated=0&type=trade_support_brokers
+                    << 200 OK 89b
+192.168.128.181:58331: GET https://api.xueqiu.com/cubes/discover/element/buttons.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294687605&_s=941c10&x=0.572
+                    << 200 OK 645b
+192.168.128.181:58308: GET https://api.xueqiu.com/statuses/abtest/switch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294687022&_s=9d2140&
+                    << 200 OK 68b
+192.168.128.181:58307: GET https://api.xueqiu.com/privacy/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294687619&_s=08c774&
+                    << 200 OK 247b
+192.168.128.181:58330: GET https://api.xueqiu.com/cubes/discover/rank/cube/filter.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294687608&_s=79105c&updateTime=1443054663000&category=0
+                    << 200 OK 48b
+192.168.128.181:58329: GET https://tc.xueqiu.com/tc/snowx/trade/setting/query.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294687621&_s=9b8fae&keys=position_card_display
+                    << 200 OK 98b
+192.168.128.181:58331: GET https://api.xueqiu.com/promotion/display_ad_batch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294687625&_s=6183dc&uid=1838001425&platform_id=0x04&page_id=0x08%2C0x22
+                    << 200 OK 279b
+192.168.128.181:58310: GET https://api.xueqiu.com/user/setting/select.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294687614&_s=cfdb11&types=is_open%2Cbegin_time%2Cend_time%2Cdirect_message%2Ccomment%2Cmention_me%2Cmention%2Cnew_follower%2Cnews_message%2Ctrade_message%2Clike_receive%2Cmart_message%2Cstatus_message%2Cimage_watermark%2Cpraise_shake%2Creject_stranger_msg%2Cpublic_timeline%2Cpaid_mention%2Cnotice
+                    << 200 OK 237b
+192.168.128.181:58308: GET https://api.xueqiu.com/promotion/search_ad.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294687624&_s=9bae0f&pos_id=0&uid=1838001425&platform_id=0x04&page_id=0x07
+                    << 200 OK 136b
+192.168.128.181:58309: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294687623&_s=cbb865&system_version=6.0&updated=0&type=profile_menu_v10.9_anonymous
+                    << 200 OK 1009b
+192.168.128.181:58332: GET https://api.xueqiu.com/friendships/groups.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294687622&_s=30d0c5&
+                    << 200 OK 214b
+192.168.128.181:58307: GET https://api.xueqiu.com/promotion/display_ad_batch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294687626&_s=f50316&uid=1838001425&platform_id=0x04&page_id=0x16%2C0x11%2C0x18
+                    << 200 OK 57b
+192.168.128.181:58331: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294687634&_s=e58a3f&system_version=6.0&updated=0&x=0.636&type=stk_hqzx_menu
+                    << 200 OK 166b
+192.168.128.181:58307: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294687643&_s=2072b7&system_version=6.0&updated=0&type=trade_support_brokers
+                    << 200 OK 89b
+192.168.128.181:58338: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294687636&_s=f7efb6&system_version=6.0&updated=0&type=android_upgrade_config
+                    << 200 OK 424b
+192.168.128.181:58308: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294687640&_s=c49d7f&system_version=6.0&updated=0&type=trade_home_menu_config_v10.0
+                    << 200 OK 884b
+192.168.128.181:58330: GET https://api.xueqiu.com/share/get_content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294687631&_s=85f09b&special_id=0&updated=0&amount=0&id=0&type=8&user_id=0
+                    << 200 OK 203b
+192.168.128.181:58309: GET https://api.xueqiu.com/stock/privilege/userprivilege/query.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294687642&_s=83560a&
+                    << 200 OK 62b
+192.168.128.181:58329: clientdisconnect
+192.168.128.181:58327: clientdisconnect
+192.168.128.181:58331: clientdisconnect
+192.168.128.181:58310: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294687632&_s=16043d&system_version=6.0&updated=1512547809384&type=stk_cata
+                    << 200 OK 419b
+192.168.128.181:58332: GET https://api.xueqiu.com/statuses/abtest/switch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294687642&_s=83560a&
+                    << 200 OK 68b
+192.168.128.181:58338: clientdisconnect
+192.168.128.181:58307: clientdisconnect
+192.168.128.181:58308: GET https://api.xueqiu.com/app/mobile_module?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294682556.1554294688396&_s=a39b3d&x=0.504
+                    << 200 OK 326b
+192.168.128.181:58340: clientconnect
+192.168.128.181:58340: GET https://assets.imedao.com/mobile-modules/mobile-module-broker-1553765861556.tar.gz HTTP/2.0
+                    << 200  730.59k
+192.168.128.181:58340: GET https://assets.imedao.com/mobile-modules/mobile-module-wallet-1553765861556.tar.gz HTTP/2.0
+                    << 200  168.08k
+192.168.128.181:58278: clientdisconnect
+192.168.128.181:58242: clientdisconnect
+192.168.128.181:58253: clientdisconnect
+192.168.128.181:58275: clientdisconnect
+192.168.128.181:58246: clientdisconnect
+192.168.128.181:58321: clientdisconnect
+192.168.128.181:58236: clientdisconnect
+192.168.128.181:58308: clientdisconnect
+192.168.128.181:58320: clientdisconnect
+192.168.128.181:58310: clientdisconnect
+192.168.128.181:58325: clientdisconnect
+192.168.128.181:58234: clientdisconnect
+192.168.128.181:58250: clientdisconnect
+192.168.128.181:58319: clientdisconnect
+192.168.128.181:58332: clientdisconnect
+192.168.128.181:58330: clientdisconnect
+192.168.128.181:58309: clientdisconnect
+192.168.128.181:58340: clientdisconnect
+192.168.128.181:58353: clientconnect
+192.168.128.181:58353: POST http://www.google-analytics.com/collect
+                    << 200 OK 35b
+192.168.128.181:58353: clientdisconnect
+192.168.128.181:58494: clientconnect
+192.168.128.181:58496: clientconnect
+192.168.128.181:58494: POST https://api.sobot.com/chat-sdk/sdk/user/v1/config.action
+                    << 200 OK 135b
+192.168.128.181:58496: POST https://api.sobot.com/chat-sdk/sdk/user/v1/collect.action
+                    << 200 OK 33b
+192.168.128.181:58504: clientconnect
+192.168.128.181:58505: clientconnect
+192.168.128.181:58508: clientconnect
+192.168.128.181:58505: GET https://qmas.xueqiu.com/domains.json?env=production
+                    << 200 OK 570b
+192.168.128.181:58510: clientconnect
+192.168.128.181:58504: POST https://register.xmpush.xiaomi.com/pass/register
+                    << 200 OK 381b
+192.168.128.181:58510: GET https://qmas.xueqiu.com/routers.json?env=production&timestamp=0&app=xueqiu&v=1
+                    << 200 OK 363b
+192.168.128.181:58508: POST https://api.xueqiu.com/provider/oauth/token?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.0.0.1554294701389&_s=7a1944
+                    << 200 OK 546b
+192.168.128.181:58513: clientconnect
+192.168.128.181:58513: GET http://resolver.msg.xiaomi.net/gslb/?ver=4.0&type=wifi&uuid=0&list=app.chat.xiaomi.net%2Cresolver.msg.xiaomi.net&sdkver=36&osver=23&os=Samsung%20Galaxy%20S6%3A233&mi=0&key=ef9901425f521e793fbef89baa5f5435
+                    << 200 OK 932b
+==================================================拦截request开始==================================================
+==================================================拦截request结束==================================================
+= 请求域名:api.xueqiu.com=
+=请求接口地址:https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294701700&_s=200d3a&x=0.220=
+=请求方法:GET=
+=请求body
+=
+192.168.128.181:58515: clientconnect
+192.168.128.181:58516: clientconnect
+192.168.128.181:58517: clientconnect
+192.168.128.181:58518: clientconnect
+192.168.128.181:58519: clientconnect
+192.168.128.181:58520: clientconnect
+192.168.128.181:58508: GET https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294701700&_s=200d3a&x=0.220
+                    << 200 OK 295b
+==================================================拦截response开始==================================================
+https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294701700&_s=200d3a&x=0.220
+==================================================mock数据==================================================
+{"list": [{"category": 200, "column": "\u5934\u6761_20190403203141", "en": "recommend_v10_9"}, {"category": 6, "column": "\u76f4\u64ad", "en": "livenews"}, {"category": 105, "column": "\u6caa\u6df1", "en": "cn"}, {"category": 115, "column": "\u79d1\u521b\u677f", "en": "tech_board"}, {"category": 102, "column": "\u6e2f\u80a11111", "en": "hk"}, {"category": 104, "column": "\u57fa\u91d1111", "en": "financial_management"}, {"category": 101, "column": "\u7f8e\u80a111", "en": "us"}, {"category": 111, "column": "\u623f\u4ea7", "en": "property"}, {"category": 113, "column": "\u79c1\u52df", "en": "private_fund"}, {"category": 114, "column": "\u6c7d\u8f66", "en": "car"}, {"category": 110, "column": "\u4fdd\u9669", "en": "insurance"}]}
+==================================================mock数据==================================================
+=响应header:
+Headers[(b'Server', b'openresty/1.11.2.4'), (b'Date', b'Wed, 03 Apr 2019 12:31:41 GMT'), (b'Content-Type', b'application/json;charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Vary', b'Accept-Encoding'), (b'Trace-Id', b'2c43733fb19e73a9'), (b'X-Application-Context', b'application:production,server'), (b'Content-Language', b'en-US'), (b'Cache-Control', b'private, no-store, no-cache, must-revalidate, max-age=0'), (b'P3P', b'"CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT""'), (b'Content-Encoding', b'gzip'), (b'content-length', b'295')]=
+=响应状态码:
+200=
+==================================================拦截response结束==================================================
+192.168.128.181:58523: clientconnect
+192.168.128.181:58516: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294701705&_s=3414a0&system_version=6.0&updated=0&type=stk_quote_main_type_field
+                    << 200 OK 391b
+192.168.128.181:58530: clientconnect
+192.168.128.181:58517: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294701704&_s=f783d3&system_version=6.0&updated=1506064170181&type=stk_quote_type_field7
+                    << 200 OK 2.15k
+192.168.128.181:58515: GET https://api.xueqiu.com/statuses/switch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294701701&_s=5b3569&
+                    << 200 OK 282b
+192.168.128.181:58508: GET https://api.xueqiu.com/rec/channel/channel_list.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294701720&_s=de6710&size=8&context=new_user
+                    << 200  34b
+192.168.128.181:58518: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294701711&_s=468302&system_version=6.0&updated=0&type=feature_grayscale_config
+                    << 200 OK 128b
+192.168.128.181:58531: clientconnect
+192.168.128.181:58532: clientconnect
+192.168.128.181:58519: GET https://api.xueqiu.com/user/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294701712&_s=b26c4e&id=1838001425
+                    << 200 OK 417b
+192.168.128.181:58523: GET https://stock.xueqiu.com/v5/stock/indicator/setting/list.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294701718&_s=7a8ca6&uid=1838001425
+                    << 200 OK 323b
+192.168.128.181:58520: GET https://api.xueqiu.com/etc/prompt/bomb_box/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294701713&_s=b341cd&uid=1838001425
+                    << 200 OK 85b
+192.168.128.181:58516: clientdisconnect
+192.168.128.181:58536: clientconnect
+192.168.128.181:58508: GET https://api.xueqiu.com/mobile_client/setting.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294701791&_s=592028&system_version=6.0&ts=1554294701788&sid=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a&device_id=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a&imei=000000000000000&old_device_id=&version=11.17&mac=08%3A00%3A27%3A6D%3A7D%3A5A&manufactory=Genymotion&channel=tx&type=1&model=Samsung+Galaxy+S6
+                    << 200 OK 36b
+192.168.128.181:58517: clientdisconnect
+192.168.128.181:58530: GET https://xueqiu.yun.pingan.com/tc/snowx/PAMID/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294701720&_s=cd2b87&tid=PAMID
+                    << 200 OK 272b
+192.168.128.181:58515: GET https://api.xueqiu.com/imgroups/joined_list.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294701823&_s=19daa5&x=0.92
+                    << 200 OK 22b
+192.168.128.181:58532: GET https://tc.xueqiu.com/tc/snowx/GLZQ/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294701721&_s=6bc6d7&tid=GLZQ
+                    << 200 OK 165b
+192.168.128.181:58518: clientdisconnect
+192.168.128.181:58519: clientdisconnect
+192.168.128.181:58538: clientconnect
+192.168.128.181:58539: clientconnect
+192.168.128.181:58540: clientconnect
+192.168.128.181:58531: GET https://tc.xueqiu.com/tc/snowx/GJZQ/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294701721&_s=917ae6&tid=GJZQ
+                    << 200 OK 165b
+192.168.128.181:58544: clientconnect
+192.168.128.181:58523: GET https://stock.xueqiu.com/v5/stock/indicator/setting/list.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294702153&_s=7a3546&x=0.328&uid=1838001425
+                    << 200 OK 323b
+192.168.128.181:58545: clientconnect
+192.168.128.181:58520: GET https://api.xueqiu.com/statuses/switch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294702170&_s=b583c5&
+                    << 200 OK 282b
+192.168.128.181:58536: GET https://qmas.xueqiu.com/domains.json?env=production
+                    << 200 OK 570b
+192.168.128.181:58539: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294702172&_s=908853&system_version=6.0&updated=1512547809384&type=stk_quote_type_field7
+                    << 200 OK 40b
+==================================================拦截request开始==================================================
+==================================================拦截request结束==================================================
+= 请求域名:api.xueqiu.com=
+=请求接口地址:https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294702170&_s=b583c5&=
+=请求方法:GET=
+=请求body
+=
+192.168.128.181:58548: clientconnect
+192.168.128.181:58530: clientdisconnect
+192.168.128.181:58515: GET https://api.xueqiu.com/mobile/android/isgray.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294702166&_s=71e0da&system_version=6.0&version=11.17
+                    << 200 OK 79b
+192.168.128.181:58550: clientconnect
+192.168.128.181:58508: POST https://api.xueqiu.com/etc/mobile/state.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294700305.1554294702161&_s=9790a5
+                    << 200 OK 36b
+192.168.128.181:58540: GET https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294702170&_s=b583c5&
+                    << 200 OK 295b
+==================================================拦截response开始==================================================
+https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294702170&_s=b583c5&
+==================================================mock数据==================================================
+{"list": [{"category": 200, "column": "\u5934\u6761_20190403203142", "en": "recommend_v10_9"}, {"category": 6, "column": "\u76f4\u64ad", "en": "livenews"}, {"category": 105, "column": "\u6caa\u6df1", "en": "cn"}, {"category": 115, "column": "\u79d1\u521b\u677f", "en": "tech_board"}, {"category": 102, "column": "\u6e2f\u80a11111", "en": "hk"}, {"category": 104, "column": "\u57fa\u91d1111", "en": "financial_management"}, {"category": 101, "column": "\u7f8e\u80a111", "en": "us"}, {"category": 111, "column": "\u623f\u4ea7", "en": "property"}, {"category": 113, "column": "\u79c1\u52df", "en": "private_fund"}, {"category": 114, "column": "\u6c7d\u8f66", "en": "car"}, {"category": 110, "column": "\u4fdd\u9669", "en": "insurance"}]}
+==================================================mock数据==================================================
+=响应header:
+Headers[(b'Server', b'openresty/1.11.2.4'), (b'Date', b'Wed, 03 Apr 2019 12:31:42 GMT'), (b'Content-Type', b'application/json;charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Vary', b'Accept-Encoding'), (b'Trace-Id', b'cbe42157215425ca'), (b'X-Application-Context', b'application:production,server'), (b'Content-Language', b'en-US'), (b'Cache-Control', b'private, no-store, no-cache, must-revalidate, max-age=0'), (b'P3P', b'"CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT""'), (b'Content-Encoding', b'gzip'), (b'content-length', b'295')]=
+=响应状态码:
+200=
+==================================================拦截response结束==================================================
+192.168.128.181:58552: clientconnect
+192.168.128.181:58553: clientconnect
+192.168.128.181:58538: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294702172&_s=5c9867&system_version=6.0&updated=1502957694391&type=stk_quote_main_type_field
+                    << 200 OK 40b
+192.168.128.181:58531: clientdisconnect
+192.168.128.181:58554: clientconnect
+192.168.128.181:58520: GET https://api.xueqiu.com/etc/prompt/bomb_box/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294702181&_s=d61c6c&uid=1838001425
+                    << 200 OK 85b
+192.168.128.181:58532: GET https://tc.xueqiu.com/tc/snowx/app/reddot/query.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294702187&_s=d2f926&config_key=broker%3Ared_point_mapper_8_6
+                    << 200 OK 410b
+192.168.128.181:58523: clientdisconnect
+192.168.128.181:58555: clientconnect
+192.168.128.181:58544: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294702175&_s=176411&system_version=6.0&updated=1540464918213&type=feature_grayscale_config
+                    << 200 OK 40b
+192.168.128.181:58539: clientdisconnect
+192.168.128.181:58548: GET https://qmas.xueqiu.com/routers.json?env=production&timestamp=0&app=xueqiu&v=1
+                    << 200 OK 363b
+192.168.128.181:58515: clientdisconnect
+192.168.128.181:58508: GET https://api.xueqiu.com/users/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294702215&_s=012782&id=6633747978%2C9485866208&simple_user=1
+                    << 200 OK 737b
+192.168.128.181:58545: GET https://api.xueqiu.com/user/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294702176&_s=dac7d9&id=1838001425
+                    << 200 OK 420b
+192.168.128.181:58540: clientdisconnect
+192.168.128.181:58538: clientdisconnect
+192.168.128.181:58552: POST http://alog.umeng.com/app_logs
+                    << 200 OK 1.05k
+192.168.128.181:58552: clientdisconnect
+192.168.128.181:58554: GET https://tc.xueqiu.com/tc/snowx/GLZQ/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294702269&_s=008ea8&tid=GLZQ
+                    << 200 OK 165b
+192.168.128.181:58550: GET https://promo.xueqiu.com/promotion/display_cache.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294702188&_s=744c4c&screen_type=3&date=1554294702188&platform_id=0x04&page_id=0x01
+                    << 200 OK 401b
+192.168.128.181:58553: GET https://xueqiu.yun.pingan.com/tc/snowx/PAMID/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294702268&_s=32c7ae&x=0.538&tid=PAMID
+                    << 200 OK 272b
+192.168.128.181:58532: clientdisconnect
+192.168.128.181:58520: clientdisconnect
+192.168.128.181:58544: clientdisconnect
+192.168.128.181:58555: GET https://tc.xueqiu.com/tc/snowx/GJZQ/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294702269&_s=100eda&tid=GJZQ
+                    << 200 OK 165b
+192.168.128.181:58508: clientdisconnect
+192.168.128.181:58561: clientconnect
+192.168.128.181:58562: clientconnect
+192.168.128.181:58563: clientconnect
+192.168.128.181:58545: GET https://api.xueqiu.com/statuses/home/hot_spot.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294703655&_s=5e7a02&
+                    << 200 OK 80b
+192.168.128.181:58562: GET https://api.xueqiu.com/cubes/discover/editorial/list.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294703652&_s=9ab1a9&x=0.546&count=6&page=1
+                    << 200 OK 560b
+192.168.128.181:58554: clientdisconnect
+192.168.128.181:58563: GET https://api.xueqiu.com/v4/statuses/public_timeline_by_category.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294703672&_s=766b99&count=8&network_type=wifi&category=6
+                    << 200 OK 1.86k
+192.168.128.181:58550: clientdisconnect
+192.168.128.181:58561: GET https://api.xueqiu.com/v4/statuses/public_timeline_by_category.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294703657&_s=836bb6&count=8&network_type=wifi&category=200
+                    << 200 OK 4.8k
+192.168.128.181:58553: clientdisconnect
+192.168.128.181:58545: GET https://api.xueqiu.com/remind/unread.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294704234&_s=8eeab1&x=0.300
+                    << 200 OK 160b
+192.168.128.181:58568: clientconnect
+192.168.128.181:58569: clientconnect
+192.168.128.181:58570: clientconnect
+192.168.128.181:58568: GET https://xqimg.imedao.com/169c71694932da183fe3a8ac.jpg!345x210.webp
+                    << 200 OK 10.08k
+192.168.128.181:58569: GET https://xqimg.imedao.com/169c71694922d2503fe1123b.jpg!345x210.webp
+                    << 200 OK 10.66k
+192.168.128.181:58570: GET https://xqimg.imedao.com/169c716948f2d4913fdb3af6.jpg!345x210.webp
+                    << 200 OK 8.57k
+192.168.128.181:58574: clientconnect
+192.168.128.181:58574: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294705433&_s=0b84da&network=WIFI&promotion_id=10000019234&page_id=0x00&x=0.52&brand=unknown&version=11.17&action_time=1554294705433&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58555: clientdisconnect
+192.168.128.181:58576: clientconnect
+192.168.128.181:58577: clientconnect
+192.168.128.181:58578: clientconnect
+192.168.128.181:58579: clientconnect
+192.168.128.181:58545: GET https://api.xueqiu.com/cubes/discover/element/buttons.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294706700&_s=0b05db&x=0.119
+                    << 200 OK 645b
+192.168.128.181:58561: GET https://api.xueqiu.com/user/setting/select.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294706702&_s=cd5db2&types=is_open%2Cbegin_time%2Cend_time%2Cdirect_message%2Ccomment%2Cmention_me%2Cmention%2Cnew_follower%2Cnews_message%2Ctrade_message%2Clike_receive%2Cmart_message%2Cstatus_message%2Cimage_watermark%2Cpraise_shake%2Creject_stranger_msg%2Cpublic_timeline%2Cpaid_mention%2Cnotice
+                    << 200 OK 237b
+192.168.128.181:58562: GET https://api.xueqiu.com/cubes/discover/rank/cube/filter.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294706701&_s=2fd66a&updateTime=0&category=0
+                    << 200 OK 491b
+192.168.128.181:58563: GET https://api.xueqiu.com/privacy/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294706703&_s=f2d983&
+                    << 200 OK 247b
+192.168.128.181:58562: GET https://api.xueqiu.com/share/get_content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294706712&_s=02795c&special_id=0&updated=0&amount=0&id=0&type=8&user_id=0
+                    << 200 OK 203b
+192.168.128.181:58545: GET https://api.xueqiu.com/promotion/display_ad_batch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294706708&_s=9c6c85&uid=1838001425&platform_id=0x04&page_id=0x08%2C0x22
+                    << 200 OK 279b
+192.168.128.181:58578: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294706706&_s=67c659&system_version=6.0&updated=0&type=profile_menu_v10.9_anonymous
+                    << 200 OK 1009b
+192.168.128.181:58563: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294706713&_s=b69db7&system_version=6.0&updated=1512547809384&type=stk_cata
+                    << 200 OK 419b
+192.168.128.181:58561: GET https://api.xueqiu.com/promotion/display_ad_batch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294706711&_s=8bf606&uid=1838001425&platform_id=0x04&page_id=0x16%2C0x11%2C0x18
+                    << 200 OK 57b
+192.168.128.181:58577: GET https://api.xueqiu.com/friendships/groups.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294706705&_s=5f7220&
+                    << 200 OK 214b
+192.168.128.181:58545: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294706714&_s=634c5e&system_version=6.0&updated=0&type=stk_hqzx_menu
+                    << 200 OK 166b
+192.168.128.181:58579: GET https://api.xueqiu.com/promotion/search_ad.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294706707&_s=9ccc65&pos_id=0&uid=1838001425&platform_id=0x04&page_id=0x07
+                    << 200 OK 136b
+192.168.128.181:58576: GET https://tc.xueqiu.com/tc/snowx/trade/setting/query.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294706704&_s=4c2fe6&keys=position_card_display
+                    << 200 OK 98b
+192.168.128.181:58563: GET https://api.xueqiu.com/statuses/abtest/switch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294706715&_s=7e0837&
+                    << 200 OK 68b
+192.168.128.181:58562: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294706714&_s=d13f04&system_version=6.0&updated=0&type=android_upgrade_config
+                    << 200 OK 424b
+192.168.128.181:58561: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294706715&_s=8a60e0&system_version=6.0&updated=0&type=trade_home_menu_config_v10.0
+                    << 200 OK 884b
+192.168.128.181:58577: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294706716&_s=a854c1&system_version=6.0&updated=0&type=trade_support_brokers
+                    << 200 OK 89b
+192.168.128.181:58574: clientdisconnect
+192.168.128.181:58578: GET https://api.xueqiu.com/stock/privilege/userprivilege/query.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294706716&_s=d05451&
+                    << 200 OK 62b
+192.168.128.181:58545: clientdisconnect
+192.168.128.181:58579: clientdisconnect
+192.168.128.181:58576: clientdisconnect
+192.168.128.181:58584: clientconnect
+192.168.128.181:58585: clientconnect
+192.168.128.181:58586: clientconnect
+192.168.128.181:58562: GET https://api.xueqiu.com/cubes/discover/element/buttons.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294707255&_s=a9a4d1&x=0.537
+                    << 200 OK 645b
+192.168.128.181:58561: GET https://api.xueqiu.com/cubes/discover/rank/cube/filter.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294707256&_s=1e1d7e&updateTime=1443054663000&category=0
+                    << 200 OK 48b
+192.168.128.181:58578: GET https://api.xueqiu.com/friendships/groups.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294707264&_s=0a5f73&
+                    << 200 OK 214b
+192.168.128.181:58577: GET https://api.xueqiu.com/privacy/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294707259&_s=ea2f76&
+                    << 200 OK 247b
+192.168.128.181:58563: GET https://api.xueqiu.com/user/setting/select.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294707258&_s=027b49&types=is_open%2Cbegin_time%2Cend_time%2Cdirect_message%2Ccomment%2Cmention_me%2Cmention%2Cnew_follower%2Cnews_message%2Ctrade_message%2Clike_receive%2Cmart_message%2Cstatus_message%2Cimage_watermark%2Cpraise_shake%2Creject_stranger_msg%2Cpublic_timeline%2Cpaid_mention%2Cnotice
+                    << 200 OK 237b
+192.168.128.181:58562: GET https://api.xueqiu.com/promotion/display_ad_batch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294707271&_s=5491aa&uid=1838001425&platform_id=0x04&page_id=0x08%2C0x22
+                    << 200 OK 279b
+192.168.128.181:58561: GET https://api.xueqiu.com/promotion/display_ad_batch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294707282&_s=573209&uid=1838001425&platform_id=0x04&page_id=0x16%2C0x11%2C0x18
+                    << 200 OK 57b
+192.168.128.181:58585: GET https://api.xueqiu.com/promotion/search_ad.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294707270&_s=e03876&pos_id=0&uid=1838001425&platform_id=0x04&page_id=0x07
+                    << 200 OK 136b
+192.168.128.181:58563: GET https://api.xueqiu.com/share/get_content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294707285&_s=9d8e23&special_id=0&updated=0&amount=0&id=0&type=8&user_id=0
+                    << 200 OK 203b
+192.168.128.181:58577: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294707287&_s=012e1c&system_version=6.0&updated=1512547809384&type=stk_cata
+                    << 200 OK 419b
+192.168.128.181:58578: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294707288&_s=4c1caf&system_version=6.0&updated=0&type=stk_hqzx_menu
+                    << 200 OK 166b
+192.168.128.181:58586: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294707268&_s=8475ea&system_version=6.0&updated=1551776791779&type=profile_menu_v10.9_anonymous
+                    << 200 OK 40b
+192.168.128.181:58562: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294707289&_s=b0648e&system_version=6.0&updated=0&type=android_upgrade_config
+                    << 200 OK 424b
+192.168.128.181:58584: GET https://tc.xueqiu.com/tc/snowx/trade/setting/query.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294707263&_s=b2fe1a&keys=position_card_display
+                    << 200 OK 98b
+192.168.128.181:58585: GET https://api.xueqiu.com/statuses/abtest/switch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294707293&_s=1be200&
+                    << 200 OK 68b
+192.168.128.181:58561: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294707290&_s=cbdf7e&system_version=6.0&updated=0&type=trade_home_menu_config_v10.0
+                    << 200 OK 884b
+192.168.128.181:58563: GET https://api.xueqiu.com/stock/privilege/userprivilege/query.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294707294&_s=e86505&
+                    << 200 OK 62b
+192.168.128.181:58578: clientdisconnect
+192.168.128.181:58577: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294707296&_s=34c8b7&system_version=6.0&updated=0&type=trade_support_brokers
+                    << 200 OK 89b
+192.168.128.181:58586: clientdisconnect
+192.168.128.181:58584: clientdisconnect
+192.168.128.181:58562: GET https://api.xueqiu.com/app/mobile_module?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294702161.1554294708059&_s=0777f9&x=0.446
+                    << 200 OK 326b
+192.168.128.181:58590: clientconnect
+192.168.128.181:58590: GET https://assets.imedao.com/mobile-modules/mobile-module-broker-1553765861556.tar.gz HTTP/2.0
+                    << 200  730.59k
+192.168.128.181:58590: GET https://assets.imedao.com/mobile-modules/mobile-module-wallet-1553765861556.tar.gz HTTP/2.0
+                    << 200  168.08k
+192.168.128.181:58504: clientdisconnect
+192.168.128.181:58513: clientdisconnect
+192.168.128.181:58548: clientdisconnect
+192.168.128.181:58536: clientdisconnect
+192.168.128.181:58496: clientdisconnect
+192.168.128.181:58585: clientdisconnect
+192.168.128.181:58561: clientdisconnect
+192.168.128.181:58505: clientdisconnect
+192.168.128.181:58577: clientdisconnect
+192.168.128.181:58568: clientdisconnect
+192.168.128.181:58510: clientdisconnect
+192.168.128.181:58494: clientdisconnect
+192.168.128.181:58570: clientdisconnect
+192.168.128.181:58563: clientdisconnect
+192.168.128.181:58569: clientdisconnect
+192.168.128.181:58590: clientdisconnect
+192.168.128.181:58562: clientdisconnect
+192.168.128.181:58605: clientconnect
+192.168.128.181:58605: POST http://www.google-analytics.com/collect
+                    << 200 OK 35b
+192.168.128.181:58605: clientdisconnect
+192.168.128.181:58744: clientconnect
+192.168.128.181:58746: clientconnect
+192.168.128.181:58744: POST https://api.sobot.com/chat-sdk/sdk/user/v1/config.action
+                    << 200 OK 135b
+192.168.128.181:58746: POST https://api.sobot.com/chat-sdk/sdk/user/v1/collect.action
+                    << 200 OK 33b
+192.168.128.181:58754: clientconnect
+192.168.128.181:58754: GET https://qmas.xueqiu.com/domains.json?env=production
+                    << 200 OK 570b
+192.168.128.181:58756: clientconnect
+192.168.128.181:58758: clientconnect
+192.168.128.181:58758: GET https://qmas.xueqiu.com/routers.json?env=production&timestamp=0&app=xueqiu&v=1
+                    << 200 OK 363b
+192.168.128.181:58760: clientconnect
+192.168.128.181:58756: POST https://api.xueqiu.com/provider/oauth/token?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.0.0.1554294720887&_s=2c1195
+                    << 200 OK 547b
+192.168.128.181:58760: POST https://register.xmpush.xiaomi.com/pass/register
+                    << 200 OK 381b
+==================================================拦截request开始==================================================
+==================================================拦截request结束==================================================
+= 请求域名:api.xueqiu.com=
+=请求接口地址:https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294721384&_s=d16885&x=0.266=
+=请求方法:GET=
+=请求body
+=
+192.168.128.181:58762: clientconnect
+192.168.128.181:58763: clientconnect
+192.168.128.181:58756: GET https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294721384&_s=d16885&x=0.266
+                    << 200 OK 295b
+==================================================拦截response开始==================================================
+https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294721384&_s=d16885&x=0.266
+==================================================mock数据==================================================
+{"list": [{"category": 200, "column": "\u5934\u6761_20190403203201", "en": "recommend_v10_9"}, {"category": 6, "column": "\u76f4\u64ad", "en": "livenews"}, {"category": 105, "column": "\u6caa\u6df1", "en": "cn"}, {"category": 115, "column": "\u79d1\u521b\u677f", "en": "tech_board"}, {"category": 102, "column": "\u6e2f\u80a11111", "en": "hk"}, {"category": 104, "column": "\u57fa\u91d1111", "en": "financial_management"}, {"category": 101, "column": "\u7f8e\u80a111", "en": "us"}, {"category": 111, "column": "\u623f\u4ea7", "en": "property"}, {"category": 113, "column": "\u79c1\u52df", "en": "private_fund"}, {"category": 114, "column": "\u6c7d\u8f66", "en": "car"}, {"category": 110, "column": "\u4fdd\u9669", "en": "insurance"}]}
+==================================================mock数据==================================================
+=响应header:
+Headers[(b'Server', b'openresty/1.11.2.4'), (b'Date', b'Wed, 03 Apr 2019 12:32:01 GMT'), (b'Content-Type', b'application/json;charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Vary', b'Accept-Encoding'), (b'Trace-Id', b'11d4fc2ef8f46a4a'), (b'X-Application-Context', b'application:production,server'), (b'Content-Language', b'en-US'), (b'Cache-Control', b'private, no-store, no-cache, must-revalidate, max-age=0'), (b'P3P', b'"CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT""'), (b'Content-Encoding', b'gzip'), (b'content-length', b'295')]=
+=响应状态码:
+200=
+==================================================拦截response结束==================================================
+192.168.128.181:58764: clientconnect
+192.168.128.181:58767: clientconnect
+192.168.128.181:58769: clientconnect
+192.168.128.181:58770: clientconnect
+192.168.128.181:58771: clientconnect
+192.168.128.181:58772: clientconnect
+192.168.128.181:58771: GET http://resolver.msg.xiaomi.net/gslb/?ver=4.0&type=wifi&uuid=0&list=app.chat.xiaomi.net%2Cresolver.msg.xiaomi.net&sdkver=36&osver=23&os=Samsung%20Galaxy%20S6%3A233&mi=0&key=ef9901425f521e793fbef89baa5f5435
+                    << 200 OK 932b
+192.168.128.181:58756: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294721405&_s=c4b890&system_version=6.0&updated=0&type=feature_grayscale_config
+                    << 200 OK 128b
+192.168.128.181:58779: clientconnect
+192.168.128.181:58767: GET https://api.xueqiu.com/user/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294721407&_s=fcb035&id=1838001425
+                    << 200 OK 421b
+192.168.128.181:58770: GET https://api.xueqiu.com/etc/prompt/bomb_box/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294721408&_s=5da908&uid=1838001425
+                    << 200 OK 85b
+192.168.128.181:58762: GET https://api.xueqiu.com/statuses/switch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294721386&_s=3795ce&
+                    << 200 OK 282b
+192.168.128.181:58772: GET https://api.xueqiu.com/rec/channel/channel_list.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294721447&_s=27b30d&size=8&x=0.61&context=new_user
+                    << 200  34b
+192.168.128.181:58763: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294721392&_s=7d8f7b&system_version=6.0&updated=0&type=stk_quote_main_type_field
+                    << 200 OK 391b
+192.168.128.181:58782: clientconnect
+192.168.128.181:58769: GET https://stock.xueqiu.com/v5/stock/indicator/setting/list.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294721445&_s=c82ef1&uid=1838001425
+                    << 200 OK 323b
+192.168.128.181:58756: clientdisconnect
+192.168.128.181:58764: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294721391&_s=344221&system_version=6.0&updated=1506064170181&type=stk_quote_type_field7
+                    << 200 OK 2.15k
+192.168.128.181:58783: clientconnect
+192.168.128.181:58784: clientconnect
+192.168.128.181:58779: GET https://xueqiu.yun.pingan.com/tc/snowx/PAMID/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294721451&_s=97eb11&tid=PAMID
+                    << 200 OK 272b
+192.168.128.181:58767: clientdisconnect
+192.168.128.181:58763: GET https://api.xueqiu.com/mobile_client/setting.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294721601&_s=7e9613&system_version=6.0&ts=1554294721601&sid=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a&device_id=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a&imei=000000000000000&old_device_id=&x=0.193&version=11.17&mac=08%3A00%3A27%3A6D%3A7D%3A5A&manufactory=Genymotion&channel=tx&type=1&model=Samsung+Galaxy+S6
+                    << 200 OK 36b
+192.168.128.181:58762: GET https://api.xueqiu.com/imgroups/joined_list.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294721603&_s=4ba9c4&
+                    << 200 OK 22b
+192.168.128.181:58770: clientdisconnect
+192.168.128.181:58772: clientdisconnect
+192.168.128.181:58782: GET https://tc.xueqiu.com/tc/snowx/GLZQ/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294721452&_s=5cfdfb&tid=GLZQ
+                    << 200 OK 165b
+192.168.128.181:58784: GET https://qmas.xueqiu.com/domains.json?env=production
+                    << 200 OK 570b
+192.168.128.181:58769: clientdisconnect
+192.168.128.181:58788: clientconnect
+192.168.128.181:58790: clientconnect
+192.168.128.181:58791: clientconnect
+192.168.128.181:58792: clientconnect
+192.168.128.181:58793: clientconnect
+192.168.128.181:58783: GET https://tc.xueqiu.com/tc/snowx/GJZQ/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294721468&_s=391002&tid=GJZQ
+                    << 200 OK 165b
+192.168.128.181:58798: clientconnect
+192.168.128.181:58762: GET https://api.xueqiu.com/users/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294721961&_s=f827f1&x=0.484&id=6633747978%2C9485866208&simple_user=1
+                    << 200 OK 739b
+192.168.128.181:58764: GET https://api.xueqiu.com/mobile/android/isgray.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294721977&_s=e8fffa&system_version=6.0&version=11.17
+                    << 200 OK 79b
+==================================================拦截request开始==================================================
+==================================================拦截request结束==================================================
+= 请求域名:api.xueqiu.com=
+=请求接口地址:https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294721982&_s=d14437&=
+=请求方法:GET=
+=请求body
+=
+192.168.128.181:58763: POST https://api.xueqiu.com/etc/mobile/state.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294719799.1554294721975&_s=bb37f4
+                    << 200 OK 36b
+192.168.128.181:58793: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294721983&_s=15d05a&system_version=6.0&updated=1512547809384&type=stk_quote_type_field7
+                    << 200 OK 40b
+192.168.128.181:58788: GET https://qmas.xueqiu.com/routers.json?env=production&timestamp=0&app=xueqiu&v=1
+                    << 200 OK 363b
+192.168.128.181:58792: GET https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294721982&_s=d14437&
+                    << 200 OK 294b
+192.168.128.181:58791: GET https://api.xueqiu.com/statuses/switch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294721983&_s=16caab&
+                    << 200 OK 282b
+==================================================拦截response开始==================================================
+https://api.xueqiu.com/v4/statuses/public_timeline/categories.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294721982&_s=d14437&
+==================================================mock数据==================================================
+{"list": [{"category": 200, "column": "\u5934\u6761_20190403203202", "en": "recommend_v10_9"}, {"category": 6, "column": "\u76f4\u64ad", "en": "livenews"}, {"category": 105, "column": "\u6caa\u6df1", "en": "cn"}, {"category": 115, "column": "\u79d1\u521b\u677f", "en": "tech_board"}, {"category": 102, "column": "\u6e2f\u80a11111", "en": "hk"}, {"category": 104, "column": "\u57fa\u91d1111", "en": "financial_management"}, {"category": 101, "column": "\u7f8e\u80a111", "en": "us"}, {"category": 111, "column": "\u623f\u4ea7", "en": "property"}, {"category": 113, "column": "\u79c1\u52df", "en": "private_fund"}, {"category": 114, "column": "\u6c7d\u8f66", "en": "car"}, {"category": 110, "column": "\u4fdd\u9669", "en": "insurance"}]}
+==================================================mock数据==================================================
+=响应header:
+Headers[(b'Server', b'openresty/1.11.2.4'), (b'Date', b'Wed, 03 Apr 2019 12:32:02 GMT'), (b'Content-Type', b'application/json;charset=UTF-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Vary', b'Accept-Encoding'), (b'Trace-Id', b'59240795567cef17'), (b'X-Application-Context', b'application:production,server'), (b'Content-Language', b'en-US'), (b'Cache-Control', b'private, no-store, no-cache, must-revalidate, max-age=0'), (b'P3P', b'"CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT""'), (b'Content-Encoding', b'gzip'), (b'content-length', b'294')]=
+=响应状态码:
+200=
+==================================================拦截response结束==================================================
+192.168.128.181:58764: GET https://api.xueqiu.com/user/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294721988&_s=00ce72&id=1838001425
+                    << 200 OK 422b
+192.168.128.181:58790: GET https://stock.xueqiu.com/v5/stock/indicator/setting/list.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.0.1554294721971&_s=af8ba2&uid=1838001425
+                    << 200 OK 323b
+192.168.128.181:58800: clientconnect
+192.168.128.181:58762: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294721987&_s=40d5a0&system_version=6.0&updated=1540464918213&type=feature_grayscale_config
+                    << 200 OK 40b
+192.168.128.181:58801: clientconnect
+192.168.128.181:58793: clientdisconnect
+192.168.128.181:58802: clientconnect
+192.168.128.181:58782: GET https://tc.xueqiu.com/tc/snowx/app/reddot/query.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294721991&_s=f92037&config_key=broker%3Ared_point_mapper_8_6
+                    << 200 OK 410b
+192.168.128.181:58792: clientdisconnect
+192.168.128.181:58779: GET https://xueqiu.yun.pingan.com/tc/snowx/PAMID/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294722005&_s=daae9e&tid=PAMID
+                    << 200 OK 272b
+192.168.128.181:58798: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294721984&_s=5ac1b6&system_version=6.0&updated=1502957694391&type=stk_quote_main_type_field
+                    << 200 OK 40b
+192.168.128.181:58763: GET https://api.xueqiu.com/etc/prompt/bomb_box/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294721988&_s=38226f&uid=1838001425
+                    << 200 OK 85b
+192.168.128.181:58791: clientdisconnect
+192.168.128.181:58764: clientdisconnect
+192.168.128.181:58790: clientdisconnect
+192.168.128.181:58783: GET https://tc.xueqiu.com/tc/snowx/GLZQ/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294722006&_s=274e6e&tid=GLZQ
+                    << 200 OK 165b
+192.168.128.181:58762: clientdisconnect
+192.168.128.181:58802: POST http://alog.umeng.com/app_logs
+                    << 200 OK 1.05k
+192.168.128.181:58802: clientdisconnect
+192.168.128.181:58800: GET https://promo.xueqiu.com/promotion/display_cache.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294721992&_s=70d673&screen_type=3&date=1554294721992&platform_id=0x04&page_id=0x01
+                    << 200 OK 402b
+192.168.128.181:58801: GET https://tc.xueqiu.com/tc/snowx/GJZQ/securities/exchange.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294722006&_s=15f80f&tid=GJZQ
+                    << 200 OK 165b
+192.168.128.181:58782: clientdisconnect
+192.168.128.181:58779: clientdisconnect
+192.168.128.181:58807: clientconnect
+192.168.128.181:58808: clientconnect
+192.168.128.181:58798: GET https://api.xueqiu.com/statuses/home/hot_spot.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294723466&_s=c015c6&
+                    << 200 OK 80b
+192.168.128.181:58763: GET https://api.xueqiu.com/cubes/discover/editorial/list.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294723464&_s=b5203d&x=0.431&count=6&page=1
+                    << 200 OK 560b
+192.168.128.181:58808: GET https://api.xueqiu.com/v4/statuses/public_timeline_by_category.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294723476&_s=987c14&count=8&network_type=wifi&category=6
+                    << 200 OK 1.86k
+192.168.128.181:58783: clientdisconnect
+192.168.128.181:58807: GET https://api.xueqiu.com/v4/statuses/public_timeline_by_category.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294723468&_s=e44c5c&count=8&network_type=wifi&category=200
+                    << 200 OK 4.57k
+192.168.128.181:58800: clientdisconnect
+192.168.128.181:58812: clientconnect
+192.168.128.181:58813: clientconnect
+192.168.128.181:58814: clientconnect
+192.168.128.181:58818: clientconnect
+192.168.128.181:58763: GET https://api.xueqiu.com/remind/unread.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294723997&_s=2a735f&x=0.422
+                    << 200 OK 160b
+192.168.128.181:58814: GET https://xqimg.imedao.com/169e1956d0669af13fc2179b.png!345x210.webp
+                    << 200 OK 13.62k
+192.168.128.181:58818: GET https://xqimg.imedao.com/169e22f50896c2383fd0eb4a.jpeg!345x210.webp
+                    << 200 OK 11.66k
+192.168.128.181:58813: GET https://xqimg.imedao.com/169e19568d66a12d3fd0fab8.png!345x210.webp
+                    << 200 OK 10.87k
+192.168.128.181:58814: GET https://xqimg.imedao.com/169e30c01566de4f3fcb5e5a.jpg!345x210.webp
+                    << 200 OK 7.28k
+192.168.128.181:58812: GET https://xqimg.imedao.com/169e195620a69aee3fe3287e.png!345x210.webp
+                    << 200 OK 13.53k
+192.168.128.181:58818: GET https://xqimg.imedao.com/169e30c01c36e0523fd8a092.jpg!345x210.webp
+                    << 200 OK 7.65k
+192.168.128.181:58813: GET https://xqimg.imedao.com/169e30c016d6de503fbe5658.jpg!345x210.webp
+                    << 200 OK 7.38k
+192.168.128.181:58820: clientconnect
+192.168.128.181:58820: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294725130&_s=880442&network=WIFI&promotion_id=10000019234&page_id=0x00&x=0.51&brand=unknown&version=11.17&action_time=1554294725130&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58801: clientdisconnect
+192.168.128.181:58822: clientconnect
+192.168.128.181:58823: clientconnect
+192.168.128.181:58824: clientconnect
+192.168.128.181:58825: clientconnect
+192.168.128.181:58798: GET https://api.xueqiu.com/cubes/discover/rank/cube/filter.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294726383&_s=904fd5&updateTime=0&category=0
+                    << 200 OK 491b
+192.168.128.181:58807: GET https://api.xueqiu.com/user/setting/select.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294726384&_s=4bf21e&types=is_open%2Cbegin_time%2Cend_time%2Cdirect_message%2Ccomment%2Cmention_me%2Cmention%2Cnew_follower%2Cnews_message%2Ctrade_message%2Clike_receive%2Cmart_message%2Cstatus_message%2Cimage_watermark%2Cpraise_shake%2Creject_stranger_msg%2Cpublic_timeline%2Cpaid_mention%2Cnotice
+                    << 200 OK 237b
+192.168.128.181:58763: GET https://api.xueqiu.com/cubes/discover/element/buttons.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294726383&_s=e2f928&x=0.108
+                    << 200 OK 645b
+192.168.128.181:58808: GET https://api.xueqiu.com/privacy/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294726385&_s=ac663f&
+                    << 200 OK 247b
+192.168.128.181:58798: GET https://api.xueqiu.com/promotion/display_ad_batch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294726390&_s=22d766&uid=1838001425&platform_id=0x04&page_id=0x08%2C0x22
+                    << 200 OK 279b
+192.168.128.181:58763: GET https://api.xueqiu.com/promotion/display_ad_batch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294726390&_s=3b36b5&uid=1838001425&platform_id=0x04&page_id=0x16%2C0x11%2C0x18
+                    << 200 OK 57b
+192.168.128.181:58825: GET https://api.xueqiu.com/promotion/search_ad.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294726388&_s=fe8e80&pos_id=0&uid=1838001425&platform_id=0x04&page_id=0x07
+                    << 200 OK 136b
+192.168.128.181:58808: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294726392&_s=1d4612&system_version=6.0&updated=1512547809384&type=stk_cata
+                    << 200 OK 419b
+192.168.128.181:58807: GET https://api.xueqiu.com/share/get_content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294726391&_s=656d80&special_id=0&updated=0&amount=0&id=0&type=8&user_id=0
+                    << 200 OK 203b
+192.168.128.181:58822: GET https://tc.xueqiu.com/tc/snowx/trade/setting/query.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294726386&_s=c01f50&keys=position_card_display
+                    << 200 OK 98b
+192.168.128.181:58830: clientconnect
+192.168.128.181:58824: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294726387&_s=9de6a5&system_version=6.0&updated=0&type=profile_menu_v10.9_anonymous
+                    << 200 OK 1009b
+192.168.128.181:58808: GET https://api.xueqiu.com/statuses/abtest/switch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294726396&_s=c2828a&
+                    << 200 OK 68b
+192.168.128.181:58763: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294726394&_s=559212&system_version=6.0&updated=0&type=trade_home_menu_config_v10.0
+                    << 200 OK 884b
+192.168.128.181:58823: GET https://api.xueqiu.com/friendships/groups.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294726387&_s=b175e8&
+                    << 200 OK 214b
+192.168.128.181:58825: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294726393&_s=d4cf4f&system_version=6.0&updated=0&type=android_upgrade_config
+                    << 200 OK 424b
+192.168.128.181:58798: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294726392&_s=25efeb&system_version=6.0&updated=0&type=stk_hqzx_menu
+                    << 200 OK 166b
+192.168.128.181:58807: GET https://api.xueqiu.com/stock/privilege/userprivilege/query.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294726397&_s=ee5cd3&
+                    << 200 OK 62b
+192.168.128.181:58820: clientdisconnect
+192.168.128.181:58822: clientdisconnect
+192.168.128.181:58824: clientdisconnect
+192.168.128.181:58823: clientdisconnect
+192.168.128.181:58832: clientconnect
+192.168.128.181:58834: clientconnect
+192.168.128.181:58763: GET https://api.xueqiu.com/cubes/discover/element/buttons.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294726991&_s=700ca9&x=0.561
+                    << 200 OK 645b
+192.168.128.181:58807: GET https://api.xueqiu.com/privacy/show.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294726994&_s=10e086&
+                    << 200 OK 247b
+192.168.128.181:58825: GET https://api.xueqiu.com/friendships/groups.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294727006&_s=bd2a3b&
+                    << 200 OK 214b
+192.168.128.181:58830: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294726398&_s=bb5099&system_version=6.0&updated=0&type=trade_support_brokers
+                    << 200 OK 89b
+192.168.128.181:58808: GET https://api.xueqiu.com/user/setting/select.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294726992&_s=d60164&types=is_open%2Cbegin_time%2Cend_time%2Cdirect_message%2Ccomment%2Cmention_me%2Cmention%2Cnew_follower%2Cnews_message%2Ctrade_message%2Clike_receive%2Cmart_message%2Cstatus_message%2Cimage_watermark%2Cpraise_shake%2Creject_stranger_msg%2Cpublic_timeline%2Cpaid_mention%2Cnotice
+                    << 200 OK 237b
+192.168.128.181:58798: GET https://api.xueqiu.com/cubes/discover/rank/cube/filter.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294726991&_s=7e91c2&updateTime=1443054663000&category=0
+                    << 200 OK 48b
+192.168.128.181:58834: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294727007&_s=2f67f1&system_version=6.0&updated=1551776791779&type=profile_menu_v10.9_anonymous
+                    << 200 OK 40b
+192.168.128.181:58807: GET https://api.xueqiu.com/promotion/display_ad_batch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294727008&_s=45fd9b&uid=1838001425&platform_id=0x04&page_id=0x08%2C0x22
+                    << 200 OK 279b
+192.168.128.181:58763: GET https://api.xueqiu.com/promotion/search_ad.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294727007&_s=c9cd46&pos_id=0&uid=1838001425&platform_id=0x04&page_id=0x07
+                    << 200 OK 136b
+192.168.128.181:58832: GET https://tc.xueqiu.com/tc/snowx/trade/setting/query.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294726995&_s=dbdce8&keys=position_card_display
+                    << 200 OK 98b
+192.168.128.181:58837: clientconnect
+192.168.128.181:58763: GET https://api.xueqiu.com/promotion/display_ad_batch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294727009&_s=09ecf4&uid=1838001425&platform_id=0x04&page_id=0x16%2C0x11%2C0x18
+                    << 200 OK 57b
+192.168.128.181:58830: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294727032&_s=5c8c5a&system_version=6.0&updated=0&type=stk_hqzx_menu
+                    << 200 OK 166b
+192.168.128.181:58798: GET https://api.xueqiu.com/statuses/abtest/switch.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294727037&_s=fdc5a6&
+                    << 200 OK 68b
+192.168.128.181:58834: GET https://api.xueqiu.com/stock/privilege/userprivilege/query.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294727038&_s=8938b0&
+                    << 200 OK 62b
+192.168.128.181:58807: GET https://api.xueqiu.com/share/get_content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294727022&_s=5ce071&special_id=0&updated=0&amount=0&id=0&type=8&user_id=0
+                    << 200 OK 203b
+192.168.128.181:58808: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294727034&_s=e0d6d2&system_version=6.0&updated=0&type=android_upgrade_config
+                    << 200 OK 424b
+192.168.128.181:58763: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294727039&_s=069c59&system_version=6.0&updated=0&type=trade_support_brokers
+                    << 200 OK 89b
+192.168.128.181:58825: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294727023&_s=8edd02&system_version=6.0&updated=1512547809384&type=stk_cata
+                    << 200 OK 419b
+192.168.128.181:58832: clientdisconnect
+192.168.128.181:58830: clientdisconnect
+192.168.128.181:58798: clientdisconnect
+192.168.128.181:58837: GET https://api.xueqiu.com/mobile_config/content.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294727036&_s=60326f&system_version=6.0&updated=0&type=trade_home_menu_config_v10.0
+                    << 200 OK 884b
+192.168.128.181:58834: clientdisconnect
+192.168.128.181:58763: GET https://api.xueqiu.com/app/mobile_module?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294727823&_s=eb79be&x=0.509
+                    << 200 OK 326b
+192.168.128.181:58839: clientconnect
+192.168.128.181:58839: GET https://assets.imedao.com/mobile-modules/mobile-module-broker-1553765861556.tar.gz HTTP/2.0
+                    << 200  730.59k
+192.168.128.181:58839: GET https://assets.imedao.com/mobile-modules/mobile-module-wallet-1553765861556.tar.gz HTTP/2.0
+                    << 200  168.08k
+192.168.128.181:58839: GET https://assets.imedao.com/mobile-modules/mobile-module-static-1553765861556.tar.gz HTTP/2.0
+                    << 200  1.85m
+192.168.128.181:58839: GET https://assets.imedao.com/mobile-modules/mobile-module-accountAnalysis-1553765861556.tar.gz HTTP/2.0
+                    << 200  24.87k
+192.168.128.181:58845: clientconnect
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294731131&_s=fd1382&network=WIFI&promotion_id=2099&page_id=0x00&x=0.22&brand=unknown&version=11.17&action_time=1554294731131&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58808: clientdisconnect
+192.168.128.181:58839: GET https://assets.imedao.com/mobile-modules/mobile-module-pinganopen-1553765861556.tar.gz HTTP/2.0
+                    << 200  410.5k
+192.168.128.181:58839: GET https://assets.imedao.com/mobile-modules/mobile-module-stock-1553765861556.tar.gz HTTP/2.0
+                    << 200  35.75k
+192.168.128.181:58763: POST https://api.xueqiu.com/upload/mobile/offlineFile?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294735300&_s=a29afc
+                    << 200 OK 30b
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294737129&_s=3124d0&network=WIFI&promotion_id=10000019291&page_id=0x00&x=0.87&brand=unknown&version=11.17&action_time=1554294737129&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58848: clientconnect
+192.168.128.181:58848: POST http://android.bugly.qq.com/rqd/async?aid=75824c0c-12f1-4008-b67e-be6fccb66b2d
+                    << 200 OK 393b
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294743127&_s=e47d7e&network=WIFI&promotion_id=2097&page_id=0x00&x=0.28&brand=unknown&version=11.17&action_time=1554294743127&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294746128&_s=e0109b&network=WIFI&promotion_id=2100&page_id=0x00&x=0.38&brand=unknown&version=11.17&action_time=1554294746128&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294749129&_s=46eb84&network=WIFI&promotion_id=10000019303&page_id=0x00&x=0.31&brand=unknown&version=11.17&action_time=1554294749128&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58763: POST https://api.xueqiu.com/upload/mobile/offlineFile?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294750306&_s=4f8b07
+                    << 200 OK 30b
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294755128&_s=4701c6&network=WIFI&promotion_id=10000019234&page_id=0x00&x=0.73&brand=unknown&version=11.17&action_time=1554294755128&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294761129&_s=d02923&network=WIFI&promotion_id=2099&page_id=0x00&x=0.32&brand=unknown&version=11.17&action_time=1554294761129&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58763: POST https://api.xueqiu.com/upload/mobile/offlineFile?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294765313&_s=f58e20
+                    << 200 OK 30b
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294767129&_s=04daa9&network=WIFI&promotion_id=10000019291&page_id=0x00&x=0.77&brand=unknown&version=11.17&action_time=1554294767129&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294770132&_s=a21b90&network=WIFI&promotion_id=2097&page_id=0x00&x=0.26&brand=unknown&version=11.17&action_time=1554294770132&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294776141&_s=33f416&network=WIFI&promotion_id=2100&page_id=0x00&x=0.39&brand=unknown&version=11.17&action_time=1554294776141&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58763: POST https://api.xueqiu.com/upload/mobile/offlineFile?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294780318&_s=b4b046
+                    << 200 OK 30b
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294782129&_s=854437&network=WIFI&promotion_id=10000019303&page_id=0x00&x=0.75&brand=unknown&version=11.17&action_time=1554294782129&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58763: GET https://api.xueqiu.com/remind/unread.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294783996&_s=6d91ec&x=0.30
+                    << 200 OK 160b
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294788131&_s=49beba&network=WIFI&promotion_id=10000019234&page_id=0x00&x=0.20&brand=unknown&version=11.17&action_time=1554294788130&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294794132&_s=0c2624&network=WIFI&promotion_id=2099&page_id=0x00&x=0.30&brand=unknown&version=11.17&action_time=1554294794132&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58763: POST https://api.xueqiu.com/upload/mobile/offlineFile?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294795323&_s=b6b128
+                    << 200 OK 30b
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294800129&_s=b284d4&network=WIFI&promotion_id=10000019291&page_id=0x00&x=0.69&brand=unknown&version=11.17&action_time=1554294800129&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294806129&_s=33546e&network=WIFI&promotion_id=2097&page_id=0x00&x=0.33&brand=unknown&version=11.17&action_time=1554294806129&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58763: POST https://api.xueqiu.com/upload/mobile/offlineFile?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294810334&_s=4755ba
+                    << 200 OK 30b
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294812130&_s=31cd24&network=WIFI&promotion_id=2100&page_id=0x00&x=0.90&brand=unknown&version=11.17&action_time=1554294812130&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294818129&_s=260617&network=WIFI&promotion_id=10000019303&page_id=0x00&x=0.29&brand=unknown&version=11.17&action_time=1554294818129&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294824129&_s=ffe006&network=WIFI&promotion_id=10000019234&page_id=0x00&x=0.33&brand=unknown&version=11.17&action_time=1554294824128&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58763: POST https://api.xueqiu.com/upload/mobile/offlineFile?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294825339&_s=4f38eb
+                    << 200 OK 30b
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294830130&_s=49370b&network=WIFI&promotion_id=2099&page_id=0x00&x=0.77&brand=unknown&version=11.17&action_time=1554294830129&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294836128&_s=eb5646&network=WIFI&promotion_id=10000019291&page_id=0x00&x=0.102&brand=unknown&version=11.17&action_time=1554294836128&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58763: POST https://api.xueqiu.com/upload/mobile/offlineFile?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294840345&_s=b9ca51
+                    << 200 OK 30b
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294842131&_s=276d25&network=WIFI&promotion_id=2097&page_id=0x00&x=0.121&brand=unknown&version=11.17&action_time=1554294842130&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58763: GET https://api.xueqiu.com/remind/unread.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294843996&_s=4404b7&x=0.35
+                    << 200 OK 160b
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294848129&_s=1286d6&network=WIFI&promotion_id=2100&page_id=0x00&x=0.28&brand=unknown&version=11.17&action_time=1554294848129&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+::ffff:192.168.128.181:58839: HTTP/2 connection terminated by server: error code: 0, last stream id: 11, additional data: None
+192.168.128.181:58839: clientdisconnect
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294854130&_s=a5b456&network=WIFI&promotion_id=10000019303&page_id=0x00&x=0.27&brand=unknown&version=11.17&action_time=1554294854130&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58763: POST https://api.xueqiu.com/upload/mobile/offlineFile?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294855353&_s=c08e40
+                    << 200 OK 30b
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294860128&_s=efc808&network=WIFI&promotion_id=10000019234&page_id=0x00&x=0.73&brand=unknown&version=11.17&action_time=1554294860128&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294863130&_s=7dd392&network=WIFI&promotion_id=2099&page_id=0x00&x=0.31&brand=unknown&version=11.17&action_time=1554294863130&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294869130&_s=b5ae54&network=WIFI&promotion_id=10000019291&page_id=0x00&x=0.32&brand=unknown&version=11.17&action_time=1554294869130&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58763: POST https://api.xueqiu.com/upload/mobile/offlineFile?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294870359&_s=b860ae
+                    << 200 OK 30b
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294875129&_s=ddc37d&network=WIFI&promotion_id=2097&page_id=0x00&x=0.71&brand=unknown&version=11.17&action_time=1554294875129&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294878131&_s=9e0822&network=WIFI&promotion_id=2100&page_id=0x00&x=0.57&brand=unknown&version=11.17&action_time=1554294878131&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294884127&_s=fc2d4d&network=WIFI&promotion_id=10000019303&page_id=0x00&x=0.30&brand=unknown&version=11.17&action_time=1554294884127&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58763: POST https://api.xueqiu.com/upload/mobile/offlineFile?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294885365&_s=399d87
+                    << 200 OK 30b
+192.168.128.181:58845: GET https://promo.xueqiu.com/promotion/show_log.json?_t=1GENYMOTION14f34b4858ce20a885ce5fb74b16b76a.1838001425.1554294721975.1554294887129&_s=4248de&network=WIFI&promotion_id=10000019234&page_id=0x00&x=0.78&brand=unknown&version=11.17&action_time=1554294887129&platform_id=0x04&model=Samsung+Galaxy+S6
+                    << 200 OK 30b
+192.168.128.181:58771: clientdisconnect
+192.168.128.181:58845: clientdisconnect
+192.168.128.181:58837: clientdisconnect
+192.168.128.181:58758: clientdisconnect
+192.168.128.181:58760: clientdisconnect
+192.168.128.181:58746: clientdisconnect
+192.168.128.181:58812: clientdisconnect
+192.168.128.181:58848: clientdisconnect
+192.168.128.181:58818: clientdisconnect
+192.168.128.181:58807: clientdisconnect
+192.168.128.181:58784: clientdisconnect
+192.168.128.181:58763: clientdisconnect
+192.168.128.181:58788: clientdisconnect
+192.168.128.181:58813: clientdisconnect
+192.168.128.181:58825: clientdisconnect
+192.168.128.181:58814: clientdisconnect
+192.168.128.181:58744: clientdisconnect
+192.168.128.181:58754: clientdisconnect
