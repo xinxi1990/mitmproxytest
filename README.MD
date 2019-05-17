@@ -9,7 +9,7 @@
 ```angularjs
 python3.7 -m venv /Users/xinxi/PycharmProjects/mitmproxytest/venv or virtualenv venv
 
-source venv/bin/activate
+ 
 
 deactivate
 ```

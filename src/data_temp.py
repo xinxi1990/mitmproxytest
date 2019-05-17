@@ -10,6 +10,8 @@ now = time.strftime("%Y%m%d%H%M%S", time.localtime())
 
 home_mock_url = "https://api.xueqiu.com/v4/statuses/public_timeline/categories.json"
 
+
+
 def set_home_mock_data(value):
     home_mock_data = {
 		"list": [{

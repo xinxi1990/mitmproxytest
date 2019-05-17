@@ -25,7 +25,6 @@ def request(flow: mitmproxy.http.HTTPFlow):
 
 
 def response(flow: mitmproxy.http.HTTPFlow):
-
     if home_mock_url in flow.request.url:
         ctx.log.info("=" * 50 + "拦截response开始" + "=" * 50)
         ctx.log.info(flow.request.url)
@@ -36,6 +35,7 @@ def response(flow: mitmproxy.http.HTTPFlow):
         ctx.log.info(get_mock_data)
         ctx.log.info("=" * 50 + "mock数据" + "=" * 50)
         flow.response.set_text(get_mock_data)
+        flow.response.set_state()
         ctx.log.info("=响应header:{}=".format("\n" + str(response.headers)))
         ctx.log.info("=响应状态码:{}=".format("\n" + str(response.status_code)))
         ctx.log.info("=" * 50 + "拦截response结束" + "=" * 50)
