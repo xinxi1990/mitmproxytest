@@ -6,9 +6,15 @@
 """
 
 from __future__ import print_function
+from mathrandom import MathRandom
 from jsonpath_rw import jsonpath, parse
 import json,re
+import logger
+logger.setup_logger('INFO')
 
+JSON_DATA_VARNAME = 'json_data'  # 存在json数据的变量名称
+data_struct_list = []  # 用于存放所有 json 元素路径，形如 json_data[0]["data"][0]["components"][0]["enabled"]
+data_struct_link = 'json_data'  # 用于临时存放单条json 元素路径(的一部分)
 
 def modify_deep_dict(new_value, json_path, json_dict):
     if "." in json_path:
@@ -86,6 +92,11 @@ def dict_generator(indict, pre=None):
 
 
 
+
+
+
+
+
 def get_jsonpath_list(sJOSN):
     '''
     生成递归jsonpath列表
@@ -96,8 +107,8 @@ def get_jsonpath_list(sJOSN):
     for i in dict_generator(sJOSN):
         get_json_path = '.'.join(i[0:-1])
         json_path_value = i[-1]
-        #print("get json path is:{}".format(get_json_path))
-        #print("get json path value:{}".format(json_path_value))
+        logger.log_debug("get json path is:{}".format(get_json_path))
+        logger.log_debug("get json path value:{}".format(json_path_value))
         jsonpath_list.append(get_json_path)
     return jsonpath_list
 
@@ -197,19 +208,15 @@ def edit_dict(expr,new_value,json_data):
 
     for sub_expr in expr.split('.'):
         re_pattern += parse_sub_expr(sub_expr)
-    # print('\n元素路径jsonpath表达式为：%s' % expr)
-    # print('元素路径正则表达式re pattern为：%s' % re_pattern)
-    # print('\njsonpath 匹配结果如下：')
+    logger.log_debug('\n元素路径jsonpath表达式为：%s' % expr)
+    logger.log_debug('元素路径正则表达式re pattern为：%s' % re_pattern)
+    logger.log_debug('\njsonpath 匹配结果如下：')
     re_pattern = re.compile(re_pattern)
     target_set = set()  # 匹配结果会有重复值，所以采用集合
     for item in data_struct_list:
         results = re.findall(re_pattern, item)
         for result in results:
-            # print('匹配的元素路径jsonpath为：%s' % item)
-            # print('正则匹配结果为：%s' % result)
             target = item[0:item.index(result) + len(result)]
-            # print('供提取数据使用的jsonpath为：%s' % target)
-            # print('提取的结果值为：%s \n' % eval(target))
             target_set.add(target)
 
     # 通过匹配提取的目标结果，操作json串
@@ -217,24 +224,13 @@ def edit_dict(expr,new_value,json_data):
         target = eval(item)
         if type(target) == type({}):  # 如果为字典
             # 更改键的值
-            print("更改键的值")
+            logger.log_debug("更改键:" + edit_key)
             target[edit_key] = new_value
-            # # 新增键值对
-            # target['new_key'] = 'key_value'
-            # # 更改键的名称，可以考虑先复制旧的键值，赋值给新的键，然后删除旧的键
-            # target['description_new'] = target['description']
-            # # 删除键值对
-            #
-            # del target['description']
-
         elif type(target) == type([]):
             # 暂不实现
             pass
-
-    print('重新生成的新json数据:\n{}'.format(json_data))
-
-
-
+    logger.log_debug('重新生成的新json数据:\n{}'.format(json_data))
+    return json_data
 
 
 def del_dict(expr,json_data):
@@ -243,46 +239,82 @@ def del_dict(expr,json_data):
     :return:
     '''
     expr_path = expr.split(".")
-    edit_key = expr_path[-1]
-    expr = expr.replace("." + edit_key,'')
+    del_key = expr_path[-1]
+    expr = expr.replace("." + del_key,'')
     # 解析表达式为正则表达式
     parse_json(json_data, data_struct_link)
     re_pattern = ''
     for sub_expr in expr.split('.'):
         re_pattern += parse_sub_expr(sub_expr)
-    # print('\n元素路径jsonpath表达式为：%s' % expr)
-    # print('元素路径正则表达式re pattern为：%s' % re_pattern)
-    # print('\njsonpath 匹配结果如下：')
+    logger.log_debug('\n元素路径jsonpath表达式为：%s' % expr)
+    logger.log_debug('元素路径正则表达式re pattern为：%s' % re_pattern)
+    logger.log_debug('\njsonpath 匹配结果如下：')
     re_pattern = re.compile(re_pattern)
     target_set = set()  # 匹配结果会有重复值，所以采用集合
     for item in data_struct_list:
         results = re.findall(re_pattern, item)
         for result in results:
-            # print('匹配的元素路径jsonpath为：%s' % item)
-            # print('正则匹配结果为：%s' % result)
             target = item[0:item.index(result) + len(result)]
-            # print('供提取数据使用的jsonpath为：%s' % target)
-            # print('提取的结果值为：%s \n' % eval(target))
             target_set.add(target)
-
     # 通过匹配提取的目标结果，操作json串
     for item in target_set:
         target = eval(item)
         if type(target) == type({}):  # 如果为字典
-           print("删除键的值")
-           del target[edit_key]
+           logger.log_debug("删除键:" + del_key)
+           del target[del_key]
         elif type(target) == type([]):
             # 暂不实现
             pass
+    logger.log_debug('重新生成的新json数据:\n{}'.format(json_data))
+    return json_data
 
-    print('重新生成的新json数据:\n{}'.format(json_data))
+
+
+
+def drop_list(expr,json_data):
+    '''
+    改成空列表
+    :return:
+    '''
+    # 解析表达式为正则表达式
+    expr_path = expr.split(".")
+    del_key = expr_path[-1]
+    expr = expr.replace("." + del_key, '')
+    parse_json(json_data, data_struct_link)
+    re_pattern = ''
+    for sub_expr in expr.split('.'):
+        re_pattern += parse_sub_expr(sub_expr)
+    logger.log_debug('\n元素路径jsonpath表达式为：%s' % expr)
+    logger.log_debug('元素路径正则表达式re pattern为：%s' % re_pattern)
+    logger.log_debug('\njsonpath 匹配结果如下：')
+    re_pattern = re.compile(re_pattern)
+    target_set = set()  # 匹配结果会有重复值，所以采用集合
+    for item in data_struct_list:
+        results = re.findall(re_pattern, item)
+        for result in results:
+            target = item[0:item.index(result) + len(result)]
+            target_set.add(target)
+    # 通过匹配提取的目标结果，操作json串
+    for item in target_set:
+        target = eval(item)
+        print(target)
+        if type(target) == type({}):  # 如果为字典
+            if '[*]' in del_key:
+                target[del_key.replace('[*]','')] = []
+            else:
+                target[del_key] = []
+        elif type(target) == type([]):
+            # 暂不实现
+            pass
+    logger.log_debug('重新生成的新json数据:\n{}'.format(json_data))
+    return json_data
 
 
 
 
 
 if __name__ == "__main__":
-    sJOSN =  {
+    json_data =  {
                 "base_config":{
                     "enforce":{
                         "value":"0",
@@ -331,10 +363,22 @@ if __name__ == "__main__":
     data_struct_list = []  # 用于存放所有 json 元素路径，形如 json_data[0]["data"][0]["components"][0]["enabled"]
     data_struct_link = 'json_data'  # 用于临时存放单条json 元素路径(的一部分)
     #print(get_jsonpath_list(sJOSN))
-    expr = 'safe_control_list.list[*].isactive'
-    # edit_dict(expr=expr,new_value="******",json_data=sJOSN)
 
-    del_dict(expr=expr,json_data=sJOSN)
+    expr = 'safe_control_list.list[*]'
+    new_data = del_list(expr=expr,json_data=json_data)
+
+    print(new_data)
+
+
+
+
+    # del_dict(expr=expr,json_data=json_data)
+
+    # for index in range(1):
+    #     json_path_list = get_jsonpath_list(json_data)
+    #     expr = (MathRandom().get_random_list(json_path_list))
+    #     print(expr)
+    #     print(edit_dict(expr=expr,new_value="555555555555",json_data=json_data))
 
 
 

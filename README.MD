@@ -62,6 +62,11 @@ mitmdump -s proxyt_client.py (没有gui模式)
 mitmweb -s proxyt_client.py (启动web页面模式)
 ```
 
+```
+mitmweb -s proxyserver.py (启动web页面模式)
+```
+
+
 # 报告
 ![image](images/report.png)
 
@@ -71,7 +76,7 @@ mitmweb -s proxyt_client.py (启动web页面模式)
 借助 anyproxy 二次开发，改善统计打点日志测试流程<br>
 https://testerhome.com/topics/9271
 
-mitmproxy
+mitmproxy<br>
 https://github.com/mitmproxy/mitmproxy.git<br>
 
 mitmproxy使用<br>

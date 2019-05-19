@@ -49,6 +49,19 @@ class MathRandom(object):
         print(result)
 
 
+
+    def get_random_list(self,list):
+        '''
+        列表中随机返回一个
+        :param list:
+        :return:
+        '''
+        return random.choice(list)
+
+
+
 if __name__ == '__main__':
     import sys
     MathRandom.main(sys.argv)
+
+
