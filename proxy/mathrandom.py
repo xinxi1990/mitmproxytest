@@ -60,6 +60,7 @@ class MathRandom(object):
 
 
 
+
 if __name__ == '__main__':
     import sys
     MathRandom.main(sys.argv)

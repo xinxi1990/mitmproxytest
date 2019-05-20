@@ -64,6 +64,8 @@ mitmweb -s proxyt_client.py (启动web页面模式)
 
 ```
 mitmweb -s proxyserver.py (启动web页面模式)
+
+mitmdump -s proxyserver.py
 ```
 
 

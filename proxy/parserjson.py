@@ -10,7 +10,7 @@ from mathrandom import MathRandom
 from jsonpath_rw import jsonpath, parse
 import json,re
 import logger
-logger.setup_logger('INFO')
+logger.setup_logger('DEBUG')
 
 JSON_DATA_VARNAME = 'json_data'  # 存在json数据的变量名称
 data_struct_list = []  # 用于存放所有 json 元素路径，形如 json_data[0]["data"][0]["components"][0]["enabled"]
@@ -89,11 +89,6 @@ def dict_generator(indict, pre=None):
                 yield pre + [key, value]
     else:
         yield indict
-
-
-
-
-
 
 
 
@@ -233,6 +228,7 @@ def edit_dict(expr,new_value,json_data):
     return json_data
 
 
+
 def del_dict(expr,json_data):
     '''
     删除键的值
@@ -357,17 +353,15 @@ if __name__ == "__main__":
                         }
                     ]
                 }
-            }
-
-    JSON_DATA_VARNAME = 'json_data'  # 存在json数据的变量名称
-    data_struct_list = []  # 用于存放所有 json 元素路径，形如 json_data[0]["data"][0]["components"][0]["enabled"]
-    data_struct_link = 'json_data'  # 用于临时存放单条json 元素路径(的一部分)
-    #print(get_jsonpath_list(sJOSN))
-
-    expr = 'safe_control_list.list[*]'
-    new_data = del_list(expr=expr,json_data=json_data)
-
-    print(new_data)
+    }
+    #       drop         }                                                  _list(expr=expr, json_data=self.rep_json)
+    #                ]
+    #            }
+    #
+    # expr = 'safe_control_list.list[*]'
+    # new_data = drop_list(expr=expr,json_data=json_data)
+    #
+    # print(new_data)
 
 
 
