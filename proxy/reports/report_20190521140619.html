@@ -1,0 +1,1530 @@
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TestReport</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      color: #333;
+      margin: 0 auto;
+      width: 960px;
+    }
+    #summary, #details {
+      width: 960px;
+    }
+    #summary th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    #summary td {
+      background-color: lightblue;
+      text-align: center;
+      padding: 4px 8px;
+    }
+    #details th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    #details td {
+      background-color: lightblue;
+      padding: 5px 12px;
+    }
+    #details .detail {
+      background-color: lightgrey;
+      font-size: smaller;
+      padding: 5px 10px;
+      text-align: center;
+    }
+    #details .success {
+      background-color: greenyellow;
+    }
+    #details .error {
+      background-color: red;
+    }
+    #details .failure {
+      background-color: salmon;
+    }
+    #details .skipped {
+      background-color: gray;
+    }
+
+    .button {
+      font-size: 1em;
+      padding: 6px;
+      width: 4em;
+      text-align: center;
+      background-color: #06d85f;
+      border-radius: 20px/50px;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+    }
+    a.button{
+      color: gray;
+      text-decoration: none;
+    }
+    .button:hover {
+      background: #2cffbd;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      transition: opacity 500ms;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .overlay:target {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .popup {
+      margin: 70px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 5px;
+      width: 30%;
+      position: relative;
+      transition: all 5s ease-in-out;
+    }
+
+    .popup h2 {
+      margin-top: 0;
+      color: #333;
+      font-family: Tahoma, Arial, sans-serif;
+    }
+    .popup .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      transition: all 200ms;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+    }
+    .popup .close:hover {
+      color: #06d85f;
+    }
+    .popup .content {
+      max-height: 30%;
+      overflow: auto;
+      text-align: left;
+    }
+
+    @media screen and (max-width: 700px) {
+      .box {
+        width: 70%;
+      }
+      .popup {
+        width: 70%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Test Report: 测试报告</h1>
+
+  <h2>Details</h2>
+  <table id="details">
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+    
+      <tr>
+        <th class="http://entree.dev.igetget.com/kaleidoscope/homepage/new_structure" style="width:5em;">http://entree.dev.igetget.com/kaleidoscope/homepage/new_structure</td>
+        <td>200</td>
+        <td style="text-align:center;width:6em;">74.0 ms</td>
+        <td class="detail">
+            <a class="button" href="#popup_log_1">data</a>
+            <div id="popup_log_1" class="overlay">
+              <div class="popup">
+                <h2>Original</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content"><pre>{
+    "h": {
+        "c": 0,
+        "e": "",
+        "s": 1558418583,
+        "t": 2
+    },
+    "c": {
+        "home_bucket_id": "A",
+        "ios_column_switch": 0,
+        "now": "2019-05-21",
+        "structure": [
+            {
+                "count": 5,
+                "data": {},
+                "has_title": 2,
+                "page_type": 112,
+                "position": 20,
+                "struct_id": 25112,
+                "type": "NewCategory"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 113,
+                "position": 40,
+                "struct_id": 25114,
+                "type": "HomepageOperationAssortment"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 10,
+                "position": 50,
+                "struct_id": 25115,
+                "type": "live"
+            },
+            {
+                "count": 0,
+                "data": {},
+                "has_title": 1,
+                "page_type": 3,
+                "position": 60,
+                "struct_id": 25116,
+                "type": "freeAudio"
+            },
+            {
+                "count": 0,
+                "data": {},
+                "has_title": 2,
+                "page_type": 2,
+                "position": 70,
+                "struct_id": 25119,
+                "type": "column"
+            },
+            {
+                "count": 0,
+                "data": {},
+                "has_title": 2,
+                "page_type": 36,
+                "position": 80,
+                "struct_id": 25118,
+                "type": "master"
+            },
+            {
+                "count": 0,
+                "data": {},
+                "has_title": 2,
+                "page_type": 22,
+                "position": 90,
+                "struct_id": 25117,
+                "type": "course"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 131,
+                "position": 100,
+                "struct_id": 25120,
+                "type": "HomepageLastUpdateStory"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 130,
+                "position": 110,
+                "struct_id": 25121,
+                "type": "HomepageLastUpdateEbook"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 132,
+                "position": 120,
+                "struct_id": 25122,
+                "type": "NewHomepageLastUpdateClass"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 90,
+                "position": 130,
+                "struct_id": 25123,
+                "type": "NewHomepageOperationContentModule"
+            },
+            {
+                "count": 3,
+                "data": {},
+                "has_title": 2,
+                "page_type": 127,
+                "position": 140,
+                "struct_id": 25124,
+                "type": "HomepageRankList"
+            },
+            {
+                "count": 0,
+                "data": {
+                    "list": [
+                        {
+                            "count": 0,
+                            "data": {},
+                            "has_title": 2,
+                            "page_type": 124,
+                            "position": 4,
+                            "struct_id": 25109,
+                            "type": "RecommendGoods"
+                        },
+                        {
+                            "count": 0,
+                            "data": {},
+                            "has_title": 2,
+                            "page_type": 125,
+                            "position": 5,
+                            "struct_id": 25110,
+                            "type": "RecommendFeedBanner"
+                        }
+                    ]
+                },
+                "has_title": 2,
+                "page_type": 129,
+                "position": 260,
+                "struct_id": 25136,
+                "type": "NewGuessYouLike"
+            }
+        ]
+    }
+}</pre></div>
+                <h2>Intercept</h2>
+                <div class="content"><pre>{
+    "h": {
+        "c": 0,
+        "e": "",
+        "s": 1558418583,
+        "t": 2
+    },
+    "c": {
+        "home_bucket_id": "A",
+        "ios_column_switch": 0,
+        "now": "2019-05-21",
+        "structure": [
+            {
+                "count": 5,
+                "data": {},
+                "has_title": 2,
+                "page_type": 112,
+                "position": 20,
+                "struct_id": 25112,
+                "type": "NewCategory"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 113,
+                "position": 40,
+                "struct_id": 25114,
+                "type": "HomepageOperationAssortment"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 10,
+                "position": 50,
+                "struct_id": 25115,
+                "type": "live"
+            },
+            {
+                "count": 0,
+                "data": {},
+                "has_title": 1,
+                "page_type": 3,
+                "position": 60,
+                "struct_id": 25116,
+                "type": "freeAudio"
+            },
+            {
+                "count": 0,
+                "data": {},
+                "has_title": 2,
+                "page_type": 2,
+                "position": 70,
+                "struct_id": 25119,
+                "type": "column"
+            },
+            {
+                "count": 0,
+                "data": {},
+                "has_title": 2,
+                "page_type": 36,
+                "position": 80,
+                "struct_id": 25118,
+                "type": "master"
+            },
+            {
+                "count": 0,
+                "data": {},
+                "has_title": 2,
+                "page_type": 22,
+                "position": 90,
+                "struct_id": 25117,
+                "type": "course"
+            },
+            {
+                "count": 1,
+                "data": ".vYmtTKyQV",
+                "has_title": 2,
+                "page_type": 131,
+                "position": 100,
+                "struct_id": 25120,
+                "type": "HomepageLastUpdateStory"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 130,
+                "position": 110,
+                "struct_id": 25121,
+                "type": "HomepageLastUpdateEbook"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 132,
+                "position": 120,
+                "struct_id": 25122,
+                "type": "NewHomepageLastUpdateClass"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 90,
+                "position": 130,
+                "struct_id": 25123,
+                "type": "NewHomepageOperationContentModule"
+            },
+            {
+                "count": 3,
+                "data": {},
+                "has_title": 2,
+                "page_type": 127,
+                "position": 140,
+                "struct_id": 25124,
+                "type": "HomepageRankList"
+            },
+            {
+                "count": 0,
+                "data": {
+                    "list": [
+                        {
+                            "count": 0,
+                            "data": {},
+                            "has_title": 2,
+                            "page_type": 124,
+                            "position": 4,
+                            "struct_id": 25109,
+                            "type": "RecommendGoods"
+                        },
+                        {
+                            "count": 0,
+                            "data": {},
+                            "has_title": 2,
+                            "page_type": 125,
+                            "position": 5,
+                            "struct_id": 25110,
+                            "type": "RecommendFeedBanner"
+                        }
+                    ]
+                },
+                "has_title": 2,
+                "page_type": 129,
+                "position": 260,
+                "struct_id": 25136,
+                "type": "NewGuessYouLike"
+            }
+        ]
+    }
+}</pre></div>
+                <h2>Diff</h2>
+                <div class="content"><pre color="red">{'iterable_item_added': {"root['c']['structure'][7]": {'count': 1, 'data': '.vYmtTKyQV', 'has_title': 2, 'page_type': 131, 'position': 100, 'struct_id': 25120, 'type': 'HomepageLastUpdateStory'}}, 'iterable_item_removed': {"root['c']['structure'][7]": {'count': 1, 'data': {}, 'has_title': 2, 'page_type': 131, 'position': 100, 'struct_id': 25120, 'type': 'HomepageLastUpdateStory'}}}</pre></div>
+              </div>
+            </div>
+
+
+        </td>
+      </tr>
+    
+      <tr>
+        <th class="http://entree.dev.igetget.com/kaleidoscope/internal/homepage/category/structuredata" style="width:5em;">http://entree.dev.igetget.com/kaleidoscope/internal/homepage/category/structuredata</td>
+        <td>200</td>
+        <td style="text-align:center;width:6em;">84.0 ms</td>
+        <td class="detail">
+            <a class="button" href="#popup_log_2">data</a>
+            <div id="popup_log_2" class="overlay">
+              <div class="popup">
+                <h2>Original</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content"><pre>{
+    "h": {
+        "c": 0,
+        "e": "",
+        "s": 1558418583,
+        "t": 1
+    },
+    "c": {
+        "count": 5,
+        "title": "",
+        "rightTitle": "",
+        "list": [
+            {
+                "m_url": "",
+                "m_id": 0,
+                "m_from": "",
+                "m_is_shop": 1,
+                "m_reddot": 0,
+                "m_img": "",
+                "m_type": 5,
+                "m_isSubscribe": 0,
+                "m_title": "h5\u5546\u57ce"
+            }
+        ]
+    }
+}</pre></div>
+                <h2>Intercept</h2>
+                <div class="content"><pre>{
+    "h": {
+        "c": 0,
+        "e": "",
+        "s": 1558418583,
+        "t": "MfXh8.S6gL"
+    },
+    "c": {
+        "count": 5,
+        "title": "",
+        "rightTitle": "",
+        "list": [
+            {
+                "m_url": "",
+                "m_id": 0,
+                "m_from": "",
+                "m_is_shop": 1,
+                "m_reddot": 0,
+                "m_img": "",
+                "m_type": 5,
+                "m_isSubscribe": 0,
+                "m_title": "h5\u5546\u57ce"
+            }
+        ]
+    }
+}</pre></div>
+                <h2>Diff</h2>
+                <div class="content"><pre color="red">{'type_changes': {"root['h']['t']": {'old_type': <class 'int'>, 'new_type': <class 'str'>, 'old_value': 1, 'new_value': 'MfXh8.S6gL'}}}</pre></div>
+              </div>
+            </div>
+
+
+        </td>
+      </tr>
+    
+      <tr>
+        <th class="http://entree.dev.igetget.com/kaleidoscope/v1/operation/assortment/list" style="width:5em;">http://entree.dev.igetget.com/kaleidoscope/v1/operation/assortment/list</td>
+        <td>200</td>
+        <td style="text-align:center;width:6em;">107.0 ms</td>
+        <td class="detail">
+            <a class="button" href="#popup_log_3">data</a>
+            <div id="popup_log_3" class="overlay">
+              <div class="popup">
+                <h2>Original</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content"><pre>{
+    "h": {
+        "c": 0,
+        "e": "",
+        "s": 1558418583,
+        "t": 18
+    },
+    "c": {
+        "list": [
+            {
+                "id": 3383,
+                "title": "\u4e66\u5355",
+                "image": "https://piccdn.igetget.com/img/201903/27/201903271112243378028738.jpeg",
+                "jump_type": "61",
+                "jump_url": "igetapp://odob/theme/themeArticle?themeId=261",
+                "sort_no": 10,
+                "create_time": "2019-05-16T17:17:34+08:00",
+                "update_time": "2019-05-16T17:17:34+08:00",
+                "relate_id": 25114
+            },
+            {
+                "id": 3384,
+                "title": "\u8bb2\u5ea7",
+                "image": "https://piccdn.igetget.com/img/201903/21/201903211521533508174733.png",
+                "jump_type": "81",
+                "jump_url": "igetapp://lecture.rn/list?lectureId=5055",
+                "sort_no": 20,
+                "create_time": "2019-05-16T17:17:34+08:00",
+                "update_time": "2019-05-16T17:17:34+08:00",
+                "relate_id": 25114
+            },
+            {
+                "id": 3385,
+                "title": "\u8bb2\u5ea7\u9996\u9875",
+                "image": "https://piccdn.igetget.com/img/201903/21/201903211523022008524053.png",
+                "jump_type": "300",
+                "jump_url": "igetapp://lecture.rn/home",
+                "sort_no": 30,
+                "create_time": "2019-05-16T17:17:34+08:00",
+                "update_time": "2019-05-16T17:17:34+08:00",
+                "relate_id": 25114
+            },
+            {
+                "id": 3386,
+                "title": "\u5546\u4e1a",
+                "image": "https://piccdn.igetget.com/img/201903/21/201903211523238416810422.png",
+                "jump_type": "150",
+                "jump_url": "igetapp://home/category?navId=4&type=1",
+                "sort_no": 40,
+                "create_time": "2019-05-16T17:17:34+08:00",
+                "update_time": "2019-05-16T17:17:34+08:00",
+                "relate_id": 25114
+            },
+            {
+                "id": 3387,
+                "title": "\u7ecf\u6d4e\u5b66",
+                "image": "https://piccdn.igetget.com/img/201903/21/201903211523380656000492.png",
+                "jump_type": "150",
+                "jump_url": "igetapp://home/category?navId=5&type=1",
+                "sort_no": 50,
+                "create_time": "2019-05-16T17:17:34+08:00",
+                "update_time": "2019-05-16T17:17:34+08:00",
+                "relate_id": 25114
+            },
+            {
+                "id": 3388,
+                "title": "\u89c6\u91ce\u5b66\u9662",
+                "image": "https://piccdn.igetget.com/img/201903/21/201903211523534664308259.png",
+                "jump_type": "70",
+                "jump_url": "igetapp://class/college?collegeId=2",
+                "sort_no": 60,
+                "create_time": "2019-05-16T17:17:34+08:00",
+                "update_time": "2019-05-16T17:17:34+08:00",
+                "relate_id": 25114
+            },
+            {
+                "id": 3389,
+                "title": "\u859b\u5146\u4e30",
+                "image": "https://piccdn.igetget.com/img/201903/21/201903211522299054134639.png",
+                "jump_type": "80",
+                "jump_url": "igetapp://user/detail?uid=11335114",
+                "sort_no": 70,
+                "create_time": "2019-05-16T17:17:34+08:00",
+                "update_time": "2019-05-16T17:17:34+08:00",
+                "relate_id": 25114
+            },
+            {
+                "id": 3390,
+                "title": "\u5168\u90e8",
+                "image": "https://piccdn.igetget.com/img/201903/21/201903211522117832339867.png",
+                "jump_type": "150",
+                "jump_url": "igetapp://home/category?type=1&navId=7",
+                "sort_no": 80,
+                "create_time": "2019-05-16T17:17:34+08:00",
+                "update_time": "2019-05-16T17:17:34+08:00",
+                "relate_id": 25114
+            },
+            {
+                "id": 3391,
+                "title": "\u5f97\u5230\u5927\u5b66",
+                "image": "https://piccdn.igetget.com/img/201903/21/201903211727232225339873.png",
+                "jump_type": "66",
+                "jump_url": "igetapp://university/index",
+                "sort_no": 90,
+                "create_time": "2019-05-16T17:17:34+08:00",
+                "update_time": "2019-05-16T17:17:34+08:00",
+                "relate_id": 25114
+            },
+            {
+                "id": 3392,
+                "title": "\u79d1\u5b66\u5206\u7c7b",
+                "image": "https://piccdn.igetget.com/img/201905/12/201905121700264074110095.jpeg",
+                "jump_type": "150",
+                "jump_url": "igetapp://home/category?navId=1&type=1",
+                "sort_no": 100,
+                "create_time": "2019-05-16T17:17:34+08:00",
+                "update_time": "2019-05-16T17:17:34+08:00",
+                "relate_id": 25114
+            }
+        ]
+    }
+}</pre></div>
+                <h2>Intercept</h2>
+                <div class="content"><pre>{
+    "h": {
+        "c": 0,
+        "e": "",
+        "s": 1558418583,
+        "t": 18
+    },
+    "c": {
+        "list": [
+            {
+                "id": 3383,
+                "title": "\u4e66\u5355",
+                "image": "https://piccdn.igetget.com/img/201903/27/201903271112243378028738.jpeg",
+                "jump_type": "61",
+                "jump_url": "igetapp://odob/theme/themeArticle?themeId=261",
+                "sort_no": 10,
+                "create_time": "2019-05-16T17:17:34+08:00",
+                "update_time": "2019-05-16T17:17:34+08:00",
+                "relate_id": "1NI0APb2jq"
+            },
+            {
+                "id": 3384,
+                "title": "\u8bb2\u5ea7",
+                "image": "https://piccdn.igetget.com/img/201903/21/201903211521533508174733.png",
+                "jump_type": "81",
+                "jump_url": "igetapp://lecture.rn/list?lectureId=5055",
+                "sort_no": 20,
+                "create_time": "2019-05-16T17:17:34+08:00",
+                "update_time": "2019-05-16T17:17:34+08:00",
+                "relate_id": 25114
+            },
+            {
+                "id": 3385,
+                "title": "\u8bb2\u5ea7\u9996\u9875",
+                "image": "https://piccdn.igetget.com/img/201903/21/201903211523022008524053.png",
+                "jump_type": "300",
+                "jump_url": "igetapp://lecture.rn/home",
+                "sort_no": 30,
+                "create_time": "2019-05-16T17:17:34+08:00",
+                "update_time": "2019-05-16T17:17:34+08:00",
+                "relate_id": 25114
+            },
+            {
+                "id": 3386,
+                "title": "\u5546\u4e1a",
+                "image": "https://piccdn.igetget.com/img/201903/21/201903211523238416810422.png",
+                "jump_type": "150",
+                "jump_url": "igetapp://home/category?navId=4&type=1",
+                "sort_no": 40,
+                "create_time": "2019-05-16T17:17:34+08:00",
+                "update_time": "2019-05-16T17:17:34+08:00",
+                "relate_id": 25114
+            },
+            {
+                "id": 3387,
+                "title": "\u7ecf\u6d4e\u5b66",
+                "image": "https://piccdn.igetget.com/img/201903/21/201903211523380656000492.png",
+                "jump_type": "150",
+                "jump_url": "igetapp://home/category?navId=5&type=1",
+                "sort_no": 50,
+                "create_time": "2019-05-16T17:17:34+08:00",
+                "update_time": "2019-05-16T17:17:34+08:00",
+                "relate_id": 25114
+            },
+            {
+                "id": 3388,
+                "title": "\u89c6\u91ce\u5b66\u9662",
+                "image": "https://piccdn.igetget.com/img/201903/21/201903211523534664308259.png",
+                "jump_type": "70",
+                "jump_url": "igetapp://class/college?collegeId=2",
+                "sort_no": 60,
+                "create_time": "2019-05-16T17:17:34+08:00",
+                "update_time": "2019-05-16T17:17:34+08:00",
+                "relate_id": 25114
+            },
+            {
+                "id": 3389,
+                "title": "\u859b\u5146\u4e30",
+                "image": "https://piccdn.igetget.com/img/201903/21/201903211522299054134639.png",
+                "jump_type": "80",
+                "jump_url": "igetapp://user/detail?uid=11335114",
+                "sort_no": 70,
+                "create_time": "2019-05-16T17:17:34+08:00",
+                "update_time": "2019-05-16T17:17:34+08:00",
+                "relate_id": 25114
+            },
+            {
+                "id": 3390,
+                "title": "\u5168\u90e8",
+                "image": "https://piccdn.igetget.com/img/201903/21/201903211522117832339867.png",
+                "jump_type": "150",
+                "jump_url": "igetapp://home/category?type=1&navId=7",
+                "sort_no": 80,
+                "create_time": "2019-05-16T17:17:34+08:00",
+                "update_time": "2019-05-16T17:17:34+08:00",
+                "relate_id": 25114
+            },
+            {
+                "id": 3391,
+                "title": "\u5f97\u5230\u5927\u5b66",
+                "image": "https://piccdn.igetget.com/img/201903/21/201903211727232225339873.png",
+                "jump_type": "66",
+                "jump_url": "igetapp://university/index",
+                "sort_no": 90,
+                "create_time": "2019-05-16T17:17:34+08:00",
+                "update_time": "2019-05-16T17:17:34+08:00",
+                "relate_id": 25114
+            },
+            {
+                "id": 3392,
+                "title": "\u79d1\u5b66\u5206\u7c7b",
+                "image": "https://piccdn.igetget.com/img/201905/12/201905121700264074110095.jpeg",
+                "jump_type": "150",
+                "jump_url": "igetapp://home/category?navId=1&type=1",
+                "sort_no": 100,
+                "create_time": "2019-05-16T17:17:34+08:00",
+                "update_time": "2019-05-16T17:17:34+08:00",
+                "relate_id": 25114
+            }
+        ]
+    }
+}</pre></div>
+                <h2>Diff</h2>
+                <div class="content"><pre color="red">{'iterable_item_added': {"root['c']['list'][0]": {'id': 3383, 'title': '书单', 'image': 'https://piccdn.igetget.com/img/201903/27/201903271112243378028738.jpeg', 'jump_type': '61', 'jump_url': 'igetapp://odob/theme/themeArticle?themeId=261', 'sort_no': 10, 'create_time': '2019-05-16T17:17:34+08:00', 'update_time': '2019-05-16T17:17:34+08:00', 'relate_id': '1NI0APb2jq'}}, 'iterable_item_removed': {"root['c']['list'][0]": {'id': 3383, 'title': '书单', 'image': 'https://piccdn.igetget.com/img/201903/27/201903271112243378028738.jpeg', 'jump_type': '61', 'jump_url': 'igetapp://odob/theme/themeArticle?themeId=261', 'sort_no': 10, 'create_time': '2019-05-16T17:17:34+08:00', 'update_time': '2019-05-16T17:17:34+08:00', 'relate_id': 25114}}}</pre></div>
+              </div>
+            </div>
+
+
+        </td>
+      </tr>
+    
+      <tr>
+        <th class="http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=1236342a5e093181f3dc3bdab7e2cd91" style="width:5em;">http://dedao.dev.igetget.com/v3/igettv/structuredata?sign=1236342a5e093181f3dc3bdab7e2cd91</td>
+        <td>200</td>
+        <td style="text-align:center;width:6em;">126.0 ms</td>
+        <td class="detail">
+            <a class="button" href="#popup_log_4">data</a>
+            <div id="popup_log_4" class="overlay">
+              <div class="popup">
+                <h2>Original</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content"><pre>{
+    "h": {
+        "c": 0,
+        "e": "",
+        "t": 0.012004438,
+        "s": 1558418583
+    },
+    "c": {
+        "data": {
+            "status": 1,
+            "online_num": 0,
+            "reservation_num": 0,
+            "title": "\u76f4\u64ad\u6d4b\u8bd5",
+            "room_id": 205,
+            "intro": "test",
+            "starttime": 1554972060,
+            "starttime_desc": "\u5468\u56db16:41",
+            "duration": 110,
+            "endtime": 1554978660,
+            "id": 205,
+            "type": 0,
+            "log_id": 205,
+            "log_type": "igettv"
+        }
+    }
+}</pre></div>
+                <h2>Intercept</h2>
+                <div class="content"><pre>{
+    "h": {
+        "c": 0,
+        "e": "",
+        "t": 0.012004438,
+        "s": 1558418583
+    },
+    "c": {
+        "data": {
+            "status": "",
+            "online_num": 0,
+            "reservation_num": 0,
+            "title": "\u76f4\u64ad\u6d4b\u8bd5",
+            "room_id": 205,
+            "intro": "test",
+            "starttime": 1554972060,
+            "starttime_desc": "\u5468\u56db16:41",
+            "duration": 110,
+            "endtime": 1554978660,
+            "id": 205,
+            "type": 0,
+            "log_id": 205,
+            "log_type": "igettv"
+        }
+    }
+}</pre></div>
+                <h2>Diff</h2>
+                <div class="content"><pre color="red">{'type_changes': {"root['c']['data']['status']": {'old_type': <class 'int'>, 'new_type': <class 'str'>, 'old_value': 1, 'new_value': ''}}}</pre></div>
+              </div>
+            </div>
+
+
+        </td>
+      </tr>
+    
+      <tr>
+        <th class="http://entree.dev.igetget.com/kaleidoscope/homepage/new_structure" style="width:5em;">http://entree.dev.igetget.com/kaleidoscope/homepage/new_structure</td>
+        <td>200</td>
+        <td style="text-align:center;width:6em;">101.0 ms</td>
+        <td class="detail">
+            <a class="button" href="#popup_log_5">data</a>
+            <div id="popup_log_5" class="overlay">
+              <div class="popup">
+                <h2>Original</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content"><pre>{
+    "h": {
+        "c": 0,
+        "e": "",
+        "s": 1558418584,
+        "t": 2
+    },
+    "c": {
+        "home_bucket_id": "A",
+        "ios_column_switch": 0,
+        "now": "2019-05-21",
+        "structure": [
+            {
+                "count": 5,
+                "data": {},
+                "has_title": 2,
+                "page_type": 112,
+                "position": 20,
+                "struct_id": 25112,
+                "type": "NewCategory"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 113,
+                "position": 40,
+                "struct_id": 25114,
+                "type": "HomepageOperationAssortment"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 10,
+                "position": 50,
+                "struct_id": 25115,
+                "type": "live"
+            },
+            {
+                "count": 0,
+                "data": {},
+                "has_title": 1,
+                "page_type": 3,
+                "position": 60,
+                "struct_id": 25116,
+                "type": "freeAudio"
+            },
+            {
+                "count": 0,
+                "data": {},
+                "has_title": 2,
+                "page_type": 2,
+                "position": 70,
+                "struct_id": 25119,
+                "type": "column"
+            },
+            {
+                "count": 0,
+                "data": {},
+                "has_title": 2,
+                "page_type": 36,
+                "position": 80,
+                "struct_id": 25118,
+                "type": "master"
+            },
+            {
+                "count": 0,
+                "data": {},
+                "has_title": 2,
+                "page_type": 22,
+                "position": 90,
+                "struct_id": 25117,
+                "type": "course"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 131,
+                "position": 100,
+                "struct_id": 25120,
+                "type": "HomepageLastUpdateStory"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 130,
+                "position": 110,
+                "struct_id": 25121,
+                "type": "HomepageLastUpdateEbook"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 132,
+                "position": 120,
+                "struct_id": 25122,
+                "type": "NewHomepageLastUpdateClass"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 90,
+                "position": 130,
+                "struct_id": 25123,
+                "type": "NewHomepageOperationContentModule"
+            },
+            {
+                "count": 3,
+                "data": {},
+                "has_title": 2,
+                "page_type": 127,
+                "position": 140,
+                "struct_id": 25124,
+                "type": "HomepageRankList"
+            },
+            {
+                "count": 0,
+                "data": {
+                    "list": [
+                        {
+                            "count": 0,
+                            "data": {},
+                            "has_title": 2,
+                            "page_type": 124,
+                            "position": 4,
+                            "struct_id": 25109,
+                            "type": "RecommendGoods"
+                        },
+                        {
+                            "count": 0,
+                            "data": {},
+                            "has_title": 2,
+                            "page_type": 125,
+                            "position": 5,
+                            "struct_id": 25110,
+                            "type": "RecommendFeedBanner"
+                        }
+                    ]
+                },
+                "has_title": 2,
+                "page_type": 129,
+                "position": 260,
+                "struct_id": 25136,
+                "type": "NewGuessYouLike"
+            }
+        ]
+    }
+}</pre></div>
+                <h2>Intercept</h2>
+                <div class="content"><pre>{
+    "h": {
+        "c": 0,
+        "e": "",
+        "s": 1558418584,
+        "t": 2
+    },
+    "c": {
+        "home_bucket_id": "A",
+        "ios_column_switch": 0,
+        "now": "2019-05-21",
+        "structure": [
+            {
+                "count": 5,
+                "data": {},
+                "has_title": 2,
+                "page_type": 112,
+                "position": 20,
+                "struct_id": 25112,
+                "type": "NewCategory"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": "\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32",
+                "page_type": 113,
+                "position": 40,
+                "struct_id": 25114,
+                "type": "HomepageOperationAssortment"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 10,
+                "position": 50,
+                "struct_id": 25115,
+                "type": "live"
+            },
+            {
+                "count": 0,
+                "data": {},
+                "has_title": 1,
+                "page_type": 3,
+                "position": 60,
+                "struct_id": 25116,
+                "type": "freeAudio"
+            },
+            {
+                "count": 0,
+                "data": {},
+                "has_title": 2,
+                "page_type": 2,
+                "position": 70,
+                "struct_id": 25119,
+                "type": "column"
+            },
+            {
+                "count": 0,
+                "data": {},
+                "has_title": 2,
+                "page_type": 36,
+                "position": 80,
+                "struct_id": 25118,
+                "type": "master"
+            },
+            {
+                "count": 0,
+                "data": {},
+                "has_title": 2,
+                "page_type": 22,
+                "position": 90,
+                "struct_id": 25117,
+                "type": "course"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 131,
+                "position": 100,
+                "struct_id": 25120,
+                "type": "HomepageLastUpdateStory"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 130,
+                "position": 110,
+                "struct_id": 25121,
+                "type": "HomepageLastUpdateEbook"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 132,
+                "position": 120,
+                "struct_id": 25122,
+                "type": "NewHomepageLastUpdateClass"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 90,
+                "position": 130,
+                "struct_id": 25123,
+                "type": "NewHomepageOperationContentModule"
+            },
+            {
+                "count": 3,
+                "data": {},
+                "has_title": 2,
+                "page_type": 127,
+                "position": 140,
+                "struct_id": 25124,
+                "type": "HomepageRankList"
+            },
+            {
+                "count": 0,
+                "data": {
+                    "list": [
+                        {
+                            "count": 0,
+                            "data": {},
+                            "has_title": 2,
+                            "page_type": 124,
+                            "position": 4,
+                            "struct_id": 25109,
+                            "type": "RecommendGoods"
+                        },
+                        {
+                            "count": 0,
+                            "data": {},
+                            "has_title": 2,
+                            "page_type": 125,
+                            "position": 5,
+                            "struct_id": 25110,
+                            "type": "RecommendFeedBanner"
+                        }
+                    ]
+                },
+                "has_title": 2,
+                "page_type": 129,
+                "position": 260,
+                "struct_id": 25136,
+                "type": "NewGuessYouLike"
+            }
+        ]
+    }
+}</pre></div>
+                <h2>Diff</h2>
+                <div class="content"><pre color="red">{'iterable_item_added': {"root['c']['structure'][1]": {'count': 1, 'data': {}, 'has_title': '超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串', 'page_type': 113, 'position': 40, 'struct_id': 25114, 'type': 'HomepageOperationAssortment'}}, 'iterable_item_removed': {"root['c']['structure'][1]": {'count': 1, 'data': {}, 'has_title': 2, 'page_type': 113, 'position': 40, 'struct_id': 25114, 'type': 'HomepageOperationAssortment'}}}</pre></div>
+              </div>
+            </div>
+
+
+        </td>
+      </tr>
+    
+      <tr>
+        <th class="http://entree.dev.igetget.com/kaleidoscope/homepage/new_structure" style="width:5em;">http://entree.dev.igetget.com/kaleidoscope/homepage/new_structure</td>
+        <td>200</td>
+        <td style="text-align:center;width:6em;">105.0 ms</td>
+        <td class="detail">
+            <a class="button" href="#popup_log_6">data</a>
+            <div id="popup_log_6" class="overlay">
+              <div class="popup">
+                <h2>Original</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content"><pre>{
+    "h": {
+        "c": 0,
+        "e": "",
+        "s": 1558418585,
+        "t": 2
+    },
+    "c": {
+        "home_bucket_id": "A",
+        "ios_column_switch": 0,
+        "now": "2019-05-21",
+        "structure": [
+            {
+                "count": 5,
+                "data": {},
+                "has_title": 2,
+                "page_type": 112,
+                "position": 20,
+                "struct_id": 25112,
+                "type": "NewCategory"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 113,
+                "position": 40,
+                "struct_id": 25114,
+                "type": "HomepageOperationAssortment"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 10,
+                "position": 50,
+                "struct_id": 25115,
+                "type": "live"
+            },
+            {
+                "count": 0,
+                "data": {},
+                "has_title": 1,
+                "page_type": 3,
+                "position": 60,
+                "struct_id": 25116,
+                "type": "freeAudio"
+            },
+            {
+                "count": 0,
+                "data": {},
+                "has_title": 2,
+                "page_type": 2,
+                "position": 70,
+                "struct_id": 25119,
+                "type": "column"
+            },
+            {
+                "count": 0,
+                "data": {},
+                "has_title": 2,
+                "page_type": 36,
+                "position": 80,
+                "struct_id": 25118,
+                "type": "master"
+            },
+            {
+                "count": 0,
+                "data": {},
+                "has_title": 2,
+                "page_type": 22,
+                "position": 90,
+                "struct_id": 25117,
+                "type": "course"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 131,
+                "position": 100,
+                "struct_id": 25120,
+                "type": "HomepageLastUpdateStory"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 130,
+                "position": 110,
+                "struct_id": 25121,
+                "type": "HomepageLastUpdateEbook"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 132,
+                "position": 120,
+                "struct_id": 25122,
+                "type": "NewHomepageLastUpdateClass"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 90,
+                "position": 130,
+                "struct_id": 25123,
+                "type": "NewHomepageOperationContentModule"
+            },
+            {
+                "count": 3,
+                "data": {},
+                "has_title": 2,
+                "page_type": 127,
+                "position": 140,
+                "struct_id": 25124,
+                "type": "HomepageRankList"
+            },
+            {
+                "count": 0,
+                "data": {
+                    "list": [
+                        {
+                            "count": 0,
+                            "data": {},
+                            "has_title": 2,
+                            "page_type": 124,
+                            "position": 4,
+                            "struct_id": 25109,
+                            "type": "RecommendGoods"
+                        },
+                        {
+                            "count": 0,
+                            "data": {},
+                            "has_title": 2,
+                            "page_type": 125,
+                            "position": 5,
+                            "struct_id": 25110,
+                            "type": "RecommendFeedBanner"
+                        }
+                    ]
+                },
+                "has_title": 2,
+                "page_type": 129,
+                "position": 260,
+                "struct_id": 25136,
+                "type": "NewGuessYouLike"
+            }
+        ]
+    }
+}</pre></div>
+                <h2>Intercept</h2>
+                <div class="content"><pre>{
+    "h": {
+        "c": 0,
+        "e": "",
+        "s": 1558418585,
+        "t": 2
+    },
+    "c": {
+        "home_bucket_id": "A",
+        "ios_column_switch": 0,
+        "now": "2019-05-21",
+        "structure": [
+            {
+                "count": 5,
+                "data": {},
+                "has_title": 2,
+                "page_type": 112,
+                "position": 20,
+                "struct_id": 25112,
+                "type": "NewCategory"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 113,
+                "position": "",
+                "struct_id": 25114,
+                "type": "HomepageOperationAssortment"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 10,
+                "position": 50,
+                "struct_id": 25115,
+                "type": "live"
+            },
+            {
+                "count": 0,
+                "data": {},
+                "has_title": 1,
+                "page_type": 3,
+                "position": 60,
+                "struct_id": 25116,
+                "type": "freeAudio"
+            },
+            {
+                "count": 0,
+                "data": {},
+                "has_title": 2,
+                "page_type": 2,
+                "position": 70,
+                "struct_id": 25119,
+                "type": "column"
+            },
+            {
+                "count": 0,
+                "data": {},
+                "has_title": 2,
+                "page_type": 36,
+                "position": 80,
+                "struct_id": 25118,
+                "type": "master"
+            },
+            {
+                "count": 0,
+                "data": {},
+                "has_title": 2,
+                "page_type": 22,
+                "position": 90,
+                "struct_id": 25117,
+                "type": "course"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 131,
+                "position": 100,
+                "struct_id": 25120,
+                "type": "HomepageLastUpdateStory"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 130,
+                "position": 110,
+                "struct_id": 25121,
+                "type": "HomepageLastUpdateEbook"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 132,
+                "position": 120,
+                "struct_id": 25122,
+                "type": "NewHomepageLastUpdateClass"
+            },
+            {
+                "count": 1,
+                "data": {},
+                "has_title": 2,
+                "page_type": 90,
+                "position": 130,
+                "struct_id": 25123,
+                "type": "NewHomepageOperationContentModule"
+            },
+            {
+                "count": 3,
+                "data": {},
+                "has_title": 2,
+                "page_type": 127,
+                "position": 140,
+                "struct_id": 25124,
+                "type": "HomepageRankList"
+            },
+            {
+                "count": 0,
+                "data": {
+                    "list": [
+                        {
+                            "count": 0,
+                            "data": {},
+                            "has_title": 2,
+                            "page_type": 124,
+                            "position": 4,
+                            "struct_id": 25109,
+                            "type": "RecommendGoods"
+                        },
+                        {
+                            "count": 0,
+                            "data": {},
+                            "has_title": 2,
+                            "page_type": 125,
+                            "position": 5,
+                            "struct_id": 25110,
+                            "type": "RecommendFeedBanner"
+                        }
+                    ]
+                },
+                "has_title": 2,
+                "page_type": 129,
+                "position": 260,
+                "struct_id": 25136,
+                "type": "NewGuessYouLike"
+            }
+        ]
+    }
+}</pre></div>
+                <h2>Diff</h2>
+                <div class="content"><pre color="red">{'iterable_item_added': {"root['c']['structure'][1]": {'count': 1, 'data': {}, 'has_title': 2, 'page_type': 113, 'position': '', 'struct_id': 25114, 'type': 'HomepageOperationAssortment'}}, 'iterable_item_removed': {"root['c']['structure'][1]": {'count': 1, 'data': {}, 'has_title': 2, 'page_type': 113, 'position': 40, 'struct_id': 25114, 'type': 'HomepageOperationAssortment'}}}</pre></div>
+              </div>
+            </div>
+
+
+        </td>
+      </tr>
+    
+  </table>
+
+</body>

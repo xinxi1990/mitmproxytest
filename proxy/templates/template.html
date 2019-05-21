@@ -133,18 +133,17 @@
   <h2>Details</h2>
   <table id="details">
     <tr>
-      <th>Status</th>
       <th>Name</th>
+      <th>Status</th>
       <th>Response Time</th>
       <th>Detail</th>
     </tr>
     {% for record in records %}
       <tr>
-        <th class="{{record.status}}" style="width:5em;">{{record.status}}</td>
-        <td>{{record.name}}</td>
+        <th class="{{record.name}}" style="width:5em;">{{record.name}}</td>
+        <td>{{record.status}}</td>
         <td style="text-align:center;width:6em;">{{ '%0.1f'| format(record.response_time_ms|float) }} ms</td>
         <td class="detail">
-
             <a class="button" href="#popup_log_{{loop.index}}">data</a>
             <div id="popup_log_{{loop.index}}" class="overlay">
               <div class="popup">
@@ -153,6 +152,8 @@
                 <div class="content"><pre>{{ record.original | safe }}</pre></div>
                 <h2>Intercept</h2>
                 <div class="content"><pre>{{ record.intercept | safe }}</pre></div>
+                <h2>Diff</h2>
+                <div class="content"><pre color="red">{{ record.diff | safe }}</pre></div>
               </div>
             </div>
 

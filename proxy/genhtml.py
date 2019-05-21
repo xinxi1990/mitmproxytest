@@ -9,8 +9,8 @@
 
 import os,re,time,subprocess,sys,json
 sys.path.append('..')
-import jinja2
 from jinja2 import Environment, PackageLoader
+from deepdiff import DeepDiff
 
 
 
@@ -24,7 +24,6 @@ class Create():
         '''
         生成html报告
         '''
-        tuples = ()
         report_folder = os.path.join(self.report_path, 'reports')
         if not os.path.exists(report_folder):
             os.makedirs(report_folder)
@@ -45,28 +44,33 @@ class Create():
 
 
     @staticmethod
-    def gen_data(file_patj):
+    def gen_data(file_path):
         '''
         组装数据
         :return:
         '''
         records = []
-        with open(file_patj) as f_r:
+        with open(file_path) as f_r:
             for line in f_r.readlines():
                 item = line.split('|')
                 data = {}
                 data['name'] = item[0]
-                data['status'] = 200
-                data['response_time_ms'] = 300
-                data['original'] =  json.dumps(eval(item[2]),indent=4)
-                data['intercept'] = json.dumps(eval(item[3]),indent=4)
+                data['method'] = item[1]
+                data['status'] = item[2]
+                data['response_time_ms'] = item[3]
+                data['original'] =  json.dumps(eval(item[4]),indent=4)
+                data['intercept'] = json.dumps(eval(item[5]),indent=4)
+                # diff_data = diff(eval(item[2]),eval(item[3]))
+                diff_data = DeepDiff(eval(item[4]), eval(item[5]), ignore_order=True)
+                data['diff'] = diff_data
                 records.append(data)
         return records
 
 
 
-
-
 if __name__ == '__main__':
-    Create("/Users/xinxi/PycharmProjects/mitmproxytest/proxy","20190520235127_intercept.log").create_html()
+    save_path  = sys.argv[1]
+    request_log_path = sys.argv[2]
+    Create(save_path,request_log_path).create_html()
+
 

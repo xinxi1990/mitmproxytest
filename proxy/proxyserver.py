@@ -21,11 +21,6 @@ save_log_file = os.path.join(project_path, now)
 
 
 
-def save_url(url):
-    with open(save_url_file,"a") as f:
-        f.write(url + "\n")
-
-
 def request(flow: mitmproxy.http.HTTPFlow):
     request = flow.request
     ctx.log.info("========================== intercept request start ==========================")
@@ -53,9 +48,7 @@ def response(flow: mitmproxy.http.HTTPFlow):
             is_mock = False
             break
 
-
-
-    if int(flow.response.status_code) == 200 and is_mock == True and 'igetget' in flow.request.url:
+    if int(flow.response.status_code) == 200 and is_mock == True:
 
         original_data = (flow.response.text)
 
@@ -68,8 +61,9 @@ def response(flow: mitmproxy.http.HTTPFlow):
             flow.response.set_text(get_mock_data)
             ctx.log.info(flow.response.text)
             ctx.log.info("========================== intercept response end ==========================")
-
-            content = str(flow.request.url) + '|' + str(flow.request.method) + '|' +  str(original_data) + '|' + str(get_mock_data)
+            spend_time = int((flow.response.timestamp_end - flow.request.timestamp_start) * 1000)
+            content = str(flow.request.url) + '|' + str(flow.request.method) + '|' + str(flow.response.status_code) + '|' \
+                      + str(spend_time) + '|' +  str(original_data) + '|' + str(get_mock_data)
             write_file(save_log_file,content,is_cover=False)
 
 
