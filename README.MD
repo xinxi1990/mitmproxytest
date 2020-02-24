@@ -9,9 +9,10 @@
 ```angularjs
 python3.7 -m venv /Users/xinxi/PycharmProjects/mitmproxytest/venv or virtualenv venv
 
+source venv/bin/activate 激活虚拟环境
  
+deactivate 退出虚拟环境
 
-deactivate
 ```
 
 ## 安装mitmproxy

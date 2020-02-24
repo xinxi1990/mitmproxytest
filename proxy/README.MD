@@ -11,6 +11,12 @@
 4.随机对返回接口时间做延迟修改
 ```
 
+## 安装
+
+```angular2html
+pip3.7 install mitmproxy
+```
+
 
 ## 使用
 
@@ -23,7 +29,7 @@ mitmdump -s proxyserver.py
 ```angularjs
 参数1:需要保存的报告地址
 参数2:保存到本地篡改数据地址
-python genhtml.py ~/PycharmProjects/mitmproxytest/proxy ~/PycharmProjects/mitmproxytest/proxy/20190521141945_intercept.log
+python genhtml.py ~/PycharmProjects/mitmproxytest/proxy ~/PycharmProjects/mitmproxytest/proxy/20190521143711_intercept.log
 ```
 
 # 展示
@@ -31,3 +37,9 @@ python genhtml.py ~/PycharmProjects/mitmproxytest/proxy ~/PycharmProjects/mitmpr
 ![image](报告1.jpg)
 
 ![image](报告2.jpg)
+
+
+## 抓包WebSocket 
+```angular2html
+mitmdump -s snifferWS.py --verbose
+```

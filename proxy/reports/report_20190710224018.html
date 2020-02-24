@@ -1,0 +1,625 @@
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TestReport</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      color: #333;
+      margin: 0 auto;
+      width: 960px;
+    }
+    #summary, #details {
+      width: 960px;
+    }
+    #summary th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    #summary td {
+      background-color: lightblue;
+      text-align: center;
+      padding: 4px 8px;
+    }
+    #details th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    #details td {
+      background-color: lightblue;
+      padding: 5px 12px;
+    }
+    #details .detail {
+      background-color: lightgrey;
+      font-size: smaller;
+      padding: 5px 10px;
+      text-align: center;
+    }
+    #details .success {
+      background-color: greenyellow;
+    }
+    #details .error {
+      background-color: red;
+    }
+    #details .failure {
+      background-color: salmon;
+    }
+    #details .skipped {
+      background-color: gray;
+    }
+
+    .button {
+      font-size: 1em;
+      padding: 6px;
+      width: 4em;
+      text-align: center;
+      background-color: #06d85f;
+      border-radius: 20px/50px;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+    }
+    a.button{
+      color: gray;
+      text-decoration: none;
+    }
+    .button:hover {
+      background: #2cffbd;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      transition: opacity 500ms;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .overlay:target {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .popup {
+      margin: 70px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 5px;
+      width: 30%;
+      position: relative;
+      transition: all 5s ease-in-out;
+    }
+
+    .popup h2 {
+      margin-top: 0;
+      color: #333;
+      font-family: Tahoma, Arial, sans-serif;
+    }
+    .popup .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      transition: all 200ms;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+    }
+    .popup .close:hover {
+      color: #06d85f;
+    }
+    .popup .content {
+      max-height: 30%;
+      overflow: auto;
+      text-align: left;
+    }
+
+    @media screen and (max-width: 700px) {
+      .box {
+        width: 70%;
+      }
+      .popup {
+        width: 70%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Test Report: 测试报告</h1>
+
+  <h2>Details</h2>
+  <table id="details">
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+    
+      <tr>
+        <th class="http://igetcool-gateway-sim.igetcool.com/app-api-other-server/white/children/tag/children?tagCode=10028" style="width:5em;">http://igetcool-gateway-sim.igetcool.com/app-api-other-server/white/children/tag/children?tagCode=10028</td>
+        <td>200</td>
+        <td style="text-align:center;width:6em;">60.0 ms</td>
+        <td class="detail">
+            <a class="button" href="#popup_log_1">data</a>
+            <div id="popup_log_1" class="overlay">
+              <div class="popup">
+                <h2>Original</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content"><pre>{
+    "code": 10000,
+    "msg": "SUCCESS",
+    "friendlyMsg": "\u64cd\u4f5c\u6210\u529f",
+    "data": [
+        {
+            "tagCode": "10047",
+            "tagName": "\u5386\u53f2"
+        },
+        {
+            "tagCode": "10048",
+            "tagName": "\u8bed\u6587"
+        },
+        {
+            "tagCode": "10049",
+            "tagName": "\u6570\u5b66"
+        },
+        {
+            "tagCode": "10050",
+            "tagName": "\u653f\u6cbb"
+        },
+        {
+            "tagCode": "10051",
+            "tagName": "\u601d\u60f3\u54c1\u5fb7"
+        },
+        {
+            "tagCode": "10052",
+            "tagName": "\u82f1\u8bed"
+        },
+        {
+            "tagCode": "10053",
+            "tagName": "\u6545\u4e8b\u4f1a"
+        },
+        {
+            "tagCode": "10054",
+            "tagName": "\u51ac\u94f6\u6d4b\u8bd5"
+        }
+    ]
+}</pre></div>
+                <h2>Intercept</h2>
+                <div class="content"><pre>{
+    "code": 10000,
+    "msg": "SUCCESS",
+    "friendlyMsg": "\u64cd\u4f5c\u6210\u529f",
+    "data": [
+        {
+            "tagName": "\u5386\u53f2"
+        },
+        {
+            "tagCode": "10048",
+            "tagName": "\u8bed\u6587"
+        },
+        {
+            "tagCode": "10049",
+            "tagName": "\u6570\u5b66"
+        },
+        {
+            "tagCode": "10050",
+            "tagName": "\u653f\u6cbb"
+        },
+        {
+            "tagCode": "10051",
+            "tagName": "\u601d\u60f3\u54c1\u5fb7"
+        },
+        {
+            "tagCode": "10052",
+            "tagName": "\u82f1\u8bed"
+        },
+        {
+            "tagCode": "10053",
+            "tagName": "\u6545\u4e8b\u4f1a"
+        },
+        {
+            "tagCode": "\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32",
+            "tagName": "\u51ac\u94f6\u6d4b\u8bd5"
+        }
+    ]
+}</pre></div>
+                <h2>Diff</h2>
+                <div class="content"><pre color="red">{'iterable_item_added': {"root['data'][0]": {'tagName': '历史'}, "root['data'][7]": {'tagCode': '超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串', 'tagName': '冬银测试'}}, 'iterable_item_removed': {"root['data'][7]": {'tagCode': '10054', 'tagName': '冬银测试'}, "root['data'][0]": {'tagCode': '10047', 'tagName': '历史'}}}</pre></div>
+              </div>
+            </div>
+
+
+        </td>
+      </tr>
+    
+      <tr>
+        <th class="http://igetcool-gateway-sim.igetcool.com/app-api-other-server/white/children/tag/children?tagCode=10028" style="width:5em;">http://igetcool-gateway-sim.igetcool.com/app-api-other-server/white/children/tag/children?tagCode=10028</td>
+        <td>200</td>
+        <td style="text-align:center;width:6em;">60.0 ms</td>
+        <td class="detail">
+            <a class="button" href="#popup_log_2">data</a>
+            <div id="popup_log_2" class="overlay">
+              <div class="popup">
+                <h2>Original</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content"><pre>{
+    "code": 10000,
+    "msg": "SUCCESS",
+    "friendlyMsg": "\u64cd\u4f5c\u6210\u529f",
+    "data": [
+        {
+            "tagCode": "10047",
+            "tagName": "\u5386\u53f2"
+        },
+        {
+            "tagCode": "10048",
+            "tagName": "\u8bed\u6587"
+        },
+        {
+            "tagCode": "10049",
+            "tagName": "\u6570\u5b66"
+        },
+        {
+            "tagCode": "10050",
+            "tagName": "\u653f\u6cbb"
+        },
+        {
+            "tagCode": "10051",
+            "tagName": "\u601d\u60f3\u54c1\u5fb7"
+        },
+        {
+            "tagCode": "10052",
+            "tagName": "\u82f1\u8bed"
+        },
+        {
+            "tagCode": "10053",
+            "tagName": "\u6545\u4e8b\u4f1a"
+        },
+        {
+            "tagCode": "10054",
+            "tagName": "\u51ac\u94f6\u6d4b\u8bd5"
+        }
+    ]
+}</pre></div>
+                <h2>Intercept</h2>
+                <div class="content"><pre>{
+    "code": 10000,
+    "msg": "SUCCESS",
+    "friendlyMsg": "\u64cd\u4f5c\u6210\u529f",
+    "data": [
+        {
+            "tagCode": "10047",
+            "tagName": "\u5386\u53f2"
+        },
+        {
+            "tagCode": "10048",
+            "tagName": "\u8bed\u6587"
+        },
+        {
+            "tagCode": "10049",
+            "tagName": "\u6570\u5b66"
+        },
+        {
+            "tagCode": "10050",
+            "tagName": "\u653f\u6cbb"
+        },
+        {
+            "tagCode": "10051"
+        },
+        {
+            "tagCode": "10052",
+            "tagName": ""
+        },
+        {
+            "tagCode": "10053",
+            "tagName": "\u6545\u4e8b\u4f1a"
+        },
+        {
+            "tagCode": "10054",
+            "tagName": "\u51ac\u94f6\u6d4b\u8bd5"
+        }
+    ]
+}</pre></div>
+                <h2>Diff</h2>
+                <div class="content"><pre color="red">{'iterable_item_added': {"root['data'][4]": {'tagCode': '10051'}, "root['data'][5]": {'tagCode': '10052', 'tagName': ''}}, 'iterable_item_removed': {"root['data'][5]": {'tagCode': '10052', 'tagName': '英语'}, "root['data'][4]": {'tagCode': '10051', 'tagName': '思想品德'}}}</pre></div>
+              </div>
+            </div>
+
+
+        </td>
+      </tr>
+    
+      <tr>
+        <th class="http://beacon-api.aliyuncs.com/beacon/fetch/config/byappkey" style="width:5em;">http://beacon-api.aliyuncs.com/beacon/fetch/config/byappkey</td>
+        <td>200</td>
+        <td style="text-align:center;width:6em;">253.0 ms</td>
+        <td class="detail">
+            <a class="button" href="#popup_log_3">data</a>
+            <div id="popup_log_3" class="overlay">
+              <div class="popup">
+                <h2>Original</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content"><pre>{
+    "errCode": "OK",
+    "result": [
+        {
+            "value": "{\"status\":\"normal\",\"ut\":\"enable\"}",
+            "key": "___push_service___"
+        },
+        {
+            "value": "{\"status\":\"normal\",\"ut\":\"enable\"}",
+            "key": "___hotfix_service___"
+        },
+        {
+            "value": "{\"status\":\"normal\",\"ut\":\"enable\"}",
+            "key": "___feedback_service___"
+        },
+        {
+            "value": "{\"status\":\"normal\",\"ut\":\"enable\",\"ip-ranking\":\"enable\"}",
+            "key": "___httpdns_service___"
+        }
+    ]
+}</pre></div>
+                <h2>Intercept</h2>
+                <div class="content"><pre>{
+    "errCode": "OK",
+    "result": [
+        {
+            "value": "{\"status\":\"normal\",\"ut\":\"enable\"}",
+            "key": "___push_service___"
+        },
+        {
+            "value": "{\"status\":\"normal\",\"ut\":\"enable\"}",
+            "key": "___hotfix_service___"
+        },
+        {
+            "value": "{\"status\":\"normal\",\"ut\":\"enable\"}",
+            "key": "___feedback_service___"
+        },
+        {
+            "value": "{\"status\":\"normal\",\"ut\":\"enable\",\"ip-ranking\":\"enable\"}",
+            "key": "\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32\u8d85\u957f\u5b57\u7b26\u4e32"
+        }
+    ]
+}</pre></div>
+                <h2>Diff</h2>
+                <div class="content"><pre color="red">{'iterable_item_added': {"root['result'][3]": {'value': '{"status":"normal","ut":"enable","ip-ranking":"enable"}', 'key': '超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串超长字符串'}}, 'iterable_item_removed': {"root['result'][3]": {'value': '{"status":"normal","ut":"enable","ip-ranking":"enable"}', 'key': '___httpdns_service___'}}}</pre></div>
+              </div>
+            </div>
+
+
+        </td>
+      </tr>
+    
+      <tr>
+        <th class="http://beacon-api.aliyuncs.com/beacon/fetch/config/byappkey" style="width:5em;">http://beacon-api.aliyuncs.com/beacon/fetch/config/byappkey</td>
+        <td>200</td>
+        <td style="text-align:center;width:6em;">304.0 ms</td>
+        <td class="detail">
+            <a class="button" href="#popup_log_4">data</a>
+            <div id="popup_log_4" class="overlay">
+              <div class="popup">
+                <h2>Original</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content"><pre>{
+    "errCode": "OK",
+    "result": [
+        {
+            "value": "{\"status\":\"normal\",\"ut\":\"enable\"}",
+            "key": "___push_service___"
+        },
+        {
+            "value": "{\"status\":\"normal\",\"ut\":\"enable\"}",
+            "key": "___hotfix_service___"
+        },
+        {
+            "value": "{\"status\":\"normal\",\"ut\":\"enable\"}",
+            "key": "___feedback_service___"
+        },
+        {
+            "value": "{\"status\":\"normal\",\"ut\":\"enable\",\"ip-ranking\":\"enable\"}",
+            "key": "___httpdns_service___"
+        }
+    ]
+}</pre></div>
+                <h2>Intercept</h2>
+                <div class="content"><pre>{
+    "errCode": "OK",
+    "result": [
+        {
+            "value": "{\"status\":\"normal\",\"ut\":\"enable\"}"
+        },
+        {
+            "value": "{\"status\":\"normal\",\"ut\":\"enable\"}",
+            "key": "___hotfix_service___"
+        },
+        {
+            "value": "{\"status\":\"normal\",\"ut\":\"enable\"}",
+            "key": "___feedback_service___"
+        },
+        {
+            "value": "{\"status\":\"normal\",\"ut\":\"enable\",\"ip-ranking\":\"enable\"}",
+            "key": "___httpdns_service___"
+        }
+    ]
+}</pre></div>
+                <h2>Diff</h2>
+                <div class="content"><pre color="red">{'iterable_item_added': {"root['result'][0]": {'value': '{"status":"normal","ut":"enable"}'}}, 'iterable_item_removed': {"root['result'][0]": {'value': '{"status":"normal","ut":"enable"}', 'key': '___push_service___'}}}</pre></div>
+              </div>
+            </div>
+
+
+        </td>
+      </tr>
+    
+      <tr>
+        <th class="http://adash.man.aliyuncs.com/man/api?ak=23356390&s=581df9ca62949ba858e9074be239fdb749246a94" style="width:5em;">http://adash.man.aliyuncs.com/man/api?ak=23356390&s=581df9ca62949ba858e9074be239fdb749246a94</td>
+        <td>200</td>
+        <td style="text-align:center;width:6em;">304.0 ms</td>
+        <td class="detail">
+            <a class="button" href="#popup_log_5">data</a>
+            <div id="popup_log_5" class="overlay">
+              <div class="popup">
+                <h2>Original</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content"><pre>{
+    "t": 1562769364340,
+    "ret": "E0111",
+    "success": "fail"
+}</pre></div>
+                <h2>Intercept</h2>
+                <div class="content"><pre>{
+    "t": 1562769364340,
+    "ret": "E0111",
+    "success": "fail"
+}</pre></div>
+                <h2>Diff</h2>
+                <div class="content"><pre color="red">{}</pre></div>
+              </div>
+            </div>
+
+
+        </td>
+      </tr>
+    
+      <tr>
+        <th class="http://adash.man.aliyuncs.com/man/api?ak=23356390&s=581df9ca62949ba858e9074be239fdb749246a94" style="width:5em;">http://adash.man.aliyuncs.com/man/api?ak=23356390&s=581df9ca62949ba858e9074be239fdb749246a94</td>
+        <td>200</td>
+        <td style="text-align:center;width:6em;">1178.0 ms</td>
+        <td class="detail">
+            <a class="button" href="#popup_log_6">data</a>
+            <div id="popup_log_6" class="overlay">
+              <div class="popup">
+                <h2>Original</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content"><pre>{
+    "t": 1562769370785,
+    "ret": "",
+    "success": "success"
+}</pre></div>
+                <h2>Intercept</h2>
+                <div class="content"><pre>{
+    "t": 1562769370785,
+    "ret": "",
+    "success": "success"
+}</pre></div>
+                <h2>Diff</h2>
+                <div class="content"><pre color="red">{}</pre></div>
+              </div>
+            </div>
+
+
+        </td>
+      </tr>
+    
+      <tr>
+        <th class="http://tracking.miui.com/track/v1" style="width:5em;">http://tracking.miui.com/track/v1</td>
+        <td>200</td>
+        <td style="text-align:center;width:6em;">160.0 ms</td>
+        <td class="detail">
+            <a class="button" href="#popup_log_7">data</a>
+            <div id="popup_log_7" class="overlay">
+              <div class="popup">
+                <h2>Original</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content"><pre>{
+    "code": 1
+}</pre></div>
+                <h2>Intercept</h2>
+                <div class="content"><pre>{
+    "code": 1
+}</pre></div>
+                <h2>Diff</h2>
+                <div class="content"><pre color="red">{}</pre></div>
+              </div>
+            </div>
+
+
+        </td>
+      </tr>
+    
+      <tr>
+        <th class="http://tracking.miui.com/track/v1" style="width:5em;">http://tracking.miui.com/track/v1</td>
+        <td>200</td>
+        <td style="text-align:center;width:6em;">32.0 ms</td>
+        <td class="detail">
+            <a class="button" href="#popup_log_8">data</a>
+            <div id="popup_log_8" class="overlay">
+              <div class="popup">
+                <h2>Original</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content"><pre>{
+    "code": 1
+}</pre></div>
+                <h2>Intercept</h2>
+                <div class="content"><pre>{
+    "code": 1
+}</pre></div>
+                <h2>Diff</h2>
+                <div class="content"><pre color="red">{}</pre></div>
+              </div>
+            </div>
+
+
+        </td>
+      </tr>
+    
+      <tr>
+        <th class="http://tracking.miui.com/track/v1" style="width:5em;">http://tracking.miui.com/track/v1</td>
+        <td>200</td>
+        <td style="text-align:center;width:6em;">86.0 ms</td>
+        <td class="detail">
+            <a class="button" href="#popup_log_9">data</a>
+            <div id="popup_log_9" class="overlay">
+              <div class="popup">
+                <h2>Original</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content"><pre>{
+    "code": 1
+}</pre></div>
+                <h2>Intercept</h2>
+                <div class="content"><pre>{
+    "code": 1
+}</pre></div>
+                <h2>Diff</h2>
+                <div class="content"><pre color="red">{}</pre></div>
+              </div>
+            </div>
+
+
+        </td>
+      </tr>
+    
+      <tr>
+        <th class="http://tracking.miui.com/track/v1" style="width:5em;">http://tracking.miui.com/track/v1</td>
+        <td>200</td>
+        <td style="text-align:center;width:6em;">43.0 ms</td>
+        <td class="detail">
+            <a class="button" href="#popup_log_10">data</a>
+            <div id="popup_log_10" class="overlay">
+              <div class="popup">
+                <h2>Original</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content"><pre>{
+    "code": 1
+}</pre></div>
+                <h2>Intercept</h2>
+                <div class="content"><pre>{
+    "code": 1
+}</pre></div>
+                <h2>Diff</h2>
+                <div class="content"><pre color="red">{}</pre></div>
+              </div>
+            </div>
+
+
+        </td>
+      </tr>
+    
+  </table>
+
+</body>
