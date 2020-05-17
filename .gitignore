@@ -16,4 +16,7 @@ site/
 .idea
 or/*
 venv/*
+venv/bin
+proxy/__pycache__
+.idea/*
 
